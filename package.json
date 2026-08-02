@@ -14,6 +14,8 @@
     "download:images": "node scripts/download-images.mjs",
     "fix:characters": "node scripts/fix-croatian-characters.mjs",
     "fix:characters:write": "node scripts/fix-croatian-characters.mjs --write",
+    "repair:encoding": "node scripts/repair-encoding.mjs",
+    "repair:encoding:write": "node scripts/repair-encoding.mjs --write",
     "api:build": "node scripts/build.mjs",
     "build": "pnpm run validate && panda build && next build && node scripts/prepare-pages.mjs",
     "validate": "node scripts/validate.mjs",

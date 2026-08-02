@@ -1,13 +1,18 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import { pathToFileURL } from 'node:url';
 import * as cheerio from 'cheerio';
 import pLimit from 'p-limit';
 import slugify from 'slugify';
 
-const START_URL = process.env.START_URL ?? process.argv[2] ?? 'https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html';
+const EXECUTED_DIRECTLY = process.argv[1]
+  && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+const START_URL = process.env.START_URL
+  ?? (EXECUTED_DIRECTLY ? process.argv[2] : undefined)
+  ?? 'https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html';
 const DEFAULT_OUTPUT_DIR = process.env.DRY_RUN === '1' ? '.tmp/api' : 'public/api';
-const OUTPUT_DIR = path.resolve(process.env.OUTPUT_DIR ?? process.argv[3] ?? DEFAULT_OUTPUT_DIR);
+const OUTPUT_DIR = path.resolve(process.env.OUTPUT_DIR ?? (EXECUTED_DIRECTLY ? process.argv[3] : undefined) ?? DEFAULT_OUTPUT_DIR);
 const CONCURRENCY = Number(process.env.CONCURRENCY ?? 3);
 const DELAY_MS = Number(process.env.DELAY_MS ?? 800);
 const MAX_RETRIES = Number(process.env.MAX_RETRIES ?? 4);
@@ -46,7 +51,21 @@ function archiveUrlFor(href, baseUrl) {
   return `https://web.archive.org/web/${timestamp}/${absolute}`;
 }
 
-async function fetchHtml(url) {
+function decodeHtml(buffer, contentType = '') {
+  const bytes = Buffer.from(buffer);
+  const headerCharset = contentType.match(/charset\s*=\s*["']?([^;"'\s]+)/i)?.[1];
+  const beginning = bytes.subarray(0, 8192).toString('latin1');
+  const metaCharset = beginning.match(/<meta[^>]+charset\s*=\s*["']?([^;"'\s/>]+)/i)?.[1];
+  const encoding = (headerCharset ?? metaCharset ?? 'utf-8').toLowerCase();
+  try {
+    return new TextDecoder(encoding).decode(bytes);
+  } catch {
+    console.warn(`Unsupported HTML charset ${encoding}; falling back to UTF-8.`);
+    return new TextDecoder('utf-8').decode(bytes);
+  }
+}
+
+export async function fetchHtml(url) {
   let lastError;
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
@@ -55,7 +74,7 @@ async function fetchHtml(url) {
         headers: { 'user-agent': USER_AGENT, accept: 'text/html,application/xhtml+xml' }
       });
       if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
-      const html = await response.text();
+      const html = decodeHtml(await response.arrayBuffer(), response.headers.get('content-type') ?? '');
       debug('Fetched', response.url, response.status, `${html.length} bytes`);
       if (!html || html.length < 500) throw new Error('Archive returned an unexpectedly small document');
       await sleep(DELAY_MS);
@@ -113,7 +132,7 @@ function findSidebarSection($, headingPattern) {
   return result;
 }
 
-function parseNavigation(html, pageUrl) {
+export function parseNavigation(html, pageUrl) {
   const $ = cheerio.load(html);
   removeWaybackChrome($);
   return Object.fromEntries(Object.entries(CATEGORIES).map(([category, config]) => {
@@ -156,7 +175,7 @@ function parseMetadata(lines) {
   return { metadata, remaining };
 }
 
-function parseArticle(html, requestedUrl, finalUrl, category) {
+export function parseArticle(html, requestedUrl, finalUrl, category) {
   const $ = cheerio.load(html);
   removeWaybackChrome($);
   $('script,style,noscript,iframe,form').remove();
@@ -315,7 +334,9 @@ async function main() {
   if (failed.length) process.exitCode = 2;
 }
 
-main().catch(error => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (EXECUTED_DIRECTLY) {
+  main().catch(error => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
