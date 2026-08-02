@@ -12,20 +12,33 @@
     "scrape:debug": "DEBUG=1 node scripts/scrape.mjs",
     "scrape:dry": "DRY_RUN=1 node scripts/scrape.mjs",
     "download:images": "node scripts/download-images.mjs",
-    "build": "node scripts/build.mjs",
+    "api:build": "node scripts/build.mjs",
+    "build": "pnpm run validate && panda build && next build && node scripts/prepare-pages.mjs",
     "validate": "node scripts/validate.mjs",
     "clean": "node scripts/clean.mjs",
-    "dev": "npx serve public",
-    "preview": "npx serve public",
-    "vercel-build": "npm run build"
+    "dev": "panda build && next dev",
+    "preview": "npx serve out",
+    "vercel-build": "pnpm run build"
   },
   "dependencies": {
     "cheerio": "^1.1.0",
+    "lucide-react": "^0.468.0",
+    "next": "16.3.0-canary.105",
+    "next-intl": "^4.3.9",
+    "next-themes": "^0.4.6",
     "p-limit": "^6.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "@pandacss/dev": "2.0.0-beta.11",
+    "@pandacss/preset-base": "2.0.0-beta.11",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "serve": "^14.2.4",
+    "typescript": "^5"
   },
   "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
 }

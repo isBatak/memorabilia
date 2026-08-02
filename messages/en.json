@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "cartoons": "Cartoons",
+    "series": "Series",
+    "movies": "Films",
+    "about": "About the archive"
+  },
+  "common": {
+    "search": "Search the archive",
+    "searchPlaceholder": "A title, character or memory…",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "readMore": "Open story",
+    "browse": "Browse the archive",
+    "all": "All",
+    "back": "Back to archive",
+    "originalSource": "Original record",
+    "gallery": "Gallery",
+    "published": "Published",
+    "preserved": "Preserved from the original blog",
+    "noResults": "No memories found.",
+    "titleOnly": "This title is waiting for its story to be rediscovered.",
+    "language": "Language",
+    "theme": "Appearance",
+    "lightTheme": "Switch to light mode",
+    "darkTheme": "Switch to dark mode"
+  },
+  "home": {
+    "eyebrow": "A digital video library of childhood",
+    "title": "Rewind to the beginning.",
+    "intro": "Memorabilia turns the original blog back on — cartoons, shows and films we once waited for in front of the TV, now preserved as an open static archive.",
+    "featured": "Tonight’s feature",
+    "cartoonRail": "Saturday morning",
+    "seriesRail": "Just one more episode",
+    "movieRail": "Movie night",
+    "archiveTitle": "Memories that don’t depend on a server.",
+    "archiveText": "The archive was recovered from snapshots of the original blog and converted into structured JSON. No database and no closed platform — its stories and locally preserved images can live on any static host.",
+    "entries": "titles",
+    "images": "preserved images",
+    "categories": "collections"
+  },
+  "detail": {
+    "archiveEntry": "Archive entry",
+    "article": "Story from the archive",
+    "more": "More from the collection",
+    "missingImage": "Image not preserved"
+  },
+  "footer": {
+    "copy": "Made for everyone who ran home before the opening credits.",
+    "data": "Open JSON API"
+  }
+}

@@ -30,9 +30,23 @@ completed later.
 
 ## Open
 
-- `http://localhost:3000/api`
+- `http://localhost:3000`
+- `http://localhost:3000/api/index.json`
 - `http://localhost:3000/api/navigation.json`
 - `http://localhost:3000/api/cartoons/bus-bus.json`
+
+## Web archive
+
+The repository also includes a Croatian-first, bilingual Next.js interface for
+browsing the complete archive. It is statically exported, searches entirely in
+the browser, and uses only locally preserved media, so it remains deployable to
+GitHub Pages and other static hosts.
+
+```text
+pnpm dev      # local site
+pnpm build    # validate data and export the site to out/
+pnpm preview  # serve the finished static export
+```
 
 ## API endpoints
 
