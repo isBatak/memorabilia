@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   const {collections} = getArchiveIndex();
   return (
-    <html lang="hr" suppressHydrationWarning>
+    <html lang="hr" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider>
           <LocaleProvider>

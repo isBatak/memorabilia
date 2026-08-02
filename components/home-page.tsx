@@ -14,11 +14,29 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 function Rail({id, title, items}: {id: string; title: string; items: ArchiveCard[]}) {
   return (
     <section id={id} className={css({scrollMarginTop: 20, mb: {base: 12, md: 18}})}>
-      <div className={css({display: 'flex', justifyContent: 'space-between', alignItems: 'end', mb: 5, px: {base: 5, md: 9}})}>
+      <div className={css({display: 'flex', justifyContent: 'space-between', alignItems: 'end', px: {base: 5, md: 9}})}>
         <h2 className={css({fontFamily: 'display', fontSize: {base: 'xl', md: '2xl'}, letterSpacing: '-.03em'})}>{title}</h2>
         <span className={css({color: 'muted', fontSize: 'xs', fontWeight: 700})}>{items.length.toString().padStart(2, '0')}</span>
       </div>
-      <div className={css({display: 'flex', gap: 4, overflowX: 'auto', px: {base: 5, md: 9}, pb: 6, scrollSnapType: 'x mandatory', scrollbarWidth: 'thin'})}>
+      <div
+        data-carousel
+        className={css({
+          display: 'flex',
+          gap: {base: 3, md: 4},
+          overflowX: 'auto',
+          px: {base: 5, md: 9},
+          pt: 5,
+          pb: 7,
+          scrollSnapType: 'x mandatory',
+          scrollPaddingInline: {base: '1.25rem', md: '2.25rem'},
+          scrollBehavior: 'smooth',
+          overscrollBehaviorX: 'contain',
+          touchAction: 'pan-x pinch-zoom',
+          scrollbarWidth: 'none',
+          WebkitOverflowScrolling: 'touch',
+          '&::-webkit-scrollbar': {display: 'none'}
+        })}
+      >
         {items.map((item, index) => <MediaCard key={item.slug} item={item} priority={index < 2}/>) }
       </div>
     </section>
@@ -31,7 +49,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
 
   return (
     <>
-      <section className={css({position: 'relative', minH: {base: '42rem', md: '47rem'}, display: 'flex', alignItems: 'end', overflow: 'hidden', color: 'paper', borderBottom: '1px solid', borderColor: 'line'})}>
+      <section className={css({position: 'relative', minH: {base: '42rem', md: '47rem'}, display: 'flex', alignItems: 'end', overflow: 'hidden', color: 'paper', borderBottom: '1px solid var(--memorabilia-line)'})}>
         {featured.image && <img src={`${basePath}${featured.image}`} alt="" className={css({position: 'absolute', inset: 0, w: '100%', h: '100%', objectFit: 'cover', objectPosition: 'center 25%', filter: 'saturate(.75) contrast(1.05)', opacity: .72})}/>} 
         <div className={css({position: 'absolute', inset: 0, bg: 'linear-gradient(90deg, #08090b 3%, rgba(8,9,11,.76) 43%, rgba(8,9,11,.18) 76%), linear-gradient(to top, #08090b 0%, transparent 58%)'})}/>
         <div className={css({position: 'relative', zIndex: 1, maxW: '52rem', px: {base: 5, md: 9}, pb: {base: 12, md: 16}, pt: 28, animation: 'rise .7s ease both'})}>
@@ -69,7 +87,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
         </div>
       </section>
 
-      <footer className={css({px: {base: 5, md: 9}, py: 10, borderTop: '1px solid', borderColor: 'line', display: {base: 'grid', md: 'flex'}, gap: 4, alignItems: 'center', justifyContent: 'space-between', color: 'muted', fontSize: 'sm'})}>
+      <footer className={css({px: {base: 5, md: 9}, py: 10, borderTop: '1px solid var(--memorabilia-line)', display: {base: 'grid', md: 'flex'}, gap: 4, alignItems: 'center', justifyContent: 'space-between', color: 'muted', fontSize: 'sm'})}>
         <p>{t('footer.copy')}</p>
         <a href={`${basePath}/api/index.json`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'cream', _hover: {color: 'lime'}})}><Database size={15}/>{t('footer.data')}</a>
       </footer>

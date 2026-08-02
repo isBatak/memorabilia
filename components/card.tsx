@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
-import {css, cx} from '#styled-system/css';
-import {card} from '#styled-system/recipes';
+import {css} from '#styled-system/css';
 import type {ArchiveCard} from '../lib/archive';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -11,26 +10,28 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export function MediaCard({item, priority = false}: {item: ArchiveCard; priority?: boolean}) {
   const t = useTranslations('common');
   const label = item.category === 'cartoons' ? 'CRTANI' : item.category === 'series' ? 'SERIJA' : 'FILM';
-  const cardStyles = card({variant: 'outline', size: 'sm'});
-
+  
   return (
     <Link
+      data-media-card
       href={`/${item.category}/${item.slug}/`}
-      className={cx('group', cardStyles.root, css({
+      className={`group ${css({
         display: 'block',
+        flexShrink: 0,
         minW: {base: '72vw', sm: '17rem'},
         maxW: {base: '72vw', sm: '17rem'},
         scrollSnapAlign: 'start',
+        scrollSnapStop: 'always',
         borderRadius: '18px',
         overflow: 'hidden',
         bg: 'panel',
         color: 'cream',
-        border: '1px solid',
-        borderColor: 'line',
-        transition: 'transform .25s ease, border-color .25s ease, box-shadow .25s ease',
-        _hover: {transform: 'translateY(-5px)', borderColor: 'rgba(197,244,103,.45)', boxShadow: '0 18px 55px rgba(0,0,0,.35)'},
+        border: 0,
+        boxShadow: 'var(--memorabilia-card-shadow)',
+        transition: 'transform .25s ease, box-shadow .25s ease',
+        _hover: {transform: 'translateY(-5px)', boxShadow: 'var(--memorabilia-card-shadow-hover)'},
         _focusVisible: {outline: '2px solid', outlineColor: 'lime', outlineOffset: '4px'}
-      }))}
+      })}`}
     >
       <div className={css({position: 'relative', aspectRatio: '16/10', overflow: 'hidden', bg: '#1c1f26'})}>
         {item.image ? (
@@ -49,7 +50,7 @@ export function MediaCard({item, priority = false}: {item: ArchiveCard; priority
           {label}
         </span>
       </div>
-      <div className={css({p: 4})}>
+      <div className={css({p: 4, borderTop: '1px solid var(--memorabilia-line)'})}>
         <h3 className={css({fontFamily: 'display', fontSize: 'md', fontWeight: 700, lineHeight: 1.25, lineClamp: 1})}>{item.title}</h3>
         <p className={css({mt: 2, color: 'muted', fontSize: 'sm', lineHeight: 1.55, lineClamp: 2, minH: '2.75rem'})}>
           {item.summary || t('titleOnly')}

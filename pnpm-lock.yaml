@@ -54,6 +54,12 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.2.4(@types/react@19.2.18)
+      dictionary-hr:
+        specifier: ^2.0.0
+        version: 2.0.0
+      hunspell-wasm:
+        specifier: ^0.3.0
+        version: 0.3.0
       serve:
         specifier: ^14.2.4
         version: 14.2.6(supports-color@7.2.0)
@@ -988,6 +994,9 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
+  dictionary-hr@2.0.0:
+    resolution: {integrity: sha512-kQoiUkcZAbubqpLSh54cpMWJ8hWJI7UObCwrCzTbrulxdFseSmANPYnxH9CJ/Rz/WhMkNP6JW+Di/BnEN+LKGw==}
+
   dom-serializer@2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
 
@@ -1069,6 +1078,9 @@ packages:
   human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+
+  hunspell-wasm@0.3.0:
+    resolution: {integrity: sha512-D7/QLaeekJYYlE37D7KBq5v38vL4tQutTFIUBOUGBl0g9la8OUgfSd8+XbwNPV5uYMHS13umXR9MtdAxStpHJg==}
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
@@ -2214,6 +2226,8 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
+  dictionary-hr@2.0.0: {}
+
   dom-serializer@2.0.0:
     dependencies:
       domelementtype: 2.3.0
@@ -2295,6 +2309,8 @@ snapshots:
       entities: 7.0.1
 
   human-signals@2.1.0: {}
+
+  hunspell-wasm@0.3.0: {}
 
   iconv-lite@0.6.3:
     dependencies:

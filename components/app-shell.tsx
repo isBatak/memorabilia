@@ -66,7 +66,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
 
   const sidebar = css({
     position: 'fixed', top: 0, bottom: 0, left: 0, zIndex: 40, w: '15.5rem', bg: 'shell',
-    borderRight: '1px solid', borderColor: 'line', px: 5, py: 6, display: 'flex', flexDirection: 'column',
+    borderRight: '1px solid var(--memorabilia-line)', px: 5, py: 6, display: 'flex', flexDirection: 'column',
     transform: {base: menuOpen ? 'translateX(0)' : 'translateX(-105%)', lg: 'none'},
     transition: 'transform .25s ease', backdropFilter: 'blur(18px)'
   });
@@ -90,7 +90,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
         </nav>
 
         <button onClick={() => setSearchOpen(true)} className={cx(button({variant: 'outline', size: 'sm'}), css({mt: 7, w: '100%', justifyContent: 'flex-start', colorPalette: 'red', borderColor: 'line', borderRadius: '12px', bg: 'soft', color: 'muted', textAlign: 'left', _hover: {color: 'cream', bg: 'hover'}}))}>
-          <Search size={17}/><span className={css({fontSize: 'sm'})}>{t('common.search')}</span><kbd className={css({ml: 'auto', fontSize: '10px', border: '1px solid', borderColor: 'line', px: 1.5, borderRadius: '4px'})}>⌘K</kbd>
+          <Search size={17}/><span className={css({fontSize: 'sm'})}>{t('common.search')}</span><kbd className={css({ml: 'auto', fontSize: '10px', border: '1px solid var(--memorabilia-line)', px: 1.5, borderRadius: '4px'})}>⌘K</kbd>
         </button>
 
         <div className={css({mt: 'auto', display: 'grid', gap: 5})}>
@@ -127,8 +127,8 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
           <div className={css({maxW: '70rem', mx: 'auto', px: {base: 5, md: 10}, py: {base: 6, md: 12}})}>
             <div className={css({display: 'flex', alignItems: 'center', gap: 4})}>
               <Search size={26} className={css({color: 'lime', flexShrink: 0})}/>
-              <input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t('common.searchPlaceholder')} className={css({w: '100%', border: 0, borderBottom: '1px solid', borderColor: 'line', bg: 'transparent', color: 'cream', fontFamily: 'display', fontWeight: 650, fontSize: {base: '2xl', md: '5xl'}, py: 3, outline: 'none', _placeholder: {color: 'muted'}})}/>
-              <button onClick={() => setSearchOpen(false)} aria-label={t('common.close')} className={css({border: '1px solid', borderColor: 'line', bg: 'transparent', color: 'cream', w: 10, h: 10, borderRadius: 'full', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0})}><X size={18}/></button>
+              <input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t('common.searchPlaceholder')} className={css({w: '100%', border: 0, borderBottom: '1px solid var(--memorabilia-line)', bg: 'transparent', color: 'cream', fontFamily: 'display', fontWeight: 650, fontSize: {base: '2xl', md: '5xl'}, py: 3, outline: 'none', _placeholder: {color: 'muted'}})}/>
+              <button onClick={() => setSearchOpen(false)} aria-label={t('common.close')} className={css({border: '1px solid var(--memorabilia-line)', bg: 'transparent', color: 'cream', w: 10, h: 10, borderRadius: 'full', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0})}><X size={18}/></button>
             </div>
             <p className={css({mt: 5, mb: 4, color: 'muted', fontSize: 'sm'})}>{results.length} / {allItems.length}</p>
             <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', sm: 'repeat(2,1fr)', lg: 'repeat(3,1fr)'}, gap: 3})}>

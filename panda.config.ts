@@ -66,7 +66,9 @@ export default defineConfig({
       '--memorabilia-shell': 'rgba(8,9,11,.96)',
       '--memorabilia-overlay': 'rgba(8,9,11,.92)',
       '--memorabilia-scroll-track': '#08090b',
-      '--memorabilia-scroll-thumb': '#31343c'
+      '--memorabilia-scroll-thumb': '#31343c',
+      '--memorabilia-card-shadow': '0 12px 34px rgba(0,0,0,.28), 0 0 0 1px rgba(255,255,255,.055)',
+      '--memorabilia-card-shadow-hover': '0 22px 60px rgba(0,0,0,.42), 0 0 0 1px rgba(197,244,103,.32)'
     },
     '[data-theme="light"]': {
       colorScheme: 'light',
@@ -80,7 +82,9 @@ export default defineConfig({
       '--memorabilia-shell': 'rgba(248,246,240,.96)',
       '--memorabilia-overlay': 'rgba(248,246,240,.94)',
       '--memorabilia-scroll-track': '#e8e4da',
-      '--memorabilia-scroll-thumb': '#aaa69d'
+      '--memorabilia-scroll-thumb': '#aaa69d',
+      '--memorabilia-card-shadow': '0 12px 34px rgba(54,46,31,.11), 0 0 0 1px rgba(21,22,26,.06)',
+      '--memorabilia-card-shadow-hover': '0 22px 55px rgba(54,46,31,.18), 0 0 0 1px rgba(136,170,69,.38)'
     },
     'html': {bg: 'ink', color: 'cream', scrollBehavior: 'smooth'},
     'body': {m: 0, bg: 'ink', color: 'cream', fontFamily: 'sans', minH: '100vh'},

@@ -35,9 +35,9 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
       <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', xl: 'minmax(0, 46rem) 18rem'}, gap: {base: 10, xl: 16}, px: {base: 5, md: 9}, py: {base: 12, md: 18}, maxW: '88rem'})}>
         <section>
           <h2 className={css({fontFamily: 'display', fontSize: '2xl', letterSpacing: '-.03em', mb: 7})}>{t('detail.article')}</h2>
-          {sections.length ? <div className={css({display: 'grid', gap: 6, color: 'cream', fontSize: {base: 'md', md: 'lg'}, lineHeight: 1.82})}>{sections.map((section, index) => <p key={index} className={css({whiteSpace: 'pre-line'})}>{section}</p>)}</div> : <div className={css({border: '1px dashed', borderColor: 'line', borderRadius: '16px', p: 8, color: 'muted'})}>{t('common.titleOnly')}</div>}
+          {sections.length ? <div className={css({display: 'grid', gap: 6, color: 'cream', fontSize: {base: 'md', md: 'lg'}, lineHeight: 1.82})}>{sections.map((section, index) => <p key={index} className={css({whiteSpace: 'pre-line'})}>{section}</p>)}</div> : <div className={css({border: '1px dashed var(--memorabilia-line)', borderRadius: '16px', p: 8, color: 'muted'})}>{t('common.titleOnly')}</div>}
         </section>
-        <aside className={css({alignSelf: 'start', position: {xl: 'sticky'}, top: 8, borderTop: '1px solid', borderColor: 'line', pt: 5})}>
+        <aside className={css({alignSelf: 'start', position: {xl: 'sticky'}, top: 8, borderTop: '1px solid var(--memorabilia-line)', pt: 5})}>
           <p className={css({fontSize: 'xs', textTransform: 'uppercase', letterSpacing: '.13em', color: 'muted', mb: 4})}>Memorabilia JSON</p>
           <dl className={css({display: 'grid', gap: 4, fontSize: 'sm'})}>
             <div><dt className={css({color: 'muted', fontSize: 'xs'})}>Slug</dt><dd className={css({mt: 1, wordBreak: 'break-all'})}>{entry.slug}</dd></div>
@@ -51,13 +51,13 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
       {entry.images.length > 0 && <section className={css({px: {base: 5, md: 9}, pb: {base: 14, md: 20}})}>
         <div className={css({display: 'flex', alignItems: 'center', gap: 3, mb: 6})}><ImageIcon size={20} className={css({color: 'lime'})}/><h2 className={css({fontFamily: 'display', fontSize: '2xl'})}>{t('common.gallery')}</h2><span className={css({color: 'muted', fontSize: 'sm'})}>{entry.images.length}</span></div>
         <div className={css({columns: {base: 1, sm: 2, lg: 3}, columnGap: 4})}>
-          {entry.images.map((image, index) => image.localUrl && <figure key={`${image.localUrl}-${index}`} className={css({breakInside: 'avoid', mb: 4, overflow: 'hidden', borderRadius: '14px', bg: 'panel', border: '1px solid', borderColor: 'line'})}><img src={`${basePath}${image.localUrl}`} alt={image.alt || `${entry.title} — ${index + 1}`} loading="lazy" className={css({w: '100%', h: 'auto'})}/></figure>)}
+          {entry.images.map((image, index) => image.localUrl && <figure key={`${image.localUrl}-${index}`} className={css({breakInside: 'avoid', mb: 4, overflow: 'hidden', borderRadius: '14px', bg: 'panel', border: '1px solid var(--memorabilia-line)'})}><img src={`${basePath}${image.localUrl}`} alt={image.alt || `${entry.title} — ${index + 1}`} loading="lazy" className={css({w: '100%', h: 'auto'})}/></figure>)}
         </div>
       </section>}
 
-      <section className={css({py: {base: 12, md: 16}, borderTop: '1px solid', borderColor: 'line'})}>
+      <section className={css({py: {base: 12, md: 16}, borderTop: '1px solid var(--memorabilia-line)'})}>
         <h2 className={css({px: {base: 5, md: 9}, fontFamily: 'display', fontSize: '2xl', mb: 6})}>{t('detail.more')}</h2>
-        <div className={css({display: 'flex', gap: 4, overflowX: 'auto', px: {base: 5, md: 9}, pb: 6, scrollSnapType: 'x mandatory'})}>{related.map((item) => <MediaCard key={item.slug} item={item}/>)}</div>
+        <div data-carousel className={css({display: 'flex', gap: {base: 3, md: 4}, overflowX: 'auto', px: {base: 5, md: 9}, pb: 7, scrollSnapType: 'x mandatory', scrollPaddingInline: {base: '1.25rem', md: '2.25rem'}, scrollBehavior: 'smooth', overscrollBehaviorX: 'contain', touchAction: 'pan-x pinch-zoom', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch', '&::-webkit-scrollbar': {display: 'none'}})}>{related.map((item) => <MediaCard key={item.slug} item={item}/>)}</div>
       </section>
     </article>
   );
