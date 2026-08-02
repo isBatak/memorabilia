@@ -5,7 +5,7 @@
   "description": "Wayback Machine scraper and static JSON API for the Memorabilia cartoon archive.",
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13.0"
   },
   "scripts": {
     "scrape": "node scripts/scrape.mjs",
