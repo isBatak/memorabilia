@@ -32,6 +32,7 @@
     "slugify": "^1.6.6"
   },
   "devDependencies": {
+    "@chakra-ui/panda-preset": "^3.36.1",
     "@pandacss/dev": "2.0.0-beta.11",
     "@pandacss/preset-base": "2.0.0-beta.11",
     "@types/node": "^20",

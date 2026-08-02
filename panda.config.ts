@@ -1,26 +1,36 @@
 import {defineConfig} from '@pandacss/dev';
-import presetBase from '@pandacss/preset-base';
 
 export default defineConfig({
-  presets: [presetBase],
+  presets: ['@pandacss/preset-base', '@chakra-ui/panda-preset'],
   preflight: true,
   include: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
   exclude: [],
   outdir: 'styled-system',
   importMap: '#styled-system',
   jsxFramework: 'react',
+  conditions: {
+    hover: '&:is(:hover, [data-hover]):not(:disabled, [data-disabled])',
+    focusVisible: '&:is(:focus-visible, [data-focus-visible])',
+    disabled: '&:is(:disabled, [disabled], [data-disabled], [aria-disabled=true])',
+    groupHover: '.group:is(:hover, [data-hover]) &',
+    placeholder: '&::placeholder',
+    after: '&::after',
+    expanded: '&:is([aria-expanded=true], [data-expanded], [data-state=expanded])'
+  },
   theme: {
     breakpoints: {
       sm: '40rem',
       md: '48rem',
       lg: '64rem',
-      xl: '80rem'
+      xl: '80rem',
+      '2xl': '96rem'
     },
     extend: {
       tokens: {
         fonts: {
           sans: {value: 'var(--font-manrope), ui-sans-serif, system-ui, sans-serif'},
-          display: {value: 'var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif'}
+          display: {value: 'var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif'},
+          brand: {value: 'Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Black", sans-serif'}
         },
         colors: {
           ink: {value: 'var(--memorabilia-bg)'},

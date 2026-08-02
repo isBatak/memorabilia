@@ -5,12 +5,25 @@ import {usePathname} from 'next/navigation';
 import {useTranslations} from 'next-intl';
 import {useTheme} from 'next-themes';
 import {useEffect, useMemo, useState} from 'react';
-import {css} from '#styled-system/css';
+import {css, cx} from '#styled-system/css';
+import {button} from '#styled-system/recipes';
+import {hstack} from '#styled-system/patterns';
 import {Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
 import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard, Category} from '../lib/archive';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const wordmark = css({
+  display: 'inline-flex',
+  alignItems: 'baseline',
+  fontFamily: 'brand',
+  color: 'paper',
+  fontSize: '2xl',
+  lineHeight: 1,
+  letterSpacing: '-.025em',
+  textTransform: 'uppercase',
+  textShadow: '0 2px 12px rgba(0,0,0,.45)'
+});
 
 const navItems = [
   {key: 'home', href: '/', icon: Home},
@@ -52,7 +65,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   const themeLabel = darkTheme ? t('common.lightTheme') : t('common.darkTheme');
 
   const sidebar = css({
-    position: 'fixed', insetY: 0, left: 0, zIndex: 40, w: '15.5rem', bg: 'shell',
+    position: 'fixed', top: 0, bottom: 0, left: 0, zIndex: 40, w: '15.5rem', bg: 'shell',
     borderRight: '1px solid', borderColor: 'line', px: 5, py: 6, display: 'flex', flexDirection: 'column',
     transform: {base: menuOpen ? 'translateX(0)' : 'translateX(-105%)', lg: 'none'},
     transition: 'transform .25s ease', backdropFilter: 'blur(18px)'
@@ -61,9 +74,8 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   return (
     <div className={css({minH: '100vh'})}>
       <aside className={sidebar} aria-label="Glavna navigacija">
-        <Link href="/" onClick={() => setMenuOpen(false)} className={css({display: 'flex', alignItems: 'center', gap: 3, mb: 10})}>
-          <span className={css({display: 'grid', placeItems: 'center', w: 10, h: 10, borderRadius: '12px', bg: 'signal', color: 'white', fontFamily: 'display', fontWeight: 800, fontSize: 'xl', transform: 'rotate(-4deg)'})}>M</span>
-          <span><strong className={css({display: 'block', fontFamily: 'display', letterSpacing: '-.03em', fontSize: 'lg'})}>memorabilia</strong><small className={css({color: 'muted', letterSpacing: '.12em', fontSize: '9px'})}>ARHIVA / 2005—DANAS</small></span>
+        <Link href="/" aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10}))}>
+          MEMORABILIA<span aria-hidden="true" className={css({color: 'signal'})}>.</span>
         </Link>
 
         <nav className={css({display: 'grid', gap: 2})}>
@@ -77,14 +89,14 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
           })}
         </nav>
 
-        <button onClick={() => setSearchOpen(true)} className={css({mt: 7, display: 'flex', alignItems: 'center', gap: 3, px: 3, py: 3, border: '1px solid', borderColor: 'line', borderRadius: '12px', bg: 'soft', color: 'muted', cursor: 'pointer', textAlign: 'left', _hover: {color: 'cream', bg: 'hover'}})}>
+        <button onClick={() => setSearchOpen(true)} className={cx(button({variant: 'outline', size: 'sm'}), css({mt: 7, w: '100%', justifyContent: 'flex-start', colorPalette: 'red', borderColor: 'line', borderRadius: '12px', bg: 'soft', color: 'muted', textAlign: 'left', _hover: {color: 'cream', bg: 'hover'}}))}>
           <Search size={17}/><span className={css({fontSize: 'sm'})}>{t('common.search')}</span><kbd className={css({ml: 'auto', fontSize: '10px', border: '1px solid', borderColor: 'line', px: 1.5, borderRadius: '4px'})}>⌘K</kbd>
         </button>
 
         <div className={css({mt: 'auto', display: 'grid', gap: 5})}>
           <div>
             <p className={css({color: 'muted', fontSize: '10px', textTransform: 'uppercase', letterSpacing: '.13em', mb: 2})}>{t('common.theme')}</p>
-            <button disabled={!mounted} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} aria-label={themeLabel} className={css({w: '100%', display: 'flex', alignItems: 'center', gap: 3, border: '1px solid', borderColor: 'line', bg: 'soft', color: 'cream', borderRadius: '10px', px: 3, py: 2.5, cursor: 'pointer', fontSize: 'xs', fontWeight: 750, _hover: {bg: 'hover'}, _disabled: {cursor: 'default'}})}>
+            <button disabled={!mounted} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} aria-label={themeLabel} className={cx(button({variant: 'outline', size: 'sm'}), css({w: '100%', justifyContent: 'flex-start', colorPalette: 'red', borderColor: 'line', bg: 'soft', color: 'cream', borderRadius: '10px', fontSize: 'xs', fontWeight: 750, _hover: {bg: 'hover'}, _disabled: {cursor: 'default'}}))}>
               {darkTheme ? <Sun size={16}/> : <Moon size={16}/>}<span>{themeLabel}</span>
             </button>
           </div>
@@ -101,10 +113,10 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
 
       <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, h: 16, px: 4, display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'paper', bg: 'linear-gradient(to bottom, rgba(8,9,11,.98), rgba(8,9,11,.72), transparent)'})}>
         <button aria-label={t('common.openMenu')} onClick={() => setMenuOpen(true)} className={css({border: 0, bg: 'transparent', color: 'paper', p: 2})}><Menu/></button>
-        <Link href="/" className={css({fontFamily: 'display', fontWeight: 800})}>memorabilia<span className={css({color: 'signal'})}>.</span></Link>
-        <div className={css({display: 'flex', alignItems: 'center'})}>
-          <button disabled={!mounted} aria-label={themeLabel} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} className={css({border: 0, bg: 'transparent', color: 'paper', p: 2})}>{darkTheme ? <Sun/> : <Moon/>}</button>
-          <button aria-label={t('common.search')} onClick={() => setSearchOpen(true)} className={css({border: 0, bg: 'transparent', color: 'paper', p: 2})}><Search/></button>
+        <Link href="/" aria-label="Memorabilia — početna" className={wordmark}>MEMORABILIA<span aria-hidden="true" className={css({color: 'signal'})}>.</span></Link>
+        <div className={hstack({gap: 0})}>
+          <button disabled={!mounted} aria-label={themeLabel} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'paper', p: 2}))}>{darkTheme ? <Sun/> : <Moon/>}</button>
+          <button aria-label={t('common.search')} onClick={() => setSearchOpen(true)} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'paper', p: 2}))}><Search/></button>
         </div>
       </header>
 

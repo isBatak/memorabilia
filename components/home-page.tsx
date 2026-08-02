@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 import {ArrowRight, Database, ImageIcon, Play, Sparkles} from 'lucide-react';
-import {css} from '#styled-system/css';
+import {css, cx} from '#styled-system/css';
+import {button} from '#styled-system/recipes';
+import {hstack} from '#styled-system/patterns';
 import {MediaCard} from './card';
 import type {ArchiveCard, Category} from '../lib/archive';
 
@@ -36,9 +38,9 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
           <div className={css({display: 'inline-flex', gap: 2, alignItems: 'center', color: 'lime', textTransform: 'uppercase', letterSpacing: '.15em', fontSize: 'xs', fontWeight: 800, mb: 5})}><Sparkles size={15}/>{t('home.eyebrow')}</div>
           <h1 className={css({fontFamily: 'display', maxW: '48rem', fontSize: {base: '4xl', sm: '6xl', md: '7xl'}, lineHeight: .94, letterSpacing: '-.065em', fontWeight: 750})}>{t('home.title')}</h1>
           <p className={css({maxW: '42rem', mt: 6, color: '#d1d2d4', fontSize: {base: 'md', md: 'lg'}, lineHeight: 1.65})}>{t('home.intro')}</p>
-          <div className={css({display: 'flex', flexWrap: 'wrap', gap: 3, mt: 8})}>
-            <Link href={`/${featured.category}/${featured.slug}/`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, px: 5, py: 3, bg: 'paper', color: 'night', borderRadius: 'full', fontWeight: 800, fontSize: 'sm', transition: 'transform .2s', _hover: {transform: 'scale(1.03)'}})}><Play size={17} fill="currentColor"/>{t('common.readMore')}</Link>
-            <a href="#cartoons" className={css({display: 'inline-flex', alignItems: 'center', gap: 2, px: 5, py: 3, bg: 'rgba(255,255,255,.11)', backdropFilter: 'blur(9px)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 'full', fontWeight: 750, fontSize: 'sm'})}>{t('common.browse')}<ArrowRight size={17}/></a>
+          <div className={hstack({flexWrap: 'wrap', gap: 3, mt: 8})}>
+            <Link href={`/${featured.category}/${featured.slug}/`} className={cx(button({variant: 'solid', size: 'lg'}), css({colorPalette: 'red', bg: 'paper', color: 'night', borderRadius: 'full', fontWeight: 800, fontSize: 'sm', _hover: {bg: 'paper', transform: 'scale(1.03)'}}))}><Play size={17} fill="currentColor"/>{t('common.readMore')}</Link>
+            <a href="#cartoons" className={cx(button({variant: 'outline', size: 'lg'}), css({colorPalette: 'gray', color: 'paper', bg: 'rgba(255,255,255,.11)', backdropFilter: 'blur(9px)', borderColor: 'rgba(255,255,255,.14)', borderRadius: 'full', fontWeight: 750, fontSize: 'sm'}))}>{t('common.browse')}<ArrowRight size={17}/></a>
           </div>
         </div>
         <div className={css({position: 'absolute', right: {base: 5, md: 9}, bottom: {base: 5, md: 8}, zIndex: 2, display: {base: 'none', sm: 'block'}, textAlign: 'right'})}>
