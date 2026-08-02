@@ -4,27 +4,13 @@ export default defineConfig({
   presets: ['@pandacss/preset-base', '@chakra-ui/panda-preset'],
   preflight: true,
   include: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
-  exclude: [],
   outdir: 'styled-system',
   importMap: '#styled-system',
   jsxFramework: 'react',
   conditions: {
-    hover: '&:is(:hover, [data-hover]):not(:disabled, [data-disabled])',
-    focusVisible: '&:is(:focus-visible, [data-focus-visible])',
-    disabled: '&:is(:disabled, [disabled], [data-disabled], [aria-disabled=true])',
-    groupHover: '.group:is(:hover, [data-hover]) &',
-    placeholder: '&::placeholder',
-    after: '&::after',
-    expanded: '&:is([aria-expanded=true], [data-expanded], [data-state=expanded])'
+    hover: '&:is(:hover, [data-hover]):not(:disabled, [disabled], [data-disabled], [aria-disabled=true])'
   },
   theme: {
-    breakpoints: {
-      sm: '40rem',
-      md: '48rem',
-      lg: '64rem',
-      xl: '80rem',
-      '2xl': '96rem'
-    },
     extend: {
       tokens: {
         fonts: {
@@ -33,68 +19,49 @@ export default defineConfig({
           brand: {value: 'Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Black", sans-serif'}
         },
         colors: {
-          ink: {value: 'var(--memorabilia-bg)'},
-          panel: {value: 'var(--memorabilia-panel)'},
-          muted: {value: 'var(--memorabilia-muted)'},
-          cream: {value: 'var(--memorabilia-text)'},
-          line: {value: 'var(--memorabilia-line)'},
-          soft: {value: 'var(--memorabilia-soft)'},
-          hover: {value: 'var(--memorabilia-hover)'},
-          shell: {value: 'var(--memorabilia-shell)'},
-          overlay: {value: 'var(--memorabilia-overlay)'},
-          night: {value: '#08090b'},
-          paper: {value: '#f5f3ed'},
-          signal: {value: '#f04b38'},
-          lime: {value: '#c5f467'}
+          lime: {
+            50: {value: '#f7fee7'},
+            100: {value: '#ecfccb'},
+            200: {value: '#d9f99d'},
+            300: {value: '#bef264'},
+            400: {value: '#a3e635'},
+            500: {value: '#84cc16'},
+            600: {value: '#65a30d'},
+            700: {value: '#3f6212'},
+            800: {value: '#365314'},
+            900: {value: '#1a2e05'},
+            950: {value: '#0f1a02'}
+          }
         }
       },
-      keyframes: {
-        rise: {from: {opacity: 0, transform: 'translateY(12px)'}, to: {opacity: 1, transform: 'translateY(0)'}}
+      semanticTokens: {
+        colors: {
+          lime: {
+            contrast: {value: {_light: '{colors.black}', _dark: '{colors.black}'}},
+            fg: {value: {_light: '{colors.lime.700}', _dark: '{colors.lime.300}'}},
+            subtle: {value: {_light: '{colors.lime.100}', _dark: '{colors.lime.900}'}},
+            muted: {value: {_light: '{colors.lime.200}', _dark: '{colors.lime.800}'}},
+            emphasized: {value: {_light: '{colors.lime.300}', _dark: '{colors.lime.700}'}},
+            solid: {value: {_light: '{colors.lime.300}', _dark: '{colors.lime.300}'}},
+            focusRing: {value: {_light: '{colors.lime.500}', _dark: '{colors.lime.500}'}},
+            border: {value: {_light: '{colors.lime.500}', _dark: '{colors.lime.500}'}}
+          }
+        }
       }
     }
   },
   globalCss: {
-    ':root, [data-theme="dark"]': {
-      colorScheme: 'dark',
-      '--memorabilia-bg': '#08090b',
-      '--memorabilia-text': '#f5f3ed',
-      '--memorabilia-panel': '#111318',
-      '--memorabilia-muted': '#a5a8b0',
-      '--memorabilia-line': 'rgba(255,255,255,.1)',
-      '--memorabilia-soft': 'rgba(255,255,255,.05)',
-      '--memorabilia-hover': 'rgba(255,255,255,.08)',
-      '--memorabilia-shell': 'rgba(8,9,11,.96)',
-      '--memorabilia-overlay': 'rgba(8,9,11,.92)',
-      '--memorabilia-scroll-track': '#08090b',
-      '--memorabilia-scroll-thumb': '#31343c',
-      '--memorabilia-card-shadow': '0 12px 34px rgba(0,0,0,.28), 0 0 0 1px rgba(255,255,255,.055)',
-      '--memorabilia-card-shadow-hover': '0 22px 60px rgba(0,0,0,.42), 0 0 0 1px rgba(197,244,103,.32)'
+    ':root, .dark': {
+      colorScheme: 'dark'
     },
-    '[data-theme="light"]': {
-      colorScheme: 'light',
-      '--memorabilia-bg': '#f1eee6',
-      '--memorabilia-text': '#15161a',
-      '--memorabilia-panel': '#fffdf8',
-      '--memorabilia-muted': '#666970',
-      '--memorabilia-line': 'rgba(21,22,26,.13)',
-      '--memorabilia-soft': 'rgba(21,22,26,.055)',
-      '--memorabilia-hover': 'rgba(21,22,26,.09)',
-      '--memorabilia-shell': 'rgba(248,246,240,.96)',
-      '--memorabilia-overlay': 'rgba(248,246,240,.94)',
-      '--memorabilia-scroll-track': '#e8e4da',
-      '--memorabilia-scroll-thumb': '#aaa69d',
-      '--memorabilia-card-shadow': '0 12px 34px rgba(54,46,31,.11), 0 0 0 1px rgba(21,22,26,.06)',
-      '--memorabilia-card-shadow-hover': '0 22px 55px rgba(54,46,31,.18), 0 0 0 1px rgba(136,170,69,.38)'
+    '.light': {
+      colorScheme: 'light'
     },
-    'html': {bg: 'ink', color: 'cream', scrollBehavior: 'smooth'},
-    'body': {m: 0, bg: 'ink', color: 'cream', fontFamily: 'sans', minH: '100vh'},
-    '*': {boxSizing: 'border-box'},
-    'a': {color: 'inherit', textDecoration: 'none'},
-    'button, input': {font: 'inherit'},
-    'img': {display: 'block', maxW: '100%'},
-    '::selection': {bg: 'signal', color: 'white'},
+    'html': {scrollBehavior: 'smooth'},
+    'body': {bg: 'bg', color: 'fg', fontFamily: 'sans', minH: '100vh'},
+    '::selection': {bg: 'red.500', color: 'white'},
     '::-webkit-scrollbar': {w: '10px', h: '8px'},
-    '::-webkit-scrollbar-track': {bg: 'var(--memorabilia-scroll-track)'},
-    '::-webkit-scrollbar-thumb': {bg: 'var(--memorabilia-scroll-thumb)', borderRadius: 'full'}
+    '::-webkit-scrollbar-track': {bg: 'bg'},
+    '::-webkit-scrollbar-thumb': {bg: 'border.emphasized', borderRadius: 'full'}
   }
 });
