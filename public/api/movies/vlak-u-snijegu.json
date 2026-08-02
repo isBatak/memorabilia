@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Vlak u snijegu",
+  "slug": "vlak-u-snijegu",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "links": [],
+  "images": [],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:49.399Z"
+  },
+  "rawArticleHtml": null
+}

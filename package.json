@@ -1,0 +1,31 @@
+{
+  "name": "memorabilia-static-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wayback Machine scraper and static JSON API for the Memorabilia cartoon archive.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "scrape:debug": "DEBUG=1 node scripts/scrape.mjs",
+    "scrape:dry": "DRY_RUN=1 node scripts/scrape.mjs",
+    "download:images": "node scripts/download-images.mjs",
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "clean": "node scripts/clean.mjs",
+    "dev": "npx serve public",
+    "preview": "npx serve public",
+    "vercel-build": "npm run build"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "p-limit": "^6.2.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
+}
