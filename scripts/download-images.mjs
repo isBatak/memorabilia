@@ -9,6 +9,7 @@ const CONCURRENCY = Number(process.env.IMAGE_CONCURRENCY ?? 6);
 const TIMEOUT_MS = Number(process.env.IMAGE_TIMEOUT_MS ?? 15000);
 const USER_AGENT = process.env.USER_AGENT ?? 'MemorabiliaArchiveExporter/1.0 (personal archival project)';
 const DEBUG = process.env.DEBUG === '1';
+const PRUNE_EMOJIS = process.argv.includes('--prune-emojis');
 const limit = pLimit(CONCURRENCY);
 const downloads = new Map();
 const filenamesBySlug = new Map();
@@ -34,6 +35,19 @@ function detectedExtension(buffer, contentType) {
   const beginning = buffer.subarray(0, 1024).toString('utf8').replace(/^\uFEFF/, '').trimStart();
   if (contentType === 'image/svg+xml' && /^(?:<\?xml[^>]*>\s*)?<svg[\s>]/i.test(beginning)) return '.svg';
   return null;
+}
+
+function gifDimensions(buffer) {
+  if (buffer.length < 10 || !/^GIF8[79]a$/.test(buffer.subarray(0, 6).toString('ascii'))) return null;
+  return {
+    width: buffer.readUInt16LE(6),
+    height: buffer.readUInt16LE(8)
+  };
+}
+
+function isEmojiGif(buffer) {
+  const dimensions = gifDimensions(buffer);
+  return Boolean(dimensions && dimensions.width <= 64 && dimensions.height <= 64);
 }
 
 async function fetchImage(url) {
@@ -65,6 +79,10 @@ async function fetchImage(url) {
         if (!extension) {
           debug('Response is not a recognized image', requestUrl, contentType);
           return null;
+        }
+        if (extension === '.gif' && isEmojiGif(buffer)) {
+          debug('Filtering emoji GIF', requestUrl);
+          return { filtered: true };
         }
         return { buffer, extension };
       } catch (error) {
@@ -118,12 +136,20 @@ async function processArticle(file) {
     const candidates = [...new Set([image.url, image.archivedUrl].filter(Boolean))];
     for (const candidate of candidates) {
       const downloaded = await fetchImage(candidate);
-      if (downloaded) return { image, downloaded };
+      if (downloaded?.filtered) return { image, downloaded: null, filtered: true };
+      if (downloaded) return { image, downloaded, filtered: false };
     }
-    return { image, downloaded: null };
+    return { image, downloaded: null, filtered: false };
   }));
 
-  for (const [index, { image, downloaded }] of checkedImages.entries()) {
+  for (const [index, { image, downloaded, filtered }] of checkedImages.entries()) {
+    if (filtered) {
+      if (image.localUrl) {
+        const localPath = path.resolve(path.dirname(articlePath), image.localUrl);
+        if (localPath.startsWith(`${PUBLIC_DIR}${path.sep}`)) await fs.rm(localPath, { force: true });
+      }
+      continue;
+    }
     if (!downloaded) {
       debug('Removing unavailable image', article.slug, image.url ?? image.archivedUrl);
       continue;
@@ -143,6 +169,45 @@ async function processArticle(file) {
   return { checked: localImages.length + removed, saved: localImages.length, removed };
 }
 
+async function pruneArticleEmojiGifs(file) {
+  const articlePath = path.join(API_DIR, file);
+  const article = JSON.parse(await fs.readFile(articlePath, 'utf8'));
+  if (!Array.isArray(article.images) || article.images.length === 0) return { checked: 0, removed: 0 };
+
+  const kept = [];
+  let removed = 0;
+  for (const image of article.images) {
+    if (!image.localUrl) {
+      kept.push(image);
+      continue;
+    }
+    const localPath = path.resolve(path.dirname(articlePath), image.localUrl);
+    if (!localPath.startsWith(`${PUBLIC_DIR}${path.sep}`)) {
+      kept.push(image);
+      continue;
+    }
+    try {
+      const buffer = await fs.readFile(localPath);
+      if (!isEmojiGif(buffer)) {
+        kept.push(image);
+        continue;
+      }
+      await fs.rm(localPath);
+      removed += 1;
+      debug('Removed emoji GIF', path.relative(process.cwd(), localPath));
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      kept.push(image);
+    }
+  }
+
+  if (removed) {
+    article.images = kept;
+    await fs.writeFile(articlePath, JSON.stringify(article, null, 2));
+  }
+  return { checked: article.images.length, removed };
+}
+
 async function main() {
   const index = JSON.parse(await fs.readFile(path.join(API_DIR, 'index.json'), 'utf8'));
   const files = [...new Set(Object.values(index)
@@ -150,6 +215,16 @@ async function main() {
     .flat()
     .filter(item => item?.status === 'ok' && typeof item.file === 'string')
     .map(item => item.file))];
+
+  if (PRUNE_EMOJIS) {
+    let removed = 0;
+    for (const file of files) {
+      const result = await pruneArticleEmojiGifs(file);
+      removed += result.removed;
+    }
+    console.log(`Removed ${removed} emoji GIFs and their API image references.`);
+    return;
+  }
 
   const totals = { checked: 0, saved: 0, removed: 0 };
   for (const [index, file] of files.entries()) {

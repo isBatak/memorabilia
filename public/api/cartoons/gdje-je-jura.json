@@ -95,14 +95,7 @@
       "archivedUrl": "https://web.archive.org/web/20121107052911/http://inobscuro.com/"
     }
   ],
-  "images": [
-    {
-      "alt": "fino",
-      "url": "http://www.blog.hr/img/hr/smiles/fino.gif",
-      "archivedUrl": "https://web.archive.org/web/20121107052911/http://www.blog.hr/img/hr/smiles/fino.gif",
-      "localUrl": "../../images/gdje-je-jura/fino.gif"
-    }
-  ],
+  "images": [],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107052911/http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",

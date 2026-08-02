@@ -185,14 +185,7 @@
       "archivedUrl": "https://web.archive.org/web/20121107082006/http://inobscuro.com/"
     }
   ],
-  "images": [
-    {
-      "alt": "kiss",
-      "url": "http://www.blog.hr/img/hr/smiles/kiss.gif",
-      "archivedUrl": "https://web.archive.org/web/20121107082006/http://www.blog.hr/img/hr/smiles/kiss.gif",
-      "localUrl": "../../images/zekoslav-mrkva/kiss.gif"
-    }
-  ],
+  "images": [],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107082006/http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",

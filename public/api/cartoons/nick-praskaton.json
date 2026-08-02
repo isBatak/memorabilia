@@ -110,14 +110,7 @@
       "archivedUrl": "https://web.archive.org/web/20121107052932/http://inobscuro.com/"
     }
   ],
-  "images": [
-    {
-      "alt": null,
-      "url": "http://www.forum.hr/images/smilies/Hail.gif",
-      "archivedUrl": "https://web.archive.org/web/20121107052932/http://www.forum.hr/images/smilies/Hail.gif",
-      "localUrl": "../../images/nick-praskaton/Hail.gif"
-    }
-  ],
+  "images": [],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107052932/http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",

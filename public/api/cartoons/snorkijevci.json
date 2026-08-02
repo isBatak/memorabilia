@@ -120,14 +120,7 @@
       "archivedUrl": "https://web.archive.org/web/20121107083728/http://inobscuro.com/"
     }
   ],
-  "images": [
-    {
-      "alt": "smijeh",
-      "url": "http://www.blog.hr/img/hr/smiles/smijeh.gif",
-      "archivedUrl": "https://web.archive.org/web/20121107083728/http://www.blog.hr/img/hr/smiles/smijeh.gif",
-      "localUrl": "../../images/snorkijevci/smijeh.gif"
-    }
-  ],
+  "images": [],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107083728/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",

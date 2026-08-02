@@ -12,6 +12,7 @@
     "scrape:debug": "DEBUG=1 node scripts/scrape.mjs",
     "scrape:dry": "DRY_RUN=1 node scripts/scrape.mjs",
     "download:images": "node scripts/download-images.mjs",
+    "prune:emoji-images": "node scripts/download-images.mjs --prune-emojis",
     "fix:characters": "node scripts/fix-croatian-characters.mjs",
     "fix:characters:write": "node scripts/fix-croatian-characters.mjs --write",
     "repair:encoding": "node scripts/repair-encoding.mjs",
