@@ -1,0 +1,18 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Srebrni pastuh",
+  "slug": "srebrni-pastuh",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:40.890Z"
+  },
+  "rawArticleHtml": null
+}

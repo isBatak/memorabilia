@@ -39,7 +39,7 @@ export type ArchiveCard = {
   summary: string;
 };
 
-const apiRoot = path.join(process.cwd(), 'public', 'api');
+const apiRoot = path.join(process.cwd(), 'public', 'api', 'v1');
 
 function readJson<T>(file: string): T {
   return JSON.parse(fs.readFileSync(file, 'utf8')) as T;
@@ -51,7 +51,7 @@ export function getAllVideoParams() {
 
 function publicImage(localUrl?: string | null) {
   if (!localUrl) return null;
-  return `/${localUrl.replace(/^\.\.\/\.\.\//, '')}`;
+  return `/${localUrl.replace(/^(?:\.\.\/)+/, '')}`;
 }
 
 function excerpt(entry: ArchiveEntry) {

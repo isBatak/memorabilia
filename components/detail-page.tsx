@@ -44,7 +44,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           <p className={css({fontSize: 'xs', textTransform: 'uppercase', letterSpacing: '.13em', color: 'gray.600', mb: 4, _dark: {color: 'gray.400'}})}>Memorabilia JSON</p>
           <dl className={css({display: 'grid', gap: 4, fontSize: 'sm'})}>
             <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>Slug</dt><dd className={css({mt: 1, wordBreak: 'break-all'})}>{entry.slug}</dd></div>
-            <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>Schema</dt><dd className={css({mt: 1})}>v1 · static JSON</dd></div>
+            <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>API</dt><dd className={css({mt: 1})}>v1 · static JSON</dd></div>
             <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>{t('common.gallery')}</dt><dd className={css({mt: 1})}>{entry.images.length}</dd></div>
           </dl>
           {source && <a href={source} target="_blank" rel="noreferrer" className={css({mt: 6, display: 'inline-flex', alignItems: 'center', gap: 2, color: 'lime.700', fontSize: 'sm', fontWeight: 750, _hover: {color: 'lime.600'}, _dark: {color: 'lime.300'}})}>{t('common.originalSource')}<ArrowUpRight size={15}/></a>}

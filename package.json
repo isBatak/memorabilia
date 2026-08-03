@@ -18,6 +18,7 @@
     "repair:encoding": "node scripts/repair-encoding.mjs",
     "repair:encoding:write": "node scripts/repair-encoding.mjs --write",
     "api:build": "node scripts/build.mjs",
+    "api:remove-links": "node scripts/remove-faulty-links.mjs",
     "build": "pnpm run validate && panda build && next build && node scripts/prepare-pages.mjs",
     "validate": "node scripts/validate.mjs",
     "clean": "node scripts/clean.mjs",

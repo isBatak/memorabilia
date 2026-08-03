@@ -12,8 +12,8 @@ async function exists(file) {
 }
 
 async function main() {
-  if (!(await exists('public/api/index.json'))) {
-    throw new Error('public/api/index.json is missing. Run `npm run scrape` and commit the generated API.');
+  if (!(await exists('public/api/v1/index.json'))) {
+    throw new Error('public/api/v1/index.json is missing. Run `npm run scrape` and commit the generated API.');
   }
 
   await new Promise((resolve, reject) => {

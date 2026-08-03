@@ -5,7 +5,7 @@ import pLimit from 'p-limit';
 import { fetchHtml, parseArticle, parseNavigation } from './scrape.mjs';
 
 const REPLACEMENT = '\uFFFD';
-const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api');
+const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api/v1');
 const CONCURRENCY = Number(process.env.CONCURRENCY ?? 3);
 const WRITE = process.argv.includes('--write');
 const HELP = process.argv.includes('--help') || process.argv.includes('-h');
@@ -23,7 +23,7 @@ Options:
   --help, -h  Show this help
 
 Environment:
-  API_DIR      JSON root (default: public/api)
+  API_DIR      JSON root (default: public/api/v1)
   CONCURRENCY  Concurrent archive requests (default: 3)`);
 }
 

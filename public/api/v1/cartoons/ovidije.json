@@ -1,0 +1,18 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Ovidije",
+  "slug": "ovidije",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:31.181Z"
+  },
+  "rawArticleHtml": null
+}

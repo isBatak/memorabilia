@@ -3,7 +3,7 @@ import path from 'node:path';
 import process from 'node:process';
 import pLimit from 'p-limit';
 
-const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api');
+const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api/v1');
 const PUBLIC_DIR = path.resolve(process.env.PUBLIC_DIR ?? 'public');
 const CONCURRENCY = Number(process.env.IMAGE_CONCURRENCY ?? 6);
 const TIMEOUT_MS = Number(process.env.IMAGE_TIMEOUT_MS ?? 15000);
@@ -160,7 +160,7 @@ async function processArticle(file) {
     const filename = uniqueFilename(preferred, sourceKey, namesBySource, usedNames);
     await fs.mkdir(outputDir, { recursive: true });
     await fs.writeFile(path.join(outputDir, filename), downloaded.buffer);
-    localImages.push({ ...image, localUrl: `../../images/${safeSlug}/${filename}` });
+    localImages.push({ ...image, localUrl: `../../../images/${safeSlug}/${filename}` });
   }
 
   const removed = article.images.length - localImages.length;

@@ -1,0 +1,18 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Tko pjeva, zlo ne misli",
+  "slug": "tko-pjeva-zlo-ne-misli",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:49.398Z"
+  },
+  "rawArticleHtml": null
+}

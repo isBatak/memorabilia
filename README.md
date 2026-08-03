@@ -12,7 +12,7 @@ preserved content, restore missing media, and add new information where useful.
 
 ## Static API
 
-All content is stored as static JSON under `public/api`. There is no application
+All content is stored as static JSON under `public/api/v1`. There is no application
 server or database required to read it, so the complete archive can be hosted on
 any static file service and consumed directly by websites, applications, or
 other preservation projects.
@@ -23,7 +23,7 @@ The API separates the archive into three collections:
 - `cartoons` — animated series and cartoons
 - `movies` — films from childhood
 
-Entries can include the original article text, metadata, links, images, source
+Entries can include the original article text, metadata, images, source
 information, and locally preserved media. Entries for which only a title has
 been recovered remain in the database as title-only records so they can be
 completed later.
@@ -31,9 +31,9 @@ completed later.
 ## Open
 
 - `http://localhost:3000`
-- `http://localhost:3000/api/index.json`
-- `http://localhost:3000/api/navigation.json`
-- `http://localhost:3000/api/cartoons/bus-bus.json`
+- `http://localhost:3000/api/v1/index.json`
+- `http://localhost:3000/api/v1/navigation.json`
+- `http://localhost:3000/api/v1/cartoons/bus-bus.json`
 
 ## Web archive
 
@@ -51,11 +51,11 @@ pnpm preview  # serve the finished static export
 ## API endpoints
 
 ```text
-GET /api/index.json
-GET /api/navigation.json
-GET /api/series/:slug.json
-GET /api/cartoons/:slug.json
-GET /api/movies/:slug.json
+GET /api/v1/index.json
+GET /api/v1/navigation.json
+GET /api/v1/series/:slug.json
+GET /api/v1/cartoons/:slug.json
+GET /api/v1/movies/:slug.json
 ```
 
 `index.json` provides the complete categorized index and references every entry
@@ -68,10 +68,11 @@ references for each title.
 ```text
 public/
 ├── api/
-│   ├── index.json
-│   ├── navigation.json
-│   ├── series/
-│   ├── cartoons/
-│   └── movies/
+│   └── v1/
+│       ├── index.json
+│       ├── navigation.json
+│       ├── series/
+│       ├── cartoons/
+│       └── movies/
 └── images/
 ```
