@@ -36,8 +36,6 @@ jobs:
         run: pnpm run build
 
       - name: Deploy production site
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: out
-          clean-exclude: pr-preview
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/deploy-pages.sh

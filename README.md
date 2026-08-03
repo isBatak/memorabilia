@@ -67,6 +67,10 @@ workflows from forked pull requests a read-only token, so previews are published
 only for branches in this repository; forked pull requests can still be built
 locally before they are merged.
 
+Production publishing is performed by `scripts/deploy-pages.sh` rather than a
+JavaScript action. The script preserves the preview directories and retries
+temporary GitHub network failures while pushing the `gh-pages` branch.
+
 ## API endpoints
 
 ```text
