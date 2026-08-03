@@ -7,7 +7,7 @@ import {getArchiveIndex} from '../lib/archive';
 
 const [githubOwner, githubRepo] = process.env.GITHUB_REPOSITORY?.split('/') || [];
 const githubUrl = githubOwner && githubRepo
-  ? `https://${githubOwner}.github.io${githubRepo.endsWith('.github.io') ? '' : `/${githubRepo}`}`
+  ? `https://${githubOwner}.github.io`
   : 'http://localhost:3000';
 const socialImage = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/og.png`;
 

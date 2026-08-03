@@ -48,6 +48,25 @@ pnpm build    # validate data and export the site to out/
 pnpm preview  # serve the finished static export
 ```
 
+## GitHub Pages deployment
+
+The GitHub Actions workflows publish the production site from `main` and create
+an isolated preview for every pull request at
+`/<repository>/pr-preview/pr-<number>/`. The preview action adds the exact URL
+to the pull request and removes the preview when the pull request is closed.
+
+To enable both production and preview deployments, open **Settings → Pages** in
+the GitHub repository and set **Build and deployment → Source** to **Deploy from
+a branch**, using the `gh-pages` branch and the `/ (root)` folder. The branch is
+created by the first successful deployment workflow run.
+
+GitHub Pages does not provide pull-request preview deployments out of the box.
+The preview workflow uses `rossjrw/pr-preview-action` to keep each preview in a
+separate directory on the shared `gh-pages` branch. For security, GitHub gives
+workflows from forked pull requests a read-only token, so previews are published
+only for branches in this repository; forked pull requests can still be built
+locally before they are merged.
+
 ## API endpoints
 
 ```text
