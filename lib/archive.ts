@@ -16,6 +16,17 @@ export type ArchiveImage = {
   archivedUrl: string | null;
 };
 
+export type YouTubeVideo = {
+  videoId: string;
+  title: string;
+  url: string;
+  thumbnailUrl: string;
+  durationText: string | null;
+  publishedText: string | null;
+  sourceName: string | null;
+  sourceUrl: string;
+};
+
 export type ArchiveEntry = {
   title: string;
   slug: string;
@@ -24,6 +35,7 @@ export type ArchiveEntry = {
   content: string;
   paragraphs: string[];
   images: ArchiveImage[];
+  youtubeVideos?: YouTubeVideo[];
   source?: {resolvedArchiveUrl?: string | null; originalUrl?: string | null};
   contentStatus?: 'scraped' | 'title-only';
 };
@@ -99,4 +111,11 @@ export function getAllParams() {
       .filter((file) => file.endsWith('.json'))
       .map((file) => ({category, slug: path.basename(file, '.json')}))
   );
+}
+
+export function getAllVideoParams() {
+  return getAllParams().flatMap(({category, slug}) => {
+    const entry = getEntry(category, slug);
+    return (entry?.youtubeVideos ?? []).map((video) => ({category, slug, videoId: video.videoId}));
+  });
 }

@@ -62,6 +62,12 @@ async function main() {
         assert(localPath.startsWith(`${PUBLIC_DIR}${path.sep}`), `${item.file} image localUrl escapes public/`);
         assert(await exists(localPath), `${item.file} references missing ${image.localUrl}`);
       }
+      for (const video of article.youtubeVideos ?? []) {
+        assert(typeof video.videoId === 'string' && /^[\w-]{6,}$/.test(video.videoId), `${item.file} has an invalid YouTube videoId`);
+        assert(video.url === `https://www.youtube.com/watch?v=${video.videoId}`, `${item.file} has an invalid YouTube url`);
+        assert(typeof video.title === 'string' && video.title.length > 0, `${item.file} has a YouTube video without a title`);
+        assert(typeof video.sourceUrl === 'string' && /^https:\/\/www\.youtube\.com\//.test(video.sourceUrl), `${item.file} has an invalid YouTube sourceUrl`);
+      }
       checked += 1;
     }
   }
