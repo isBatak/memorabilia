@@ -50,26 +50,25 @@ pnpm preview  # serve the finished static export
 
 ## GitHub Pages deployment
 
-The GitHub Actions workflows publish the production site from `main` and create
-an isolated preview for every pull request at
-`/<repository>/pr-preview/pr-<number>/`. The preview action adds the exact URL
-to the pull request and removes the preview when the pull request is closed.
+The GitHub Actions workflows publish the production site from `main`. Pull
+requests from branches in this repository deploy their preview to that same
+GitHub Pages URL—for this repository, `https://isBatak.github.io/memorabilia/`.
+Closing a pull request rebuilds and redeploys the default branch.
 
 To enable both production and preview deployments, open **Settings → Pages** in
 the GitHub repository and set **Build and deployment → Source** to **Deploy from
 a branch**, using the `gh-pages` branch and the `/ (root)` folder. The branch is
 created by the first successful deployment workflow run.
 
-GitHub Pages does not provide pull-request preview deployments out of the box.
-The preview workflow uses `rossjrw/pr-preview-action` to keep each preview in a
-separate directory on the shared `gh-pages` branch. For security, GitHub gives
-workflows from forked pull requests a read-only token, so previews are published
-only for branches in this repository; forked pull requests can still be built
-locally before they are merged.
+GitHub Pages does not provide isolated pull-request preview deployments out of
+the box: a repository has one Pages site and URL. Consequently, a PR preview
+temporarily replaces the production site, and the most recently deployed PR is
+the version at that URL. For security, previews are published only for branches
+in this repository; forked pull requests retain GitHub's read-only token.
 
-Production publishing is performed by `scripts/deploy-pages.sh` rather than a
-JavaScript action. The script preserves the preview directories and retries
-temporary GitHub network failures while pushing the `gh-pages` branch.
+Publishing is performed by `scripts/deploy-pages.sh` rather than a JavaScript
+action. The script retries temporary GitHub network failures while pushing the
+`gh-pages` branch.
 
 ## API endpoints
 

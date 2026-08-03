@@ -36,9 +36,9 @@ else
   git -C "$deploy_dir" remote add origin "$remote"
 fi
 
-# Production owns the branch root. PR previews own pr-preview/, so leave that
-# directory untouched when refreshing the production export.
-rsync -a --delete --exclude=.git --exclude=pr-preview out/ "$deploy_dir"/
+# Pages serves one site per repository, so each deployment refreshes the branch
+# root. A PR close event rebuilds the default branch to restore production.
+rsync -a --delete --exclude=.git out/ "$deploy_dir"/
 
 git -C "$deploy_dir" config user.name "github-actions[bot]"
 git -C "$deploy_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -51,8 +51,8 @@ fi
 
 git -C "$deploy_dir" commit --quiet -m "Deploy production from ${GITHUB_SHA:-unknown}"
 
-# A preview may update the same branch between clone and push. Rebasing retains
-# that independent preview commit; retries also cover temporary GitHub 5xx errors.
+# Another deployment may update the branch between clone and push. Rebase before
+# retrying; retries also cover temporary GitHub 5xx errors.
 for attempt in {1..5}; do
   if git -C "$deploy_dir" push --quiet origin HEAD:gh-pages; then
     echo "Production site deployed to gh-pages."
