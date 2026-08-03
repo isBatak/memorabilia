@@ -3,6 +3,37 @@ set -euo pipefail
 
 : "${GITHUB_REPOSITORY:?GITHUB_REPOSITORY is required}"
 
+readonly owner="${GITHUB_REPOSITORY%%/*}"
+readonly repository="${GITHUB_REPOSITORY#*/}"
+pr_number="${PR_NUMBER:-}"
+if [[ -z "$pr_number" && "${GITHUB_REF:-}" =~ ^refs/pull/([0-9]+)/ ]]; then
+  pr_number="${BASH_REMATCH[1]}"
+fi
+
+if [[ -n "$pr_number" ]]; then
+  if [[ ! "$pr_number" =~ ^[0-9]+$ ]]; then
+    echo "Invalid pull request number: $pr_number" >&2
+    exit 1
+  fi
+  readonly deploy_path="previews/pr-${pr_number}"
+  readonly pages_base_path="/${repository}/${deploy_path}"
+  readonly page_url="https://${owner}.github.io/${repository}/${deploy_path}/"
+  PAGES_BASE_PATH="$pages_base_path" pnpm run build
+else
+  readonly deploy_path=""
+fi
+
+report_preview() {
+  [[ -n "$deploy_path" ]] || return 0
+  echo "Preview deployed to ${page_url}"
+  if [[ -n "${GITHUB_OUTPUT:-}" ]]; then
+    echo "page_url=${page_url}" >> "$GITHUB_OUTPUT"
+  fi
+  if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then
+    echo "### [Open preview](${page_url})" >> "$GITHUB_STEP_SUMMARY"
+  fi
+}
+
 if [[ -n "${PAGES_REMOTE:-}" ]]; then
   readonly remote="$PAGES_REMOTE"
 else
@@ -36,9 +67,14 @@ else
   git -C "$deploy_dir" remote add origin "$remote"
 fi
 
-# Pages serves one site per repository, so each deployment refreshes the branch
-# root. A PR close event rebuilds the default branch to restore production.
-rsync -a --delete --exclude=.git out/ "$deploy_dir"/
+if [[ -n "$deploy_path" ]]; then
+  # Keep production intact and publish each pull request in an isolated folder.
+  mkdir -p "$deploy_dir/$deploy_path"
+  rsync -a --delete out/ "$deploy_dir/$deploy_path"/
+else
+  # Production refreshes the branch root but retains active preview folders.
+  rsync -a --delete --exclude=.git --exclude=previews out/ "$deploy_dir"/
+fi
 
 git -C "$deploy_dir" config user.name "github-actions[bot]"
 git -C "$deploy_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -46,16 +82,21 @@ git -C "$deploy_dir" add --all
 
 if git -C "$deploy_dir" diff --cached --quiet; then
   echo "The deployed production site is already up to date."
+  report_preview
   exit 0
 fi
 
-git -C "$deploy_dir" commit --quiet -m "Deploy production from ${GITHUB_SHA:-unknown}"
+git -C "$deploy_dir" commit --quiet -m "Deploy ${deploy_path:-production} from ${GITHUB_SHA:-unknown}"
 
 # Another deployment may update the branch between clone and push. Rebase before
 # retrying; retries also cover temporary GitHub 5xx errors.
 for attempt in {1..5}; do
   if git -C "$deploy_dir" push --quiet origin HEAD:gh-pages; then
-    echo "Production site deployed to gh-pages."
+    if [[ -n "$deploy_path" ]]; then
+      report_preview
+    else
+      echo "Production site deployed to gh-pages."
+    fi
     exit 0
   fi
 
