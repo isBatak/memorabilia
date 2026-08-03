@@ -21,3 +21,7 @@ Cartoon thumbnails and their playback surfaces share Panda CSS v2
 `viewTransition` styles, allowing supported browsers to morph the selected
 thumbnail into the cinematic player while preserving a normal navigation
 fallback everywhere else.
+
+Pull requests are deployed to `/previews/pr-<number>/`. Production deployments
+preserve those directories, and the preview workflow deletes a pull request's
+directory when it is closed or merged.
