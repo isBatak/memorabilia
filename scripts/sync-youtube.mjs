@@ -57,14 +57,14 @@ function videoFromRenderer(renderer, source) {
   if (!videoId || !title) return null;
   const thumbnails = renderer.thumbnail?.thumbnails ?? [];
   return {
-    videoId,
+    id: videoId,
     title,
     url: `https://www.youtube.com/watch?v=${videoId}`,
+    embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`,
     thumbnailUrl: thumbnails.at(-1)?.url ?? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
     durationText: text(renderer.lengthText),
     publishedText: text(renderer.publishedTimeText),
-    sourceName: source.name ?? null,
-    sourceUrl: source.url
+    source: {type: 'youtube', name: source.name ?? null, url: source.url}
   };
 }
 
@@ -112,7 +112,7 @@ async function scanSource(source) {
     videos.push(...page.videos);
     for (const token of page.continuations) if (!seen.has(token)) { seen.add(token); queue.push(token); }
   }
-  return [...new Map(videos.map((video) => [video.videoId, video])).values()];
+  return [...new Map(videos.map((video) => [`${video.source.type}:${video.id}`, video])).values()];
 }
 
 export function normalize(value) {
@@ -125,6 +125,14 @@ export function matchEntry(videoTitle, entries) {
     .map((entry) => ({entry, normalized: normalize(entry.title)}))
     .filter(({normalized}) => normalized.length >= 3 && candidate.includes(` ${normalized} `))
     .sort((a, b) => b.normalized.length - a.normalized.length)[0]?.entry ?? null;
+}
+
+export function linkMatchesVideo(link, video) {
+  if (!link?.url) return false;
+  if (link.url === video.url) return true;
+  if (video.source.type !== 'youtube') return false;
+  const linkedId = link.url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{6,})/)?.[1];
+  return linkedId === video.id;
 }
 
 async function main() {
@@ -149,11 +157,12 @@ async function main() {
   let changed = 0;
   for (const [file, videos] of matches) {
     const entry = JSON.parse(await fs.readFile(file, 'utf8'));
-    const youtubeVideos = [...new Map([...(entry.youtubeVideos ?? []), ...videos].map((video) => [video.videoId, video])).values()];
-    if (JSON.stringify(entry.youtubeVideos ?? []) === JSON.stringify(youtubeVideos)) continue;
+    const mergedVideos = [...new Map([...(entry.videos ?? []), ...videos].map((video) => [`${video.source.type}:${video.id}`, video])).values()];
+    const links = (entry.links ?? []).filter((link) => !mergedVideos.some((video) => linkMatchesVideo(link, video)));
+    if (JSON.stringify(entry.videos ?? []) === JSON.stringify(mergedVideos) && JSON.stringify(entry.links ?? []) === JSON.stringify(links)) continue;
     changed += 1;
-    if (!options.dryRun) await fs.writeFile(file, `${JSON.stringify({...entry, youtubeVideos}, null, 2)}\n`);
-    console.log(`${options.dryRun ? 'Would update' : 'Updated'} ${path.relative(process.cwd(), file)} (${youtubeVideos.length} videos)`);
+    if (!options.dryRun) await fs.writeFile(file, `${JSON.stringify({...entry, schemaVersion: 2, links, videos: mergedVideos}, null, 2)}\n`);
+    console.log(`${options.dryRun ? 'Would update' : 'Updated'} ${path.relative(process.cwd(), file)} (${mergedVideos.length} videos)`);
   }
   console.log(`${options.dryRun ? 'Would update' : 'Updated'} ${changed} cartoon entries.`);
 }

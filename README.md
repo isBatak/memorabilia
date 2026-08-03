@@ -76,8 +76,10 @@ pnpm youtube:sync --source https://www.youtube.com/@another-channel/videos
 ```
 
 The scanner follows paginated channel results, matches normalized video titles
-against cartoon titles, and writes matches to the additive `youtubeVideos`
-property. Review a dry run before writing generated data because channel owners
+against cartoon titles, and writes matches to the source-agnostic `videos`
+property. Each video identifies its provider in `source.type`; matching URLs are
+removed from the legacy `links` array to avoid duplication. Review a dry run
+before writing generated data because channel owners
 can rename videos over time.
 
 Cartoon thumbnails and their playback surfaces share Panda CSS v2
