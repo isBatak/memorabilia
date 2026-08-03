@@ -28,7 +28,7 @@ function Rail({id, title, items}: {id: string; title: string; items: ArchiveCard
           px: {base: 5, md: 9},
           pt: 5,
           pb: {base: '16', md: '20'},
-          scrollSnapType: 'x mandatory',
+          // scrollSnapType: 'x mandatory',
           scrollPaddingInline: {base: '1.25rem', md: '2.25rem'},
           scrollBehavior: 'smooth',
           overscrollBehaviorX: 'contain',
