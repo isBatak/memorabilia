@@ -4,6 +4,7 @@ import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 import {ArrowLeft, ArrowUpRight, CalendarDays} from 'lucide-react';
 import {css} from '#styled-system/css';
+import {AdSlot} from './ad-slot';
 import {ArchiveGallery} from './archive-gallery';
 import {MediaCard} from './card';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
@@ -48,6 +49,8 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           {source && <a href={source} target="_blank" rel="noreferrer" className={css({mt: 6, display: 'inline-flex', alignItems: 'center', gap: 2, color: 'lime.700', fontSize: 'sm', fontWeight: 750, _hover: {color: 'lime.600'}, _dark: {color: 'lime.300'}})}>{t('common.originalSource')}<ArrowUpRight size={15}/></a>}
         </aside>
       </div>
+
+      <AdSlot slot={process.env.NEXT_PUBLIC_ADSENSE_ARTICLE_SLOT}/>
 
       <ArchiveGallery images={entry.images} title={t('common.gallery')} entryTitle={entry.title} basePath={basePath}/>
 

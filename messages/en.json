@@ -24,7 +24,8 @@
     "language": "Language",
     "theme": "Appearance",
     "lightTheme": "Switch to light mode",
-    "darkTheme": "Switch to dark mode"
+    "darkTheme": "Switch to dark mode",
+    "advertisement": "Advertisement"
   },
   "home": {
     "eyebrow": "A digital video library of childhood",
