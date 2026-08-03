@@ -48,6 +48,10 @@ pnpm build    # validate data and export the site to out/
 pnpm preview  # serve the finished static export
 ```
 
+GitHub Actions builds the Pages artifact through `scripts/deploy-pages.sh`. The
+wrapper runs the production build from the repository root, verifies that
+`out/` exists, and ensures the exported site includes the `.nojekyll` marker.
+
 ## API endpoints
 
 ```text
