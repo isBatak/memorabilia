@@ -44,7 +44,9 @@
     "archiveEntry": "Arhivski zapis",
     "article": "Priča iz arhive",
     "more": "Još iz kolekcije",
-    "missingImage": "Slika nije sačuvana"
+    "missingImage": "Slika nije sačuvana",
+    "watch": "Gledaj sada",
+    "videos": "videozapisa"
   },
   "footer": {
     "copy": "Napravljeno za sve koji su trčali kući prije uvodne špice.",

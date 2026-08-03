@@ -50,7 +50,7 @@ async function main() {
       assert(typeof item.file === 'string', `Missing file reference for ${item.title ?? 'unknown item'}`);
       const articlePath = path.join(API_DIR, item.file);
       const article = await readJson(articlePath);
-      assert(article.schemaVersion === 1, `${item.file} must use schemaVersion 1`);
+      assert([1, 2].includes(article.schemaVersion), `${item.file} must use schemaVersion 1 or 2`);
       assert(article.type === expectedType, `${item.file} has an invalid type`);
       assert(article.category === category, `${item.file} has an invalid category`);
       assert(typeof article.title === 'string' && article.title.length > 0, `${item.file} is missing title`);
@@ -61,6 +61,12 @@ async function main() {
         const localPath = path.resolve(path.dirname(articlePath), image.localUrl);
         assert(localPath.startsWith(`${PUBLIC_DIR}${path.sep}`), `${item.file} image localUrl escapes public/`);
         assert(await exists(localPath), `${item.file} references missing ${image.localUrl}`);
+      }
+      for (const video of article.videos ?? []) {
+        assert(article.schemaVersion === 2, `${item.file} with videos must use schemaVersion 2`);
+        assert(typeof video.id === 'string' && video.id.length > 0, `${item.file} has an invalid video id`);
+        assert(typeof video.embedUrl === 'string' && video.embedUrl.startsWith('https://'), `${item.file} has an invalid video embedUrl`);
+        assert(/^[a-z0-9-]+$/.test(video.source?.type ?? ''), `${item.file} has an invalid video source`);
       }
       checked += 1;
     }

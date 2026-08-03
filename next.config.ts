@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const repository = process.env.GITHUB_REPOSITORY?.split('/')[1];
 const isProjectPages = process.env.GITHUB_ACTIONS === 'true' && repository && !repository.endsWith('.github.io');
-const basePath = isProjectPages ? `/${repository}` : '';
+const basePath = process.env.PAGES_BASE_PATH ?? (isProjectPages ? `/${repository}` : '');
 
 const nextConfig: NextConfig = {
   output: 'export',

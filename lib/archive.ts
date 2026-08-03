@@ -15,6 +15,7 @@ export type ArchiveImage = {
   localUrl: string | null;
   archivedUrl: string | null;
 };
+export type ArchiveVideo = {id: string; title: string; url: string; embedUrl: string; thumbnailUrl: string; durationText: string | null; publishedText: string | null; source: {type: string; name: string | null; url: string}};
 
 export type ArchiveEntry = {
   title: string;
@@ -24,6 +25,7 @@ export type ArchiveEntry = {
   content: string;
   paragraphs: string[];
   images: ArchiveImage[];
+  videos?: ArchiveVideo[];
   source?: {resolvedArchiveUrl?: string | null; originalUrl?: string | null};
   contentStatus?: 'scraped' | 'title-only';
 };
@@ -41,6 +43,10 @@ const apiRoot = path.join(process.cwd(), 'public', 'api');
 
 function readJson<T>(file: string): T {
   return JSON.parse(fs.readFileSync(file, 'utf8')) as T;
+}
+
+export function getAllVideoParams() {
+  return getAllParams().flatMap(({category, slug}) => (getEntry(category, slug)?.videos ?? []).map((video) => ({category, slug, source: video.source.type, videoId: video.id})));
 }
 
 function publicImage(localUrl?: string | null) {

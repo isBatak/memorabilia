@@ -23,7 +23,8 @@
     "clean": "node scripts/clean.mjs",
     "dev": "panda build && next dev",
     "preview": "npx serve out",
-    "vercel-build": "pnpm run build"
+    "vercel-build": "pnpm run build",
+    "youtube:sync": "node scripts/sync-youtube.mjs"
   },
   "dependencies": {
     "@ark-ui/react": "^5.37.2",
