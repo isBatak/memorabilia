@@ -11,7 +11,7 @@ const EXECUTED_DIRECTLY = process.argv[1]
 const START_URL = process.env.START_URL
   ?? (EXECUTED_DIRECTLY ? process.argv[2] : undefined)
   ?? 'https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html';
-const DEFAULT_OUTPUT_DIR = process.env.DRY_RUN === '1' ? '.tmp/api' : 'public/api';
+const DEFAULT_OUTPUT_DIR = process.env.DRY_RUN === '1' ? '.tmp/api/v1' : 'public/api/v1';
 const OUTPUT_DIR = path.resolve(process.env.OUTPUT_DIR ?? (EXECUTED_DIRECTLY ? process.argv[3] : undefined) ?? DEFAULT_OUTPUT_DIR);
 const CONCURRENCY = Number(process.env.CONCURRENCY ?? 3);
 const DELAY_MS = Number(process.env.DELAY_MS ?? 800);
@@ -198,14 +198,6 @@ export function parseArticle(html, requestedUrl, finalUrl, category) {
   const dateMatch = fullText.match(/(\d{2}\.\d{2}\.\d{4}\.)\s+u\s+(\d{1,2}:\d{2})/);
   const publishedAt = dateMatch ? `${dateMatch[1]} ${dateMatch[2]}` : null;
 
-  const links = [];
-  container.find('a[href]').each((_, a) => {
-    const text = clean($(a).text());
-    const href = $(a).attr('href');
-    if (!href || !text || /Komentar|Print|Arhiva/i.test(text)) return;
-    links.push({ text, url: canonicalOriginalUrl(new URL(href, finalUrl).href), archivedUrl: archiveUrlFor(href, finalUrl) });
-  });
-
   const images = [];
   container.find('img[src]').each((_, img) => {
     const src = $(img).attr('src');
@@ -231,7 +223,6 @@ export function parseArticle(html, requestedUrl, finalUrl, category) {
   const body = metadataCount ? [...remaining, ...contentLines.slice(12)] : contentLines;
 
   return {
-    schemaVersion: 1,
     type: CATEGORIES[category].type,
     category,
     title,
@@ -240,7 +231,6 @@ export function parseArticle(html, requestedUrl, finalUrl, category) {
     metadata,
     content: clean(body.join('\n\n')),
     paragraphs: body,
-    links,
     images,
     source: {
       requestedArchiveUrl: requestedUrl,
@@ -254,7 +244,6 @@ export function parseArticle(html, requestedUrl, finalUrl, category) {
 
 function titleOnlyArticle(item, category) {
   return {
-    schemaVersion: 1,
     type: CATEGORIES[category].type,
     category,
     title: item.title,
@@ -263,7 +252,6 @@ function titleOnlyArticle(item, category) {
     metadata: {},
     content: '',
     paragraphs: [],
-    links: [],
     images: [],
     source: {
       requestedArchiveUrl: null,
@@ -285,7 +273,6 @@ async function main() {
   console.log(`Found ${discovered} entries: ${Object.entries(navigation).map(([category, entries]) => `${entries.length} ${category}`).join(', ')}.`);
 
   await fs.writeFile(path.join(OUTPUT_DIR, 'navigation.json'), JSON.stringify({
-    schemaVersion: 1,
     source: START_URL,
     generatedAt: new Date().toISOString(),
     ...navigation
@@ -320,7 +307,6 @@ async function main() {
   const successful = allResults.filter(x => x.status === 'ok');
   const failed = allResults.filter(x => x.status === 'error');
   await fs.writeFile(path.join(OUTPUT_DIR, 'index.json'), JSON.stringify({
-    schemaVersion: 1,
     generatedAt: new Date().toISOString(),
     counts: {
       discovered: allResults.length,

@@ -13,9 +13,9 @@
     }
   ],
   "rewrites": [
-    { "source": "/api", "destination": "/api/index.json" },
-    { "source": "/api/cartoons/:slug", "destination": "/api/cartoons/:slug.json" },
-    { "source": "/api/series/:slug", "destination": "/api/series/:slug.json" },
-    { "source": "/api/movies/:slug", "destination": "/api/movies/:slug.json" }
+    { "source": "/api/v1", "destination": "/api/v1/index.json" },
+    { "source": "/api/v1/cartoons/:slug", "destination": "/api/v1/cartoons/:slug.json" },
+    { "source": "/api/v1/series/:slug", "destination": "/api/v1/series/:slug.json" },
+    { "source": "/api/v1/movies/:slug", "destination": "/api/v1/movies/:slug.json" }
   ]
 }

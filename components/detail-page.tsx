@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
-import {ArrowLeft, ArrowUpRight, CalendarDays} from 'lucide-react';
+import {ArrowLeft, ArrowUpRight, CalendarDays, CirclePlay} from 'lucide-react';
 import {css} from '#styled-system/css';
 import {ArchiveGallery} from './archive-gallery';
 import {MediaCard} from './card';
+import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -32,6 +33,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           </div>
         </div>
       </header>
+      {!!entry.videos?.length && <section className={css({bg:'gray.950',color:'white',px:{base:5,md:9},py:10})}><h2 className={css({fontFamily:'display',fontSize:'3xl',mb:6})}>{t('detail.watch')}</h2><div className={css({display:'flex',gap:4,overflowX:'auto'})}>{entry.videos.map(video=><Link key={`${video.source.type}:${video.id}`} transitionTypes={['watch-video']} href={`/watch/${entry.category}/${entry.slug}/${video.source.type}/${video.id}`} className={css({flex:'0 0 min(82vw,23rem)'})}><div style={{viewTransitionName:videoTransitionName(video.id)}} className={css({viewTransitionClass:videoMorph,position:'relative',aspectRatio:'16/9',overflow:'hidden',borderRadius:'12px'})}><img src={video.thumbnailUrl} alt="" className={css({w:'100%',h:'100%',objectFit:'cover'})}/><CirclePlay className={css({position:'absolute',left:4,bottom:4})}/></div><h3 className={css({mt:3,fontWeight:750})}>{video.title}</h3><p className={css({color:'gray.400',fontSize:'xs'})}>{video.source.name||video.source.type}</p></Link>)}</div></section>}
 
       <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', xl: 'minmax(0, 46rem) 18rem'}, gap: {base: 10, xl: 16}, px: {base: 5, md: 9}, py: {base: 12, md: 18}, maxW: '88rem'})}>
         <section>
@@ -42,7 +44,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           <p className={css({fontSize: 'xs', textTransform: 'uppercase', letterSpacing: '.13em', color: 'gray.600', mb: 4, _dark: {color: 'gray.400'}})}>Memorabilia JSON</p>
           <dl className={css({display: 'grid', gap: 4, fontSize: 'sm'})}>
             <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>Slug</dt><dd className={css({mt: 1, wordBreak: 'break-all'})}>{entry.slug}</dd></div>
-            <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>Schema</dt><dd className={css({mt: 1})}>v1 · static JSON</dd></div>
+            <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>API</dt><dd className={css({mt: 1})}>v1 · static JSON</dd></div>
             <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>{t('common.gallery')}</dt><dd className={css({mt: 1})}>{entry.images.length}</dd></div>
           </dl>
           {source && <a href={source} target="_blank" rel="noreferrer" className={css({mt: 6, display: 'inline-flex', alignItems: 'center', gap: 2, color: 'lime.700', fontSize: 'sm', fontWeight: 750, _hover: {color: 'lime.600'}, _dark: {color: 'lime.300'}})}>{t('common.originalSource')}<ArrowUpRight size={15}/></a>}

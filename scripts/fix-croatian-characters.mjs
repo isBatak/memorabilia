@@ -5,7 +5,7 @@ import dictionary from 'dictionary-hr';
 import { createHunspellFromStrings } from 'hunspell-wasm';
 
 const REPLACEMENT = '\uFFFD';
-const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api');
+const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api/v1');
 const REPORT_FILE = path.resolve(process.env.CORRECTION_REPORT ?? '.tmp/croatian-character-report.json');
 const LOWERCASE_LETTERS = ['č', 'ć', 'đ', 'š', 'ž'];
 const UPPERCASE_LETTERS = LOWERCASE_LETTERS.map(letter => letter.toLocaleUpperCase('hr'));
@@ -29,7 +29,7 @@ Options:
   --help, -h     Show this help
 
 Environment:
-  API_DIR              JSON root (default: public/api)
+  API_DIR              JSON root (default: public/api/v1)
   CORRECTION_REPORT    Review report path (default: .tmp/croatian-character-report.json)
   MAX_VARIANTS         Candidate limit per word (default: ${MAX_VARIANTS})`);
 }

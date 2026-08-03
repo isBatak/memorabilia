@@ -2,8 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
-const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api');
-const PUBLIC_DIR = path.resolve(process.env.PUBLIC_DIR ?? path.dirname(API_DIR));
+const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api/v1');
+const PUBLIC_DIR = path.resolve(process.env.PUBLIC_DIR ?? 'public');
 const CATEGORIES = {
   series: 'series-post',
   cartoons: 'cartoon-post',
@@ -37,7 +37,8 @@ async function main() {
   const index = await readJson(indexPath);
   const navigation = await readJson(navigationPath);
 
-  assert(index.schemaVersion === 1, 'index.json must use schemaVersion 1');
+  assert(!('schemaVersion' in index), 'index.json must not contain schemaVersion');
+  assert(!('schemaVersion' in navigation), 'navigation.json must not contain schemaVersion');
   for (const category of Object.keys(CATEGORIES)) {
     assert(Array.isArray(index[category]), `index.json ${category} must be an array`);
     assert(Array.isArray(navigation[category]), `navigation.json ${category} must be an array`);
@@ -50,17 +51,23 @@ async function main() {
       assert(typeof item.file === 'string', `Missing file reference for ${item.title ?? 'unknown item'}`);
       const articlePath = path.join(API_DIR, item.file);
       const article = await readJson(articlePath);
-      assert(article.schemaVersion === 1, `${item.file} must use schemaVersion 1`);
+      assert(!('schemaVersion' in article), `${item.file} must not contain schemaVersion`);
+      assert(!('links' in article), `${item.file} must not contain links`);
       assert(article.type === expectedType, `${item.file} has an invalid type`);
       assert(article.category === category, `${item.file} has an invalid category`);
       assert(typeof article.title === 'string' && article.title.length > 0, `${item.file} is missing title`);
       assert(typeof article.slug === 'string' && article.slug.length > 0, `${item.file} is missing slug`);
       for (const image of article.images ?? []) {
         if (!image.localUrl) continue;
-        assert(/^\.\.\/\.\.\/images\/[^/]+\/[^/]+$/.test(image.localUrl), `${item.file} has an invalid image localUrl`);
+        assert(/^\.\.\/\.\.\/\.\.\/images\/[^/]+\/[^/]+$/.test(image.localUrl), `${item.file} has an invalid image localUrl`);
         const localPath = path.resolve(path.dirname(articlePath), image.localUrl);
         assert(localPath.startsWith(`${PUBLIC_DIR}${path.sep}`), `${item.file} image localUrl escapes public/`);
         assert(await exists(localPath), `${item.file} references missing ${image.localUrl}`);
+      }
+      for (const video of article.videos ?? []) {
+        assert(typeof video.id === 'string' && video.id.length > 0, `${item.file} has an invalid video id`);
+        assert(typeof video.embedUrl === 'string' && video.embedUrl.startsWith('https://'), `${item.file} has an invalid video embedUrl`);
+        assert(/^[a-z0-9-]+$/.test(video.source?.type ?? ''), `${item.file} has an invalid video source`);
       }
       checked += 1;
     }

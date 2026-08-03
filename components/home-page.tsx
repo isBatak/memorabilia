@@ -90,7 +90,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
 
       <footer className={css({px: {base: 5, md: 9}, py: 10, borderTop: '1px solid', borderColor: 'gray.200', display: {base: 'grid', md: 'flex'}, gap: 4, alignItems: 'center', justifyContent: 'space-between', color: 'gray.600', fontSize: 'sm', _dark: {borderColor: 'gray.800', color: 'gray.400'}})}>
         <p>{t('footer.copy')}</p>
-        <a href={`${basePath}/api/index.json`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.950', fontWeight: 700, _hover: {color: 'lime.700'}, _dark: {color: 'gray.50', _hover: {color: 'lime.300'}}})}><Database size={15}/>{t('footer.data')}</a>
+        <a href={`${basePath}/api/v1/index.json`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.950', fontWeight: 700, _hover: {color: 'lime.700'}, _dark: {color: 'gray.50', _hover: {color: 'lime.300'}}})}><Database size={15}/>{t('footer.data')}</a>
       </footer>
     </>
   );
