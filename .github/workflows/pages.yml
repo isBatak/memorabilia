@@ -38,7 +38,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build static site
-        run: scripts/deploy-pages.sh
+        run: pnpm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
