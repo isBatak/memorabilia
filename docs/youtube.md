@@ -21,7 +21,3 @@ Cartoon thumbnails and their playback surfaces share Panda CSS v2
 `viewTransition` styles, allowing supported browsers to morph the selected
 thumbnail into the cinematic player while preserving a normal navigation
 fallback everywhere else.
-
-Pull-request deployments are published below `/previews/pr-<number>/` rather
-than replacing or linking to the production site. The deploy script rebuilds
-with that preview base path so Next.js routes and assets remain isolated.
