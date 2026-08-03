@@ -34,16 +34,6 @@ export default defineConfig({
           }
         }
       },
-      keyframes: {
-        videoZoomOut: {
-          from: {opacity: 1, transform: 'scale(1)'},
-          to: {opacity: 0, transform: 'scale(.94)'}
-        },
-        videoZoomIn: {
-          from: {opacity: 0, transform: 'scale(1.04)'},
-          to: {opacity: 1, transform: 'scale(1)'}
-        }
-      },
       semanticTokens: {
         colors: {
           lime: {

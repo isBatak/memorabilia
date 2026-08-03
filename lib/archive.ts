@@ -16,21 +16,6 @@ export type ArchiveImage = {
   archivedUrl: string | null;
 };
 
-export type ArchiveVideo = {
-  id: string;
-  title: string;
-  url: string;
-  embedUrl: string;
-  thumbnailUrl: string;
-  durationText: string | null;
-  publishedText: string | null;
-  source: {
-    type: string;
-    name: string | null;
-    url: string;
-  };
-};
-
 export type ArchiveEntry = {
   title: string;
   slug: string;
@@ -39,7 +24,6 @@ export type ArchiveEntry = {
   content: string;
   paragraphs: string[];
   images: ArchiveImage[];
-  videos?: ArchiveVideo[];
   source?: {resolvedArchiveUrl?: string | null; originalUrl?: string | null};
   contentStatus?: 'scraped' | 'title-only';
 };
@@ -115,11 +99,4 @@ export function getAllParams() {
       .filter((file) => file.endsWith('.json'))
       .map((file) => ({category, slug: path.basename(file, '.json')}))
   );
-}
-
-export function getAllVideoParams() {
-  return getAllParams().flatMap(({category, slug}) => {
-    const entry = getEntry(category, slug);
-    return (entry?.videos ?? []).map((video) => ({category, slug, source: video.source.type, videoId: video.id}));
-  });
 }

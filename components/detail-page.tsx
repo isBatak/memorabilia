@@ -2,11 +2,10 @@
 
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
-import {ArrowLeft, ArrowUpRight, CalendarDays, CirclePlay} from 'lucide-react';
+import {ArrowLeft, ArrowUpRight, CalendarDays} from 'lucide-react';
 import {css} from '#styled-system/css';
 import {ArchiveGallery} from './archive-gallery';
 import {MediaCard} from './card';
-import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -33,24 +32,6 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           </div>
         </div>
       </header>
-
-      {!!entry.videos?.length && <section className={css({bg: 'gray.950', color: 'white', px: {base: 5, md: 9}, py: {base: 10, md: 14}})}>
-        <div className={css({display: 'flex', alignItems: 'end', justifyContent: 'space-between', gap: 4, mb: 6})}>
-          <div><p className={css({color: 'red.400', fontSize: 'xs', fontWeight: 800, letterSpacing: '.14em', textTransform: 'uppercase', mb: 2})}>{t('detail.video')}</p><h2 className={css({fontFamily: 'display', fontSize: {base: '2xl', md: '3xl'}})}>{t('detail.watch')}</h2></div>
-          <span className={css({color: 'gray.400', fontSize: 'sm'})}>{entry.videos.length} {t('detail.videos')}</span>
-        </div>
-        <div data-carousel className={css({display: 'flex', gap: 4, overflowX: 'auto', pb: 4, scrollSnapType: 'x mandatory', scrollbarWidth: 'thin'})}>
-          {entry.videos.map((video) => <Link key={`${video.source.type}:${video.id}`} transitionTypes={['watch-video']} href={`/watch/${entry.category}/${entry.slug}/${video.source.type}/${video.id}`} className={css({flex: '0 0 min(82vw, 23rem)', scrollSnapAlign: 'start', color: 'white', _hover: {'& img': {transform: 'scale(1.035)', opacity: .82}, '& [data-play]': {transform: 'scale(1.1)', bg: 'red.600'}}})}>
-            <div style={{viewTransitionName: videoTransitionName(video.id)}} className={css({viewTransitionClass: videoMorph, position: 'relative', aspectRatio: '16/9', overflow: 'hidden', borderRadius: '12px', bg: 'gray.900'})}>
-              <img src={video.thumbnailUrl} alt="" className={css({w: '100%', h: '100%', objectFit: 'cover', transition: 'transform .35s ease, opacity .35s ease'})}/>
-              <span data-play className={css({position: 'absolute', left: 4, bottom: 4, display: 'grid', placeItems: 'center', w: 11, h: 11, borderRadius: 'full', bg: 'red.500', boxShadow: '0 8px 24px token(colors.black/45)', transition: 'all .25s ease'})}><CirclePlay size={25}/></span>
-              {video.durationText && <span className={css({position: 'absolute', right: 2, bottom: 2, px: 2, py: 1, borderRadius: '4px', bg: 'black/80', fontSize: 'xs', fontWeight: 700})}>{video.durationText}</span>}
-            </div>
-            <h3 className={css({mt: 3, fontWeight: 750, lineHeight: 1.35})}>{video.title}</h3>
-            <p className={css({mt: 1, color: 'gray.400', fontSize: 'xs'})}>{video.source.name || video.source.type}{video.publishedText ? ` · ${video.publishedText}` : ''}</p>
-          </Link>)}
-        </div>
-      </section>}
 
       <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', xl: 'minmax(0, 46rem) 18rem'}, gap: {base: 10, xl: 16}, px: {base: 5, md: 9}, py: {base: 12, md: 18}, maxW: '88rem'})}>
         <section>

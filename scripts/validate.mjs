@@ -31,10 +31,6 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-function youtubeId(url) {
-  return url?.match(/(?:youtu\.be\/|[?&]v=)([\w-]{6,})/)?.[1] ?? null;
-}
-
 async function main() {
   const indexPath = path.join(API_DIR, 'index.json');
   const navigationPath = path.join(API_DIR, 'navigation.json');
@@ -54,7 +50,7 @@ async function main() {
       assert(typeof item.file === 'string', `Missing file reference for ${item.title ?? 'unknown item'}`);
       const articlePath = path.join(API_DIR, item.file);
       const article = await readJson(articlePath);
-      assert([1, 2].includes(article.schemaVersion), `${item.file} must use schemaVersion 1 or 2`);
+      assert(article.schemaVersion === 1, `${item.file} must use schemaVersion 1`);
       assert(article.type === expectedType, `${item.file} has an invalid type`);
       assert(article.category === category, `${item.file} has an invalid category`);
       assert(typeof article.title === 'string' && article.title.length > 0, `${item.file} is missing title`);
@@ -65,20 +61,6 @@ async function main() {
         const localPath = path.resolve(path.dirname(articlePath), image.localUrl);
         assert(localPath.startsWith(`${PUBLIC_DIR}${path.sep}`), `${item.file} image localUrl escapes public/`);
         assert(await exists(localPath), `${item.file} references missing ${image.localUrl}`);
-      }
-      assert(!article.youtubeVideos, `${item.file} uses obsolete youtubeVideos; use videos`);
-      for (const video of article.videos ?? []) {
-        assert(article.schemaVersion === 2, `${item.file} with videos must use schemaVersion 2`);
-        assert(typeof video.id === 'string' && video.id.length > 0, `${item.file} has a video without an id`);
-        assert(typeof video.url === 'string' && /^https:\/\//.test(video.url), `${item.file} has an invalid video url`);
-        assert(typeof video.embedUrl === 'string' && /^https:\/\//.test(video.embedUrl), `${item.file} has an invalid video embedUrl`);
-        assert(typeof video.title === 'string' && video.title.length > 0, `${item.file} has a video without a title`);
-        assert(typeof video.source?.type === 'string' && /^[a-z0-9-]+$/.test(video.source.type), `${item.file} has an invalid video source type`);
-        assert(typeof video.source?.url === 'string' && /^https:\/\//.test(video.source.url), `${item.file} has an invalid video source url`);
-        const duplicate = (article.links ?? []).some((link) =>
-          link.url === video.url || (video.source.type === 'youtube' && youtubeId(link.url) === video.id)
-        );
-        assert(!duplicate, `${item.file} duplicates video ${video.url} in links`);
       }
       checked += 1;
     }
