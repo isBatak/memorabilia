@@ -1,0 +1,2 @@
+:HL["/memorabilia/pr-preview/pr-2/_next/static/chunks/16gjud3iziu4f.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"category","param":{"type":"d","key":"movies","siblings":[]},"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"tulum","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"UKKQyUPruEc33XOeWtaM-"}
