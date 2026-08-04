@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=W4otkUD5TS8"
       }
+    },
+    {
+      "id": "2VDwUhqX4MU",
+      "title": "Bipsići - Bitanga i Princeza - crtani film",
+      "url": "https://www.youtube.com/watch?v=2VDwUhqX4MU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2VDwUhqX4MU?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2VDwUhqX4MU/hqdefault.jpg",
+      "durationText": "10:46",
+      "publishedText": "prije 1 godinu",
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
     }
   ]
 }

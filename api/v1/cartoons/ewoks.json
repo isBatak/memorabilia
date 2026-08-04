@@ -161,6 +161,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=c4xqrZTIJjw"
       }
+    },
+    {
+      "id": "S0r4jnZC7-c",
+      "title": "Crtani film Ewoks - Je li to bilo stvarno?",
+      "url": "https://www.youtube.com/watch?v=S0r4jnZC7-c",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/S0r4jnZC7-c?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S0r4jnZC7-c/hqdefault.jpg",
+      "durationText": "10:36",
+      "publishedText": "prije 11 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Channel Awesome",
+        "url": "https://www.youtube.com/@ChannelAwesome"
+      }
     }
   ]
 }

@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:21.691Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "Tpsl5lObE2c",
+      "title": "Horton Hears a Who Full Opening Theme",
+      "url": "https://www.youtube.com/watch?v=Tpsl5lObE2c",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Tpsl5lObE2c?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tpsl5lObE2c/hqdefault.jpg",
+      "durationText": "2:25",
+      "publishedText": "prije 9 godina",
+      "source": {
+        "type": "youtube",
+        "name": "AngelWorks 2",
+        "url": "https://www.youtube.com/@angelworks2649"
+      }
+    }
+  ]
 }

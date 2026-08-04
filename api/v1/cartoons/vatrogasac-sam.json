@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=MpH5H4gBflM"
       }
+    },
+    {
+      "id": "tK8KnU7VnlE",
+      "title": "Vatrogasac Sam E18 Mornar Steele - Crtani za djecu",
+      "url": "https://www.youtube.com/watch?v=tK8KnU7VnlE",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/tK8KnU7VnlE?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tK8KnU7VnlE/hqdefault.jpg",
+      "durationText": "10:00",
+      "publishedText": "prije 5 mj.",
+      "source": {
+        "type": "youtube",
+        "name": "Sinkronizirani Crtići",
+        "url": "https://www.youtube.com/@Sinkroniziranozadjecu"
+      }
     }
   ]
 }

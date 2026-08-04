@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=PjXBLxRFi3M"
       }
+    },
+    {
+      "id": "0XG5ucouTUg",
+      "title": "Ernest Le Vampire - Intro & Outro",
+      "url": "https://www.youtube.com/watch?v=0XG5ucouTUg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/0XG5ucouTUg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0XG5ucouTUg/hqdefault.jpg",
+      "durationText": "0:17",
+      "publishedText": "prije 12 g.",
+      "source": {
+        "type": "youtube",
+        "name": "Alan Ford",
+        "url": "https://www.youtube.com/@alanford9810"
+      }
     }
   ]
 }

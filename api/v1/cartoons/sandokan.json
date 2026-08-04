@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=QdsthZ-Kqxk"
       }
+    },
+    {
+      "id": "nwpAhh1NbkY",
+      "title": "Sandokan - Crtani film",
+      "url": "https://www.youtube.com/watch?v=nwpAhh1NbkY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/nwpAhh1NbkY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nwpAhh1NbkY/hqdefault.jpg",
+      "durationText": "1:14:58",
+      "publishedText": "prije 1 godinu",
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"
+      }
     }
   ]
 }

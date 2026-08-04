@@ -21,5 +21,35 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:46.254Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "DK7E3o7sIgU",
+      "title": "ZVONKO Epizoda 4  ZVONKO I KIŠOBRAN",
+      "url": "https://www.youtube.com/watch?v=DK7E3o7sIgU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/DK7E3o7sIgU?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DK7E3o7sIgU/hqdefault.jpg",
+      "durationText": "10:02",
+      "publishedText": "prije 2 mjeseca",
+      "source": {
+        "type": "youtube",
+        "name": "Sinkronizirani Crtići",
+        "url": "https://www.youtube.com/@Sinkroniziranozadjecu"
+      }
+    },
+    {
+      "id": "JZ0kLncZFOw",
+      "title": "Zvonko - Intro & Outro |HR",
+      "url": "https://www.youtube.com/watch?v=JZ0kLncZFOw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/JZ0kLncZFOw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JZ0kLncZFOw/hqdefault.jpg",
+      "durationText": "1:32",
+      "publishedText": "prije 12 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Alan Ford",
+        "url": "https://www.youtube.com/@alanford9810"
+      }
+    }
+  ]
 }

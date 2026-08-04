@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:28.953Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "Bb8sTTYcX-g",
+      "title": "Philip Mouse - Episode 1",
+      "url": "https://www.youtube.com/watch?v=Bb8sTTYcX-g",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Bb8sTTYcX-g?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bb8sTTYcX-g/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Rabe",
+        "url": "https://www.youtube.com/watch?v=Bb8sTTYcX-g"
+      }
+    }
+  ]
 }

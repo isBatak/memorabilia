@@ -21,5 +21,35 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:40.890Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "HuhuXJar6bw",
+      "title": "The Silver Brumby - A Bothersome Nuisance (full episode)",
+      "url": "https://www.youtube.com/watch?v=HuhuXJar6bw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/HuhuXJar6bw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HuhuXJar6bw/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "The Silver Brumby",
+        "url": "https://www.youtube.com/watch?v=HuhuXJar6bw"
+      }
+    },
+    {
+      "id": "KntqBmrwxCA",
+      "title": "The Silver Brumby - intro",
+      "url": "https://www.youtube.com/watch?v=KntqBmrwxCA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/KntqBmrwxCA?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KntqBmrwxCA/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=KntqBmrwxCA"
+      }
+    }
+  ]
 }

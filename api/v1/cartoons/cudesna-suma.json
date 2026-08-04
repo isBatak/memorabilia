@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:14.836Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "AmoRMCXuIOk",
+      "title": "Čudesna šuma - Vatroslav",
+      "url": "https://www.youtube.com/watch?v=AmoRMCXuIOk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/AmoRMCXuIOk?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AmoRMCXuIOk/hqdefault.jpg",
+      "durationText": "1:53",
+      "publishedText": "prije 2 mjeseca",
+      "source": {
+        "type": "youtube",
+        "name": "pitogata",
+        "url": "https://www.youtube.com/@pitogata"
+      }
+    }
+  ]
 }

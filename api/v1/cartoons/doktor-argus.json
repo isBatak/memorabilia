@@ -53,6 +53,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=XISrziuQDII"
       }
+    },
+    {
+      "id": "i7a8KE59sUQ",
+      "title": "Doktor Argus - Čarobni Višebojni Dijamant",
+      "url": "https://www.youtube.com/watch?v=i7a8KE59sUQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/i7a8KE59sUQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i7a8KE59sUQ/hqdefault.jpg",
+      "durationText": "18:54",
+      "publishedText": "prije 14 godina",
+      "source": {
+        "type": "youtube",
+        "name": "dobriSTARIcrtani",
+        "url": "https://www.youtube.com/@dobriSTARIcrtani"
+      }
     }
   ]
 }

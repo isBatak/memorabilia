@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=o6D5C1C7Nso"
       }
+    },
+    {
+      "id": "lAuXQR9V3d8",
+      "title": "Riblje Redarstvo - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=lAuXQR9V3d8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/lAuXQR9V3d8?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lAuXQR9V3d8/hqdefault.jpg",
+      "durationText": "1:30:28",
+      "publishedText": "prije 5 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"
+      }
     }
   ]
 }
