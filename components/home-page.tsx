@@ -6,6 +6,7 @@ import {ArrowRight, Database, ImageIcon, Play, Sparkles} from 'lucide-react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
+import {AdSlot} from './ad-slot';
 import {ArchiveBadge} from './archive-badge';
 import {MediaCard} from './card';
 import type {ArchiveCard, Category} from '../lib/archive';
@@ -70,6 +71,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
 
       <div className={css({pt: {base: 12, md: 16}})}>
         <Rail id="cartoons" title={t('home.cartoonRail')} items={[...collections.cartoons].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
+        <AdSlot slot={process.env.NEXT_PUBLIC_ADSENSE_HOME_SLOT}/>
         <Rail id="series" title={t('home.seriesRail')} items={[...collections.series].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
         <Rail id="movies" title={t('home.movieRail')} items={[...collections.movies].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
       </div>
