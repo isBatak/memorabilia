@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:31.181Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "i4-NF_5bldA",
+      "title": "Ovidije - Intro |HR",
+      "url": "https://www.youtube.com/watch?v=i4-NF_5bldA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/i4-NF_5bldA?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i4-NF_5bldA/hqdefault.jpg",
+      "durationText": "0:31",
+      "publishedText": "prije 12 g.",
+      "source": {
+        "type": "youtube",
+        "name": "Alan Ford",
+        "url": "https://www.youtube.com/@alanford9810"
+      }
+    }
+  ]
 }

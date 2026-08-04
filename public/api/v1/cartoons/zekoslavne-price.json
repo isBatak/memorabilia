@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:44.848Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "UWDOUCQsWVs",
+      "title": "Zekoslavne Priče - Intro |HR",
+      "url": "https://www.youtube.com/watch?v=UWDOUCQsWVs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/UWDOUCQsWVs?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UWDOUCQsWVs/hqdefault.jpg",
+      "durationText": "1:00",
+      "publishedText": "prije 12 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Alan Ford",
+        "url": "https://www.youtube.com/@alanford9810"
+      }
+    }
+  ]
 }

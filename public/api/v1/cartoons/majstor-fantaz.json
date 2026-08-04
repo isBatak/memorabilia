@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=nwG6_PAFnXI"
       }
+    },
+    {
+      "id": "AbxeFrNatSM",
+      "title": "Majstor Fantaz  ( Tko je majstor Fantaz ? ) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=AbxeFrNatSM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/AbxeFrNatSM?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AbxeFrNatSM/hqdefault.jpg",
+      "durationText": "22:10",
+      "publishedText": "prije 5 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"
+      }
     }
   ]
 }

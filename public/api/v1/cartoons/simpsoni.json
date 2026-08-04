@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:37.572Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "VZ3zRW0any0",
+      "title": "SIMPSONI THE WORD 1989 VHS 2 😍",
+      "url": "https://www.youtube.com/watch?v=VZ3zRW0any0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VZ3zRW0any0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VZ3zRW0any0/hqdefault.jpg",
+      "durationText": "0:15",
+      "publishedText": "prije 6 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Danijel Šestić",
+        "url": "https://www.youtube.com/@danijelsestic6817"
+      }
+    }
+  ]
 }

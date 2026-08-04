@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:44.699Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "Jxrt5-0OB_Q",
+      "title": "Arabian Knights 01 - Joining of the Knights",
+      "url": "https://www.youtube.com/watch?v=Jxrt5-0OB_Q",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Jxrt5-0OB_Q?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jxrt5-0OB_Q/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "NewWaveToons",
+        "url": "https://www.youtube.com/watch?v=Jxrt5-0OB_Q"
+      }
+    }
+  ]
 }

@@ -21,5 +21,35 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:16.071Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "i3O_lTXB9io",
+      "title": "Danger Mouse Pilot + Episode 1",
+      "url": "https://www.youtube.com/watch?v=i3O_lTXB9io",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/i3O_lTXB9io?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i3O_lTXB9io/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Retro Rewind TV",
+        "url": "https://www.youtube.com/watch?v=i3O_lTXB9io"
+      }
+    },
+    {
+      "id": "VLrHsGmQHUo",
+      "title": "Danger Mouse (intro) 1981",
+      "url": "https://www.youtube.com/watch?v=VLrHsGmQHUo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VLrHsGmQHUo?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VLrHsGmQHUo/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=VLrHsGmQHUo"
+      }
+    }
+  ]
 }

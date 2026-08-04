@@ -41,6 +41,20 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=aEsjsJMWWSA"
       }
+    },
+    {
+      "id": "A3JgLPHcjrg",
+      "title": "Blufonci:Evolucija nije ono sto je nekad bila",
+      "url": "https://www.youtube.com/watch?v=A3JgLPHcjrg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/A3JgLPHcjrg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A3JgLPHcjrg/hqdefault.jpg",
+      "durationText": "23:54",
+      "publishedText": "prije 5 godina",
+      "source": {
+        "type": "youtube",
+        "name": "CrtaniFilmoviHR",
+        "url": "https://www.youtube.com/@borbenimacak88"
+      }
     }
   ]
 }

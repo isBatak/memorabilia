@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:23.767Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "lIZdMkTvsl0",
+      "title": "Labuđa Princeza - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=lIZdMkTvsl0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/lIZdMkTvsl0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lIZdMkTvsl0/hqdefault.jpg",
+      "durationText": "39:29",
+      "publishedText": "prije 5 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"
+      }
+    }
+  ]
 }

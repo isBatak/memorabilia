@@ -21,5 +21,21 @@
     "originalUrl": null,
     "scrapedAt": "2026-08-02T16:18:25.587Z"
   },
-  "rawArticleHtml": null
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "VEd_zq5BXFQ",
+      "title": "The Little Mermaid (1989) [Hrvatski]",
+      "url": "https://www.youtube.com/watch?v=VEd_zq5BXFQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VEd_zq5BXFQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VEd_zq5BXFQ/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Disney Hrvatska",
+        "url": "https://www.youtube.com/watch?v=VEd_zq5BXFQ"
+      }
+    }
+  ]
 }
