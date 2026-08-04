@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-02T16:18:50.164Z",
+  "generatedAt": "2026-08-04T13:26:37.000Z",
   "counts": {
-    "discovered": 142,
-    "successful": 142,
+    "discovered": 143,
+    "successful": 143,
     "failed": 0,
     "byCategory": {
-      "series": 37,
+      "series": 38,
       "cartoons": 84,
       "movies": 21
     }
@@ -18,6 +18,14 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "series/24-djeteta.json"
+    },
+    {
+      "title": "Alf",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/alf.json"
     },
     {
       "title": "Allo! Allo!",
