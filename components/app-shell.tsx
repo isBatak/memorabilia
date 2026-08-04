@@ -26,9 +26,9 @@ const wordmark = css({
 
 const navItems = [
   {key: 'home', href: '/', icon: Home},
-  {key: 'cartoons', href: '/#cartoons', icon: Tv},
-  {key: 'series', href: '/#series', icon: Clapperboard},
-  {key: 'movies', href: '/#movies', icon: Film}
+  {key: 'cartoons', href: '/cartoons/', icon: Tv},
+  {key: 'series', href: '/series/', icon: Clapperboard},
+  {key: 'movies', href: '/movies/', icon: Film}
 ] as const;
 
 export function AppShell({children, collections}: {children: React.ReactNode; collections: Record<Category, ArchiveCard[]>}) {
@@ -40,7 +40,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const [activeSection, setActiveSection] = useState('home');
+  const activeSection = pathname === '/' ? 'home' : pathname.split('/').filter(Boolean)[0] || 'home';
   const allItems = useMemo(() => Object.values(collections).flat(), [collections]);
   const results = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase('hr');
@@ -61,32 +61,6 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
     return () => window.removeEventListener('keydown', handler);
   }, []);
 
-  useEffect(() => {
-    if (pathname !== '/') {
-      setActiveSection(pathname.split('/').filter(Boolean)[0] || 'home');
-      return;
-    }
-
-    const updateTop = () => {
-      if (window.scrollY < 220) setActiveSection('home');
-    };
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.find((entry) => entry.isIntersecting);
-      if (visible) setActiveSection(visible.target.id);
-    }, {rootMargin: '-18% 0px -70% 0px'});
-
-    ['cartoons', 'series', 'movies'].forEach((id) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    });
-    updateTop();
-    window.addEventListener('scroll', updateTop, {passive: true});
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('scroll', updateTop);
-    };
-  }, [pathname]);
-
   const darkTheme = !mounted || resolvedTheme !== 'light';
   const themeLabel = darkTheme ? t('common.lightTheme') : t('common.darkTheme');
 
@@ -101,7 +75,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   return (
     <div className={css({minH: '100vh', bg: 'gray.50', color: 'gray.950', _dark: {bg: 'black', color: 'gray.50'}})}>
       <aside className={sidebar} aria-label="Glavna navigacija">
-        <Link href="/" aria-label="Memorabilia — početna" onClick={() => {setMenuOpen(false); setActiveSection('home');}} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
+        <Link href="/" aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
           MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.500'})}>.</span>
         </Link>
 
@@ -113,7 +87,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
                 key={key}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                onClick={() => {setMenuOpen(false); setActiveSection(key);}}
+                onClick={() => setMenuOpen(false)}
                 className={cx(
                   css({display: 'flex', alignItems: 'center', gap: 3, px: 3, py: 2.5, borderRadius: '10px', fontSize: 'sm', fontWeight: 700, transition: 'color .2s, background .2s, transform .2s', _hover: {transform: 'translateX(2px)'}}),
                   active

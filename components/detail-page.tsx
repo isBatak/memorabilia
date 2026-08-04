@@ -5,7 +5,7 @@ import {useTranslations} from 'next-intl';
 import {ArrowLeft, ArrowUpRight, CalendarDays, CirclePlay} from 'lucide-react';
 import {css} from '#styled-system/css';
 import {ArchiveGallery} from './archive-gallery';
-import {MediaCard} from './card';
+import {MediaCard} from './media-card';
 import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
 
@@ -24,7 +24,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
         {hero ? <img src={`${basePath}${hero}`} alt="" className={css({position: 'absolute', inset: 0, w: '100%', h: '100%', objectFit: 'cover', objectPosition: 'center 28%', opacity: .72, filter: 'saturate(.76)'})}/> : <div className={css({position: 'absolute', inset: 0, bg: 'radial-gradient(circle at 70% 30%, token(colors.gray.700) 0%, token(colors.gray.900) 40%, token(colors.black) 75%)'})}/>}
         <div className={css({position: 'absolute', inset: 0, bg: 'linear-gradient(to top, token(colors.black) 3%, token(colors.black/68) 44%, token(colors.black/10) 82%), linear-gradient(90deg, token(colors.black/72), transparent 75%)'})}/>
         <div className={css({position: 'relative', zIndex: 1, w: '100%', px: {base: 5, md: 9}, pb: {base: 9, md: 12}, pt: 24})}>
-          <Link href="/" className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.300', fontSize: 'sm', mb: 8, _hover: {color: 'lime.300'}})}><ArrowLeft size={17}/>{t('common.back')}</Link>
+          <Link href={`/${entry.category}/`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.300', fontSize: 'sm', mb: 8, _hover: {color: 'lime.300'}})}><ArrowLeft size={17}/>{t('common.back')}</Link>
           <p className={css({color: 'lime.300', fontSize: 'xs', fontWeight: 850, letterSpacing: '.15em', textTransform: 'uppercase', mb: 3})}>{t('detail.archiveEntry')} · {t(`nav.${entry.category}`)}</p>
           <h1 className={css({fontFamily: 'display', fontSize: {base: '4xl', sm: '6xl', md: '7xl'}, lineHeight: .94, letterSpacing: '-.06em', maxW: '55rem'})}>{entry.title}</h1>
           <div className={css({display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 5, mt: 6, color: 'gray.300', fontSize: 'sm'})}>

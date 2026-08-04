@@ -31,14 +31,22 @@
     "title": "Rewind to the beginning.",
     "intro": "Memorabilia turns the original blog back on — cartoons, shows and films we once waited for in front of the TV, now preserved as an open static archive.",
     "featured": "Tonight’s feature",
-    "cartoonRail": "Saturday morning",
-    "seriesRail": "Just one more episode",
-    "movieRail": "Movie night",
+    "cartoonRail": "Beloved cartoons",
+    "seriesRail": "Beloved series",
+    "movieRail": "Beloved movies",
     "archiveTitle": "Memories that don’t depend on a server.",
     "archiveText": "The archive was recovered from snapshots of the original blog and converted into structured JSON. No database and no closed platform — its stories and locally preserved images can live on any static host.",
     "entries": "titles",
     "images": "preserved images",
     "categories": "collections"
+  },
+  "collection": {
+    "eyebrow": "Memorabilia collection",
+    "cartoons": "The cartoons we waited for on Saturday mornings, collected in one place.",
+    "series": "Shows that always made one more episode sound like a good idea.",
+    "movies": "Movie nights, videotapes, and films that stayed part of growing up.",
+    "searchPlaceholder": "Search this collection…",
+    "showing": "Showing"
   },
   "detail": {
     "archiveEntry": "Archive entry",

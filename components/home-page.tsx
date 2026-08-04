@@ -7,7 +7,7 @@ import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
 import {ArchiveBadge} from './archive-badge';
-import {MediaCard} from './card';
+import {MediaCard} from './media-card';
 import type {ArchiveCard, Category} from '../lib/archive';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -59,7 +59,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
           <p className={css({maxW: '42rem', mt: 6, color: 'gray.300', fontSize: {base: 'md', md: 'lg'}, lineHeight: 1.65})}>{t('home.intro')}</p>
           <div className={hstack({flexWrap: 'wrap', gap: 3, mt: 8})}>
             <Link href={`/${featured.category}/${featured.slug}/`} className={cx(button({variant: 'solid', size: 'lg'}), css({colorPalette: 'red', bg: 'gray.100', color: 'black', borderRadius: 'full', fontWeight: 800, fontSize: 'sm', _hover: {bg: 'gray.100', transform: 'scale(1.03)'}}))}><Play size={17} fill="currentColor"/>{t('common.readMore')}</Link>
-            <a href="#cartoons" className={cx(button({variant: 'outline', size: 'lg'}), css({colorPalette: 'gray', color: 'gray.100', bg: 'white/11', backdropFilter: 'blur(9px)', borderColor: 'white/14', borderRadius: 'full', fontWeight: 750, fontSize: 'sm'}))}>{t('common.browse')}<ArrowRight size={17}/></a>
+            <Link href="/cartoons/" className={cx(button({variant: 'outline', size: 'lg'}), css({colorPalette: 'gray', color: 'gray.100', bg: 'white/11', backdropFilter: 'blur(9px)', borderColor: 'white/14', borderRadius: 'full', fontWeight: 750, fontSize: 'sm'}))}>{t('common.browse')}<ArrowRight size={17}/></Link>
           </div>
         </div>
         <div className={css({position: 'absolute', right: {base: 5, md: 9}, bottom: {base: 5, md: 8}, zIndex: 2, display: {base: 'none', sm: 'block'}, textAlign: 'right'})}>
