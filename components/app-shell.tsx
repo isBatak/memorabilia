@@ -40,6 +40,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState('');
+  const watching = pathname.startsWith('/watch/');
   const activeSection = pathname === '/' ? 'home' : pathname.split('/').filter(Boolean)[0] || 'home';
   const allItems = useMemo(() => Object.values(collections).flat(), [collections]);
   const results = useMemo(() => {
@@ -74,7 +75,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
 
   return (
     <div className={css({minH: '100vh', bg: 'gray.50', color: 'gray.950', _dark: {bg: 'black', color: 'gray.50'}})}>
-      <aside className={sidebar} aria-label="Glavna navigacija">
+      {!watching && <aside className={sidebar} aria-label="Glavna navigacija">
         <Link href="/" aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
           MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.500'})}>.</span>
         </Link>
@@ -119,20 +120,20 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
           </div>
           </div>
         </div>
-      </aside>
+      </aside>}
 
-      {menuOpen && <button aria-label={t('common.close')} onClick={() => setMenuOpen(false)} className={css({position: 'fixed', inset: 0, zIndex: 30, bg: 'blackAlpha.700', border: 0, lg: {display: 'none'}})}/>}
+      {!watching && menuOpen && <button aria-label={t('common.close')} onClick={() => setMenuOpen(false)} className={css({position: 'fixed', inset: 0, zIndex: 30, bg: 'blackAlpha.700', border: 0, lg: {display: 'none'}})}/>}
 
-      <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, h: 16, px: 4, display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'gray.100', bg: 'linear-gradient(to bottom, token(colors.blackAlpha.950), token(colors.blackAlpha.700), transparent)'})}>
+      {!watching && <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, h: 16, px: 4, display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'gray.100', bg: 'linear-gradient(to bottom, token(colors.blackAlpha.950), token(colors.blackAlpha.700), transparent)'})}>
         <button aria-label={t('common.openMenu')} onClick={() => setMenuOpen(true)} className={css({border: 0, bg: 'transparent', color: 'gray.100', p: 2})}><Menu/></button>
         <Link href="/" aria-label="Memorabilia — početna" className={cx(wordmark, css({color: 'gray.100'}))}>MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.300'})}>.</span></Link>
         <div className={hstack({gap: 0})}>
           <button disabled={!mounted} aria-label={themeLabel} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'gray.100', p: 2}))}>{darkTheme ? <Sun/> : <Moon/>}</button>
           <button aria-label={t('common.search')} onClick={() => setSearchOpen(true)} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'gray.100', p: 2}))}><Search/></button>
         </div>
-      </header>
+      </header>}
 
-      <main className={css({ml: {base: 0, lg: '15.5rem'}, minW: 0})}>{children}</main>
+      <main className={css({ml: {base: 0, lg: watching ? 0 : '15.5rem'}, minW: 0})}>{children}</main>
 
       {searchOpen && (
         <div className={css({position: 'fixed', inset: 0, zIndex: 80, bg: 'white/94', color: 'gray.950', backdropFilter: 'blur(22px)', overflowY: 'auto', _dark: {bg: 'black/94', color: 'gray.50'}})} role="dialog" aria-modal="true" aria-label={t('common.search')}>
