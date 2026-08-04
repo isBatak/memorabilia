@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Vitezovi Orijenta",
+      "url": "https://i.ytimg.com/vi/Jxrt5-0OB_Q/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/vitezovi-orijenta/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

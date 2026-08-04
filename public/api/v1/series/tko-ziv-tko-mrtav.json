@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Tko živ, tko mrtav",
+      "url": "https://i.ytimg.com/vi/YUmyNzCUxM0/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/tko-ziv-tko-mrtav/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

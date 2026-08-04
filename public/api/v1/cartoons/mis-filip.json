@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Miš Filip",
+      "url": "https://i.ytimg.com/vi/Bb8sTTYcX-g/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/mis-filip/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

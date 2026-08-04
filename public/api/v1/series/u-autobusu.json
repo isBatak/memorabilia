@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "U autobusu",
+      "url": "https://i.ytimg.com/vi/OVri2MCRnnk/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/u-autobusu/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

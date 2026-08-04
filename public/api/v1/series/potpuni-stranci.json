@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Potpuni stranci",
+      "url": "https://i.ytimg.com/vi/aij1esEk0cg/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/potpuni-stranci/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "My Girl",
+      "url": "https://i.ytimg.com/vi/KSyKO0Lklmo/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/my-girl/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

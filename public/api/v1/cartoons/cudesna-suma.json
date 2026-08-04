@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Čudesna šuma",
+      "url": "https://i.ytimg.com/vi/5FOMBegfqZw/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/cudesna-suma/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

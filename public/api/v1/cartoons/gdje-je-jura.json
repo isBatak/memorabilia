@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Gdje je Jura?",
+      "url": "https://i.ytimg.com/vi/7iS0R6gbkJo/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/gdje-je-jura/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107052911/http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",

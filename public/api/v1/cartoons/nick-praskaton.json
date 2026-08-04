@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Nick Praskaton",
+      "url": "https://i.ytimg.com/vi/ONHRm5qeCik/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/nick-praskaton/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107052932/http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",

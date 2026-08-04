@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Critters",
+      "url": "https://i.ytimg.com/vi/9V3YGz-u2Ts/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/critters/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

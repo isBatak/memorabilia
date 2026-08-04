@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Gremlins",
+      "url": "https://i.ytimg.com/vi/XBEVwaJEgaA/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/gremlins/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Zvjezdane staze",
+      "url": "https://i.ytimg.com/vi/a9RC6NKPsqQ/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/zvjezdane-staze/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

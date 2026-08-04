@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Back To The Future",
+      "url": "https://i.ytimg.com/vi/qvsgGtivCgs/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/back-to-the-future/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

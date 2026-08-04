@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Xena",
+      "url": "https://i.ytimg.com/vi/GdTnm6QNzeE/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/xena/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

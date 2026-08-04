@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Spremni ili ne",
+      "url": "https://i.ytimg.com/vi/j3PaGGDfOB0/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/spremni-ili-ne/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

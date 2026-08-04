@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Lav Krezumica",
+      "url": "https://i.ytimg.com/vi/L_Ey9DfX-Dg/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/lav-krezumica/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

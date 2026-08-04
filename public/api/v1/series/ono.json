@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Ono",
+      "url": "https://i.ytimg.com/vi/m5JO8wtNnzQ/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/ono/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620743950/ono.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107083817/http://memorabilia.blog.hr/2006/03/1620743950/ono.html",

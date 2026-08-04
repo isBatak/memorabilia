@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Tko pjeva, zlo ne misli",
+      "url": "https://upload.wikimedia.org/wikipedia/hr/3/38/Tko_pjeva_zlo_ne_misli.jpg?utm_source=hr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "archivedUrl": null,
+      "localUrl": "../../../images/tko-pjeva-zlo-ne-misli/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Death Becomes Her",
+      "url": "https://i.ytimg.com/vi/NFXQQ2uAeHM/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/death-becomes-her/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

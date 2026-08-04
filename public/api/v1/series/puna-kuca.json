@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Puna kuća",
+      "url": "https://i.ytimg.com/vi/Lh3zV7JOwZU/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/puna-kuca/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

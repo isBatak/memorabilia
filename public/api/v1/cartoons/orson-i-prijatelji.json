@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Orson i prijatelji",
+      "url": "https://i.ytimg.com/vi/HrGjZw6JoQo/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/orson-i-prijatelji/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

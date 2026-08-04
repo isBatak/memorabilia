@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Kralj lavova",
+      "url": "https://i.ytimg.com/vi/lFzVJEksoDY/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/kralj-lavova/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

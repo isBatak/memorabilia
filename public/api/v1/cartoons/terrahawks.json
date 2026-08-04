@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Terrahawks",
+      "url": "https://i.ytimg.com/vi/kaOQA-wcm2w/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/terrahawks/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

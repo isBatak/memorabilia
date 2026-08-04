@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Empire of the Sun",
+      "url": "https://i.ytimg.com/vi/i_WiDVA1kLY/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/empire-of-the-sun/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

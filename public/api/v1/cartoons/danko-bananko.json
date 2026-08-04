@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Danko Bananko",
+      "url": "https://i.ytimg.com/vi/nz8XTi4nc5Y/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/danko-bananko/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/09/1623272801/danko-bananko.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107083709/http://memorabilia.blog.hr/2007/09/1623272801/danko-bananko.html",

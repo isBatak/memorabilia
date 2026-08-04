@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Beetle Juice",
+      "url": "https://i.ytimg.com/vi/ickbVzajrk0/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/beetle-juice/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

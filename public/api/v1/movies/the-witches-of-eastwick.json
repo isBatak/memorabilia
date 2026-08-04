@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "The Witches Of Eastwick",
+      "url": "https://i.ytimg.com/vi/mLs1y_KSTKk/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/the-witches-of-eastwick/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,
