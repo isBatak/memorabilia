@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Zvonko",
+      "url": "https://i.ytimg.com/vi/kEagVkUy4XI/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/zvonko/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

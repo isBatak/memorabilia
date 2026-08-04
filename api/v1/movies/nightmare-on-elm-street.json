@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Nightmare On Elm Street",
+      "url": "https://i.ytimg.com/vi/dCVh4lBfW-c/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/nightmare-on-elm-street/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

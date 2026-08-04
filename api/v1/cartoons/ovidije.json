@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Ovidije",
+      "url": "https://i.ytimg.com/vi/kMs53dWD1IA/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/ovidije/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

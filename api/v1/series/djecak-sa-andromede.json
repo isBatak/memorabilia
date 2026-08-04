@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Dječak sa Andromede",
+      "url": "https://i.ytimg.com/vi/TXnFCkStSAY/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/djecak-sa-andromede/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

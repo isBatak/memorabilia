@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Korni Kornjača",
+      "url": "https://i.ytimg.com/vi/IFDSzaDCeSk/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/korni-kornjaca/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

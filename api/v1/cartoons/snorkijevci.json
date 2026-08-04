@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Snorkijevci",
+      "url": "https://i.ytimg.com/vi/ncWklE6CgnY/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/snorkijevci/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107083728/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",

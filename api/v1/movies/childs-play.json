@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Child's Play",
+      "url": "https://i.ytimg.com/vi/qDbMsaJjp3c/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/childs-play/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

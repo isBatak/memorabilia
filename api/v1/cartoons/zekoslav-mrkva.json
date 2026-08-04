@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Zekoslav Mrkva",
+      "url": "https://i.ytimg.com/vi/QJzC19JQWr8/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/zekoslav-mrkva/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107082006/http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",

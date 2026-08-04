@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Dadilja",
+      "url": "https://i.ytimg.com/vi/y-WRr0z4TVg/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/dadilja/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

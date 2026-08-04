@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Simpsoni",
+      "url": "https://i.ytimg.com/vi/GbM60spz3ew/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/simpsoni/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

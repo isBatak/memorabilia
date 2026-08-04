@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Poltergeist",
+      "url": "https://i.ytimg.com/vi/9eZgEKjYJqA/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/poltergeist/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

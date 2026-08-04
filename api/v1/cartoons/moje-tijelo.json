@@ -12,7 +12,14 @@
     "Dnevnik.hrGol.hrZadovoljna.hrOYO.hrNovaTV.hrDomaTV.hrMojamini.tv",
     "Sadržaj © http://memorabilia.blog.hr/\nDesign © nel`chee."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Moje tijelo",
+      "url": "https://i.ytimg.com/vi/Zj6G986lpag/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/moje-tijelo/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/10/1623343350/moje-tijelo.html",
     "resolvedArchiveUrl": "https://web.archive.org/web/20121107082118/http://memorabilia.blog.hr/2007/10/1623343350/moje-tijelo.html",

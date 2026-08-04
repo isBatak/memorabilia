@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Home Alone",
+      "url": "https://i.ytimg.com/vi/jEDaVHmw7r4/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/home-alone/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Srebrni pastuh",
+      "url": "https://i.ytimg.com/vi/KntqBmrwxCA/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/srebrni-pastuh/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Muneca Brava",
+      "url": "https://i.ytimg.com/vi/6zA35gyFI8A/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/muneca-brava/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

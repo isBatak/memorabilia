@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Ally McBeal",
+      "url": "https://i.ytimg.com/vi/_5Xheohw8Pc/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/ally-mcbeal/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

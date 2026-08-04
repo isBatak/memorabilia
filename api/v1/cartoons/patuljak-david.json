@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Patuljak David",
+      "url": "https://i.ytimg.com/vi/l7NUNabKZuw/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/patuljak-david/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Vuk samotnjak",
+      "url": "https://i.ytimg.com/vi/Tyl3jWwsj2Q/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/vuk-samotnjak/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,

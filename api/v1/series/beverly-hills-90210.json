@@ -7,7 +7,14 @@
   "metadata": {},
   "content": "",
   "paragraphs": [],
-  "images": [],
+  "images": [
+    {
+      "alt": "Beverly Hills 90210",
+      "url": "https://i.ytimg.com/vi/En2nLQXfgp4/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/beverly-hills-90210/cover.jpg"
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,
