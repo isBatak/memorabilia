@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import slugify from 'slugify';
 
 const API_DIR = path.resolve(process.env.API_DIR ?? 'public/api/v1');
 const PUBLIC_DIR = path.resolve(process.env.PUBLIC_DIR ?? 'public');
@@ -31,6 +32,8 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+const canonicalSlug = (title) => slugify(title, {lower: true, strict: true, locale: 'hr'}) || 'untitled';
+
 async function main() {
   const indexPath = path.join(API_DIR, 'index.json');
   const navigationPath = path.join(API_DIR, 'navigation.json');
@@ -57,6 +60,9 @@ async function main() {
       assert(article.category === category, `${item.file} has an invalid category`);
       assert(typeof article.title === 'string' && article.title.length > 0, `${item.file} is missing title`);
       assert(typeof article.slug === 'string' && article.slug.length > 0, `${item.file} is missing slug`);
+      const expectedSlug = canonicalSlug(article.title);
+      assert(article.slug === expectedSlug, `${item.file} slug must be ${expectedSlug}`);
+      assert(path.basename(item.file, '.json') === expectedSlug, `${item.file} filename must be ${expectedSlug}.json`);
       for (const image of article.images ?? []) {
         if (!image.localUrl) continue;
         assert(/^\.\.\/\.\.\/\.\.\/images\/[^/]+\/[^/]+$/.test(image.localUrl), `${item.file} has an invalid image localUrl`);
