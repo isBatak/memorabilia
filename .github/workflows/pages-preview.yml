@@ -23,7 +23,7 @@ jobs:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: ${{ github.event_name == 'pull_request' && 'pull-request-preview' || 'github-pages' }}
       url: ${{ github.event_name == 'pull_request' && format('https://{0}.github.io/{1}/previews/pr-{2}/hr/', github.repository_owner, github.event.repository.name, github.event.pull_request.number) || format('https://{0}.github.io/{1}/hr/', github.repository_owner, github.event.repository.name) }}
     steps:
       - name: Check out exact source revision
