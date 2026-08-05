@@ -14,7 +14,7 @@ const socialImage = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/og.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || githubUrl),
   title: {default: 'Memorabilia — arhiva djetinjstva', template: '%s · Memorabilia'},
-  description: 'Crtani filmovi, serije i filmovi iz djetinjstva, sačuvani iz originalnog Memorabilia bloga.',
+  description: 'Crtani filmovi, serije, filmovi i stare reklame iz djetinjstva, sačuvani u Memorabilia arhivi.',
   openGraph: {title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', type: 'website', images: [{url: socialImage, width: 1730, height: 909, alt: 'Memorabilia — vrati program na početak'}]},
   twitter: {card: 'summary_large_image', title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', images: [socialImage]}
 };
