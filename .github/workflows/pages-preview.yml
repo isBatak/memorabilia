@@ -1,6 +1,8 @@
-name: Deploy pull request preview
+name: Deploy GitHub Pages
 
 on:
+  push:
+    branches: [main]
   pull_request:
     types: [opened, synchronize, reopened, closed]
 
@@ -8,18 +10,21 @@ permissions:
   contents: write
 
 concurrency:
-  group: pages-preview-${{ github.event.pull_request.number }}
+  group: deploy-pages-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
-  preview:
+  deploy:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     environment:
-      name: pull-request-preview
-      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/pr-${{ github.event.pull_request.number }}/
+      name: ${{ github.event_name == 'push' && 'github-pages' || 'pull-request-preview' }}
+      url: ${{ github.event_name == 'push' && format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) || format('https://{0}.github.io/{1}/previews/pr-{2}/', github.repository_owner, github.event.repository.name, github.event.pull_request.number) }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.sha || github.event.repository.default_branch }}
 
       - name: Set up pnpm
         if: github.event.action != 'closed'
@@ -37,24 +42,15 @@ jobs:
         if: github.event.action != 'closed'
         run: pnpm install --frozen-lockfile
 
-      - name: Build preview
+      - name: Build site
         if: github.event.action != 'closed'
         env:
-          PAGES_BASE_PATH: /${{ github.event.repository.name }}/previews/pr-${{ github.event.pull_request.number }}
+          PAGES_BASE_PATH: ${{ github.event_name == 'pull_request' && format('/{0}/previews/pr-{1}', github.event.repository.name, github.event.pull_request.number) || '' }}
         run: pnpm run build
 
-      - name: Publish preview
-        if: github.event.action != 'closed'
+      - name: Publish site
         env:
-          DEPLOY_MODE: preview
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: scripts/deploy-pages.sh
-
-      - name: Remove closed preview
-        if: github.event.action == 'closed'
-        env:
-          DEPLOY_MODE: cleanup
+          DEPLOY_MODE: ${{ github.event_name == 'push' && 'production' || github.event.action == 'closed' && 'cleanup' || 'preview' }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: scripts/deploy-pages.sh
