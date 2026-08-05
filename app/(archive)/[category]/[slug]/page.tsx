@@ -1,23 +1,27 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {DetailPage} from '../../../components/detail-page';
-import {categories, getAllParams, getArchiveIndex, getEntry, type Category} from '../../../lib/archive';
+import {category as getCategory} from 'next/root-params';
+import {DetailPage} from '../../../../components/detail-page';
+import {categories, getAllParams, getArchiveIndex, getEntry, type Category} from '../../../../lib/archive';
 
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return getAllParams();
+export async function generateStaticParams() {
+  const category = await getCategory();
+  return getAllParams()
+    .filter((params) => params.category === category)
+    .map(({slug}) => ({slug}));
 }
 
-export async function generateMetadata({params}: {params: Promise<{category: string; slug: string}>}): Promise<Metadata> {
-  const {category, slug} = await params;
+export async function generateMetadata({params}: {params: Promise<{slug: string}>}): Promise<Metadata> {
+  const [{slug}, category] = await Promise.all([params, getCategory()]);
   if (!categories.includes(category as Category)) return {};
   const entry = getEntry(category as Category, slug);
   return entry ? {title: entry.title, description: entry.paragraphs?.[0]?.replace(/\s+/g, ' ').slice(0, 155)} : {};
 }
 
-export default async function Page({params}: {params: Promise<{category: string; slug: string}>}) {
-  const {category, slug} = await params;
+export default async function Page({params}: {params: Promise<{slug: string}>}) {
+  const [{slug}, category] = await Promise.all([params, getCategory()]);
   if (!categories.includes(category as Category)) notFound();
   const entry = getEntry(category as Category, slug);
   if (!entry) notFound();
