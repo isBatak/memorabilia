@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-04T13:26:37.000Z",
+  "generatedAt": "2026-08-05T14:54:19.047Z",
   "counts": {
-    "discovered": 143,
-    "successful": 143,
+    "discovered": 144,
+    "successful": 144,
     "failed": 0,
     "byCategory": {
-      "series": 38,
+      "series": 39,
       "cartoons": 84,
       "movies": 21
     }
@@ -156,6 +156,14 @@
       "file": "series/narnijske-kronike-lav-vjestica-i-ormar.json"
     },
     {
+      "title": "Normalnofobija",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/normalnofobija.json"
+    },
+    {
       "title": "Obična klinka",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/09/1625335735/obicna-klinka.html",
       "originalUrl": "http://memorabilia.blog.hr/2008/09/1625335735/obicna-klinka.html",
@@ -180,12 +188,12 @@
       "file": "series/ono.json"
     },
     {
-      "title": "Tko živ, tko mrtav",
-      "archiveUrl": null,
-      "originalUrl": null,
+      "title": "Otkačena obitelj\" (?!)",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
       "status": "ok",
-      "contentStatus": "title-only",
-      "file": "series/tko-ziv-tko-mrtav.json"
+      "contentStatus": "scraped",
+      "file": "series/otkacena-obitelj.json"
     },
     {
       "title": "Potpuni stranci",
@@ -218,14 +226,6 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "series/roseanne.json"
-    },
-    {
-      "title": "Otkačena obitelj\" (?!)",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
-      "originalUrl": "http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
-      "status": "ok",
-      "contentStatus": "scraped",
-      "file": "series/otkacena-obitelj.json"
     },
     {
       "title": "Seinfeld",
@@ -274,6 +274,14 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "series/superbaka.json"
+    },
+    {
+      "title": "Tko živ, tko mrtav",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/tko-ziv-tko-mrtav.json"
     },
     {
       "title": "U autobusu",
