@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 # Every deployment writes to gh-pages. Serialize them so preview and production
 # runs cannot race and overwrite each other's branch state.
@@ -21,7 +23,7 @@ jobs:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     environment:
-      name: ${{ github.event_name == 'pull_request' && 'pull-request-preview' || 'github-pages' }}
+      name: github-pages
       url: ${{ github.event_name == 'pull_request' && format('https://{0}.github.io/{1}/previews/pr-{2}/hr/', github.repository_owner, github.event.repository.name, github.event.pull_request.number) || format('https://{0}.github.io/{1}/hr/', github.repository_owner, github.event.repository.name) }}
     steps:
       - name: Check out exact source revision
@@ -73,3 +75,20 @@ jobs:
           DEPLOY_MODE: production
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: scripts/deploy-pages.sh
+
+      # GITHUB_TOKEN pushes do not trigger a second Pages build. Deploy the
+      # updated gh-pages tree explicitly from this same workflow run.
+      - name: Check out assembled Pages site
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: pages-site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages-site
+
+      - name: Deploy Pages artifact
+        id: pages
+        uses: actions/deploy-pages@v4
