@@ -1,9 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {css, cx} from '#styled-system/css';
-import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard} from '../lib/archive';
 import {localizedPath} from '../lib/i18n';
 
@@ -21,7 +20,7 @@ export function MediaCard({
   onNavigate?: () => void;
 }) {
   const t = useTranslations();
-  const locale = useLocaleChoice();
+  const locale = useLocale();
 
   return (
     <Link

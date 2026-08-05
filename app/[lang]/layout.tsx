@@ -3,8 +3,6 @@ import {locales} from '../../lib/i18n';
 import {RootDocument, rootMetadata} from '../root-document';
 
 export const metadata = rootMetadata;
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return locales.map((lang) => ({lang}));
 }

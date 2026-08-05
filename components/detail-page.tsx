@@ -1,12 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {ArrowLeft, ArrowUpRight, CalendarDays, CirclePlay} from 'lucide-react';
 import {css} from '#styled-system/css';
 import {ArchiveGallery} from './archive-gallery';
 import {MediaCard} from './media-card';
-import {useLocaleChoice} from './locale-provider';
 import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
 import {localizedPath} from '../lib/i18n';
@@ -15,7 +14,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export function DetailPage({entry, related}: {entry: ArchiveEntry; related: ArchiveCard[]}) {
   const t = useTranslations();
-  const locale = useLocaleChoice();
+  const locale = useLocale();
   const hero = entry.images.find((image) => image.localUrl)?.localUrl;
   const article = entry.paragraphs?.[0] || '';
   const sections = article.split(/\n\s*\n/).map((part) => part.trim()).filter(Boolean);

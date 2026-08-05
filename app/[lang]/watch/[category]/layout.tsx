@@ -1,7 +1,5 @@
 import {getAllVideoParams} from '../../../../lib/archive';
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return [...new Set(getAllVideoParams().map(({category}) => category))]
     .map((category) => ({category}));

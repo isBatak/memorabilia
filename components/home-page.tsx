@@ -1,14 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {ArrowRight, Database, ImageIcon, Play, Sparkles} from 'lucide-react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
 import {ArchiveBadge} from './archive-badge';
 import {MediaCard} from './media-card';
-import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard, Category} from '../lib/archive';
 import {localizedPath} from '../lib/i18n';
 
@@ -48,7 +47,7 @@ function Rail({id, title, items}: {id: string; title: string; items: ArchiveCard
 
 export function HomePage({collections, counts, imageCount}: {collections: Record<Category, ArchiveCard[]>; counts: Record<Category, number>; imageCount: number}) {
   const t = useTranslations();
-  const locale = useLocaleChoice();
+  const locale = useLocale();
   const featured = collections.cartoons.find((item) => item.slug === 'profesor-baltazar') || collections.cartoons.find((item) => item.image) || collections.cartoons[0];
 
   return (

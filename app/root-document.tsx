@@ -1,13 +1,9 @@
 import type {Metadata} from 'next';
-import {notFound} from 'next/navigation';
-import {lang as getLang} from 'next/root-params';
+import {getLocale, getMessages} from 'next-intl/server';
 import {AppShell} from '../components/app-shell';
 import {LocaleProvider} from '../components/locale-provider';
 import {ThemeProvider} from '../components/theme-provider';
 import {getArchiveIndex} from '../lib/archive';
-import {isLocale} from '../lib/i18n';
-import en from '../messages/en.json';
-import hr from '../messages/hr.json';
 
 const [githubOwner, githubRepo] = process.env.GITHUB_REPOSITORY?.split('/') || [];
 const githubUrl = githubOwner && githubRepo
@@ -24,14 +20,14 @@ export const rootMetadata: Metadata = {
 };
 
 export async function RootDocument({children}: Readonly<{children: React.ReactNode}>) {
-  const locale = await getLang();
-  if (!isLocale(locale)) notFound();
+  const locale = await getLocale();
+  const messages = await getMessages();
   const {collections} = getArchiveIndex();
   return (
     <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <LocaleProvider locale={locale} messages={locale === 'hr' ? hr : en}>
+          <LocaleProvider locale={locale} messages={messages}>
             <AppShell collections={collections}>{children}</AppShell>
           </LocaleProvider>
         </ThemeProvider>

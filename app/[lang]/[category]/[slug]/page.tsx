@@ -3,8 +3,6 @@ import {notFound} from 'next/navigation';
 import {DetailPage} from '../../../../components/detail-page';
 import {categories, getAllParams, getArchiveIndex, getEntry, type Category} from '../../../../lib/archive';
 
-export const dynamicParams = false;
-
 export async function generateStaticParams({params}: {params: {category: string}}) {
   const {category} = params;
   return getAllParams()

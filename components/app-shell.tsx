@@ -2,14 +2,13 @@
 
 import Link from 'next/link';
 import {usePathname, useRouter} from 'next/navigation';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {useTheme} from 'next-themes';
 import {useEffect, useMemo, useState} from 'react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
 import {Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
-import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard, Category} from '../lib/archive';
 import {localizedPath, type Locale} from '../lib/i18n';
 
@@ -36,7 +35,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   const t = useTranslations();
   const pathname = usePathname();
   const router = useRouter();
-  const locale = useLocaleChoice();
+  const locale = useLocale();
   const {resolvedTheme, setTheme} = useTheme();
   const [mounted, setMounted] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);

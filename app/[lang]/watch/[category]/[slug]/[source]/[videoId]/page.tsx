@@ -1,9 +1,7 @@
 import {notFound} from 'next/navigation';
+import {getLocale} from 'next-intl/server';
 import {VideoPage} from '../../../../../../../components/video-page';
 import {categories, getAllVideoParams, getEntry, type Category} from '../../../../../../../lib/archive';
-import {isLocale} from '../../../../../../../lib/i18n';
-
-export const dynamicParams = false;
 
 export async function generateStaticParams({params}: {params: {category: string}}) {
   const {category} = params;
@@ -13,11 +11,11 @@ export async function generateStaticParams({params}: {params: {category: string}
 }
 
 export default async function Page({params}: PageProps<'/[lang]/watch/[category]/[slug]/[source]/[videoId]'>) {
-  const {lang, category, slug, source, videoId} = await params;
-  if (!isLocale(lang)) notFound();
+  const {category, slug, source, videoId} = await params;
+  const locale = await getLocale();
   if (!categories.includes(category as Category)) notFound();
   const entry = getEntry(category as Category, slug);
   const video = entry?.videos?.find((video) => video.id === videoId && video.source.type === source);
   if (!entry || !video) notFound();
-  return <VideoPage entry={entry} video={video} locale={lang}/>;
+  return <VideoPage entry={entry} video={video} locale={locale}/>;
 }

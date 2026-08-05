@@ -1,7 +1,5 @@
 import {categories} from '../../../lib/archive';
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return categories.map((category) => ({category}));
 }
