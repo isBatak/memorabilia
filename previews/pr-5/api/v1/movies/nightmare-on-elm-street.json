@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Nightmare On Elm Street",
+  "slug": "nightmare-on-elm-street",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Nightmare On Elm Street",
+      "url": "https://i.ytimg.com/vi/dCVh4lBfW-c/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/nightmare-on-elm-street/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:49.397Z"
+  },
+  "rawArticleHtml": null
+}

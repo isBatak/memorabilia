@@ -1,0 +1,1163 @@
+{
+  "generatedAt": "2026-08-04T13:26:37.000Z",
+  "counts": {
+    "discovered": 143,
+    "successful": 143,
+    "failed": 0,
+    "byCategory": {
+      "series": 38,
+      "cartoons": 84,
+      "movies": 21
+    }
+  },
+  "series": [
+    {
+      "title": "2,4 djeteta",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/10/1621672998/24-djeteta.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/10/1621672998/24-djeteta.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/24-djeteta.json"
+    },
+    {
+      "title": "Alf",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/alf.json"
+    },
+    {
+      "title": "Allo! Allo!",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620734452/allo-allo.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620734452/allo-allo.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/allo-allo.json"
+    },
+    {
+      "title": "Ally McBeal",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/ally-mcbeal.json"
+    },
+    {
+      "title": "Beverly Hills 90210",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/beverly-hills-90210.json"
+    },
+    {
+      "title": "Crna Guja",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/07/1621342186/crna-guja.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/07/1621342186/crna-guja.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/crna-guja.json"
+    },
+    {
+      "title": "Crveni patuljak",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620839061/crveni-patuljak.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620839061/crveni-patuljak.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/crveni-patuljak.json"
+    },
+    {
+      "title": "Dadilja",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/dadilja.json"
+    },
+    {
+      "title": "Dječak sa Andromede",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/djecak-sa-andromede.json"
+    },
+    {
+      "title": "Dječak upoznaje svijet",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/djecak-upoznaje-svijet.json"
+    },
+    {
+      "title": "Djevojčica iz budućnosti",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2005/11/1620421948/djevojcica-iz-buducnosti.html",
+      "originalUrl": "http://memorabilia.blog.hr/2005/11/1620421948/djevojcica-iz-buducnosti.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/djevojcica-iz-buducnosti.json"
+    },
+    {
+      "title": "Gilmoreice",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/gilmoreice.json"
+    },
+    {
+      "title": "Gusari",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/gusari.json"
+    },
+    {
+      "title": "I to mi je neki život",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620641006/i-to-mi-je-neki-zivot.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620641006/i-to-mi-je-neki-zivot.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/i-to-mi-je-neki-zivot.json"
+    },
+    {
+      "title": "Moja obitelj",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/moja-obitelj.json"
+    },
+    {
+      "title": "Mr. Bean",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/01/1620571522/mr-bean.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/01/1620571522/mr-bean.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/mr-bean.json"
+    },
+    {
+      "title": "Muneca Brava",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/muneca-brava.json"
+    },
+    {
+      "title": "Narnijske kronike: Lav, vještica i ormar",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620714237/narnijske-kronike-lav-vjestica-i-ormar.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620714237/narnijske-kronike-lav-vjestica-i-ormar.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/narnijske-kronike-lav-vjestica-i-ormar.json"
+    },
+    {
+      "title": "Obična klinka",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/09/1625335735/obicna-klinka.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/09/1625335735/obicna-klinka.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/obicna-klinka.json"
+    },
+    {
+      "title": "Ogledalce, ogledalce",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/07/1625111041/ogledalce-ogledalce.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/07/1625111041/ogledalce-ogledalce.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/ogledalce-ogledalce.json"
+    },
+    {
+      "title": "Ono",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620743950/ono.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620743950/ono.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/ono.json"
+    },
+    {
+      "title": "Tko živ, tko mrtav",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/tko-ziv-tko-mrtav.json"
+    },
+    {
+      "title": "Potpuni stranci",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/potpuni-stranci.json"
+    },
+    {
+      "title": "Prijatelji",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/prijatelji.json"
+    },
+    {
+      "title": "Puna kuća",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/puna-kuca.json"
+    },
+    {
+      "title": "Roseanne",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620685405/roseanne.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620685405/roseanne.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/roseanne.json"
+    },
+    {
+      "title": "Otkačena obitelj\" (?!)",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/07/1622938048/otkacena-obitelj.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/otkacena-obitelj.json"
+    },
+    {
+      "title": "Seinfeld",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/seinfeld.json"
+    },
+    {
+      "title": "Sex i grad",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/sex-i-grad.json"
+    },
+    {
+      "title": "Smogovci",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/01/1620611676/smogovci.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/01/1620611676/smogovci.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/smogovci.json"
+    },
+    {
+      "title": "Spremni ili ne",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/spremni-ili-ne.json"
+    },
+    {
+      "title": "Stiže dr.Beeching",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/stize-drbeeching.json"
+    },
+    {
+      "title": "Superbaka",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/06/1621199085/superbaka.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/06/1621199085/superbaka.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/superbaka.json"
+    },
+    {
+      "title": "U autobusu",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/u-autobusu.json"
+    },
+    {
+      "title": "Vau, vau",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2009/08/1626633594/vau-vau.html",
+      "originalUrl": "http://memorabilia.blog.hr/2009/08/1626633594/vau-vau.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/vau-vau.json"
+    },
+    {
+      "title": "Xena",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/xena.json"
+    },
+    {
+      "title": "Zvjezdane staze",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/zvjezdane-staze.json"
+    },
+    {
+      "title": "Zvonili ste, Milorde?",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621434718/zvonili-ste-milorde.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621434718/zvonili-ste-milorde.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "series/zvonili-ste-milorde.json"
+    }
+  ],
+  "cartoons": [
+    {
+      "title": "A je to",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/01/1620589901/a-je-to.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/01/1620589901/a-je-to.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/a-je-to.json"
+    },
+    {
+      "title": "Profesor Baltazar",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/profesor-baltazar.json"
+    },
+    {
+      "title": "Barney",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/07/1625191784/barney.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/07/1625191784/barney.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/barney.json"
+    },
+    {
+      "title": "Bipsići",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621010751/bipsici.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621010751/bipsici.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/bipsici.json"
+    },
+    {
+      "title": "Blufonci",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621469786/blufonci.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621469786/blufonci.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/blufonci.json"
+    },
+    {
+      "title": "Bojan",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/08/1625257144/bojan.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/08/1625257144/bojan.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/bojan.json"
+    },
+    {
+      "title": "Bolek i Lolek",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/bolek-i-lolek.json"
+    },
+    {
+      "title": "Brum",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/brum.json"
+    },
+    {
+      "title": "Bubimir",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621095948/bubimir.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621095948/bubimir.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/bubimir.json"
+    },
+    {
+      "title": "Bus Bus",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/bus-bus.json"
+    },
+    {
+      "title": "Candy Candy",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621410051/candy-candy.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621410051/candy-candy.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/candy-candy.json"
+    },
+    {
+      "title": "Cipelići",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620701841/cipelici.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620701841/cipelici.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/cipelici.json"
+    },
+    {
+      "title": "Čarobnjakov šešir",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/carobnjakov-sesir.json"
+    },
+    {
+      "title": "Čudesna šuma",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/cudesna-suma.json"
+    },
+    {
+      "title": "Čupavci",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2009/03/1626000416/cupavci.html",
+      "originalUrl": "http://memorabilia.blog.hr/2009/03/1626000416/cupavci.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/cupavci.json"
+    },
+    {
+      "title": "Danko Bananko",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/09/1623272801/danko-bananko.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/09/1623272801/danko-bananko.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/danko-bananko.json"
+    },
+    {
+      "title": "Dar-mar Holmes",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/dar-mar-holmes.json"
+    },
+    {
+      "title": "Doktor Argus",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623013149/doktor-argus.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/08/1623013149/doktor-argus.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/doktor-argus.json"
+    },
+    {
+      "title": "Ernest",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621391864/ernest.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621391864/ernest.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/ernest.json"
+    },
+    {
+      "title": "Eustahije Brzić",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/eustahije-brzic.json"
+    },
+    {
+      "title": "Ewoks",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2005/12/1620453318/ewoks.html",
+      "originalUrl": "http://memorabilia.blog.hr/2005/12/1620453318/ewoks.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/ewoks.json"
+    },
+    {
+      "title": "Garfield",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/garfield.json"
+    },
+    {
+      "title": "Gdje je Jura?",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/12/1623872159/gdje-je-jura.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/gdje-je-jura.json"
+    },
+    {
+      "title": "Graškograd",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620713761/graskograd.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620713761/graskograd.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/graskograd.json"
+    },
+    {
+      "title": "Kako je Grinch ukrao Božić",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/kako-je-grinch-ukrao-bozic.json"
+    },
+    {
+      "title": "Gustav",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620657377/gustav.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620657377/gustav.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/gustav.json"
+    },
+    {
+      "title": "He-man i Gospodari Svemira",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/11/1621780948/heman-i-gospodari-svemira.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/11/1621780948/heman-i-gospodari-svemira.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/he-man-i-gospodari-svemira.json"
+    },
+    {
+      "title": "Horton Hears a Who!",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/horton-hears-a-who.json"
+    },
+    {
+      "title": "Kakav Nered",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/06/1621244144/kakav-nered.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/06/1621244144/kakav-nered.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/kakav-nered.json"
+    },
+    {
+      "title": "Kapetan Zaspan",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/kapetan-zaspan.json"
+    },
+    {
+      "title": "Korni Kornjača",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/korni-kornjaca.json"
+    },
+    {
+      "title": "Kralj lavova",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/kralj-lavova.json"
+    },
+    {
+      "title": "Bajum Badum",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/bajum-badum.json"
+    },
+    {
+      "title": "Labuđa princeza",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/labudja-princeza.json"
+    },
+    {
+      "title": "Lav Krezumica",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/lav-krezumica.json"
+    },
+    {
+      "title": "Le Piaf",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/03/1622330326/le-piaf.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/03/1622330326/le-piaf.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/le-piaf.json"
+    },
+    {
+      "title": "Lija Skočibarica",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/02/1624255989/lija-skocibarica.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/02/1624255989/lija-skocibarica.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/lija-skocibarica.json"
+    },
+    {
+      "title": "Lokvići",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/02/1622169374/lokvici.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/02/1622169374/lokvici.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/lokvici.json"
+    },
+    {
+      "title": "Majstor Fantaz",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/06/1621176398/majstor-fantaz.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/06/1621176398/majstor-fantaz.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/majstor-fantaz.json"
+    },
+    {
+      "title": "Mala sirena",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/mala-sirena.json"
+    },
+    {
+      "title": "Mali leteći medvjedići",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621117870/mali-leteci-medvjedici.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621117870/mali-leteci-medvjedici.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/mali-leteci-medvjedici.json"
+    },
+    {
+      "title": "Maksim",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/maksim.json"
+    },
+    {
+      "title": "Micek Trtko",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2009/07/1626524783/micek-trtko.html",
+      "originalUrl": "http://memorabilia.blog.hr/2009/07/1626524783/micek-trtko.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/micek-trtko.json"
+    },
+    {
+      "title": "Mio Mao",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2012/02/1629941771/mio-mao.html",
+      "originalUrl": "http://memorabilia.blog.hr/2012/02/1629941771/mio-mao.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/mio-mao.json"
+    },
+    {
+      "title": "Miš Filip",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/mis-filip.json"
+    },
+    {
+      "title": "Moćni Max",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620714886/mocni-max.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620714886/mocni-max.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/mocni-max.json"
+    },
+    {
+      "title": "Moćni psići",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2010/05/1627515887/mocni-psici.html",
+      "originalUrl": "http://memorabilia.blog.hr/2010/05/1627515887/mocni-psici.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/mocni-psici.json"
+    },
+    {
+      "title": "Moje tijelo",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/10/1623343350/moje-tijelo.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/10/1623343350/moje-tijelo.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/moje-tijelo.json"
+    },
+    {
+      "title": "Nick Praskaton",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/09/1621588049/nick-praskaton.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/nick-praskaton.json"
+    },
+    {
+      "title": "Orson i prijatelji",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/orson-i-prijatelji.json"
+    },
+    {
+      "title": "Ovidije",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/ovidije.json"
+    },
+    {
+      "title": "Patuljak David",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/patuljak-david.json"
+    },
+    {
+      "title": "Pauk nije bauk",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/06/1621211771/pauk-nije-bauk.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/06/1621211771/pauk-nije-bauk.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/pauk-nije-bauk.json"
+    },
+    {
+      "title": "Petar i čarobno jaje",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2009/04/1626111727/petar-i-carobno-jaje.html",
+      "originalUrl": "http://memorabilia.blog.hr/2009/04/1626111727/petar-i-carobno-jaje.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/petar-i-carobno-jaje.json"
+    },
+    {
+      "title": "Pingu",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620860275/pingu.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620860275/pingu.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/pingu.json"
+    },
+    {
+      "title": "Pink Panther",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620902056/pink-panther.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620902056/pink-panther.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/pink-panther.json"
+    },
+    {
+      "title": "Ptica trkačica",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621558967/ptica-trkacica.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/09/1621558967/ptica-trkacica.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/ptica-trkacica.json"
+    },
+    {
+      "title": "Pustolovine šumske družine",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/09/1625411396/pustolovine-sumske-druzine.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/09/1625411396/pustolovine-sumske-druzine.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/pustolovine-sumske-druzine.json"
+    },
+    {
+      "title": "Rakuni",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620767664/rakuni.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620767664/rakuni.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/rakuni.json"
+    },
+    {
+      "title": "Riblje redarstvo",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/riblje-redarstvo.json"
+    },
+    {
+      "title": "Sandokan",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/11/1621811429/sandokan.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/11/1621811429/sandokan.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/sandokan.json"
+    },
+    {
+      "title": "Simpsoni",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/simpsoni.json"
+    },
+    {
+      "title": "Slonica Nelica",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/06/1621272911/slonica-nelica.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/06/1621272911/slonica-nelica.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/slonica-nelica.json"
+    },
+    {
+      "title": "Snješko Bijeliš",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/snjesko-bijelis.json"
+    },
+    {
+      "title": "Snorkijevci",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/snorkijevci.json"
+    },
+    {
+      "title": "Sport Billy",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/10/1623492288/sport-billy.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/10/1623492288/sport-billy.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/sport-billy.json"
+    },
+    {
+      "title": "Srebrni pastuh",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/srebrni-pastuh.json"
+    },
+    {
+      "title": "Stripy",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620960321/stripy.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620960321/stripy.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/stripy.json"
+    },
+    {
+      "title": "SuperTed",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621517879/superted.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/09/1621517879/superted.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/superted.json"
+    },
+    {
+      "title": "Štucavko",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/10/1621626331/stucavko.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/10/1621626331/stucavko.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/stucavko.json"
+    },
+    {
+      "title": "Terrahawks",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/terrahawks.json"
+    },
+    {
+      "title": "Todor i Fedor",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/todor-i-fedor.json"
+    },
+    {
+      "title": "Tom i Jerry",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/07/1621311955/tom-i-jerry.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/07/1621311955/tom-i-jerry.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/tom-i-jerry.json"
+    },
+    {
+      "title": "Toro i Pončo",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620803094/toro-i-ponco.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/03/1620803094/toro-i-ponco.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/toro-i-ponco.json"
+    },
+    {
+      "title": "Vatrogasac Sam",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621144764/vatrogasac-sam.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621144764/vatrogasac-sam.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/vatrogasac-sam.json"
+    },
+    {
+      "title": "Virgul",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2011/08/1629494431/quotvirgulquot.html",
+      "originalUrl": "http://memorabilia.blog.hr/2011/08/1629494431/quotvirgulquot.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/virgul.json"
+    },
+    {
+      "title": "Vitezovi Orijenta",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/vitezovi-orijenta.json"
+    },
+    {
+      "title": "Voltron",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/09/1623155323/voltron.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/09/1623155323/voltron.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/voltron.json"
+    },
+    {
+      "title": "Zekoslavne priče",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/zekoslavne-price.json"
+    },
+    {
+      "title": "Zekoslav Mrkva",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/zekoslav-mrkva.json"
+    },
+    {
+      "title": "Zvonko",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/zvonko.json"
+    },
+    {
+      "title": "Zubić vile",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/08/1625308026/zubic-vile.html",
+      "originalUrl": "http://memorabilia.blog.hr/2008/08/1625308026/zubic-vile.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/zubic-vile.json"
+    },
+    {
+      "title": "Žderosaur",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html",
+      "originalUrl": "http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/zderosaur.json"
+    },
+    {
+      "title": "Wumi",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/wumi.json"
+    }
+  ],
+  "movies": [
+    {
+      "title": "Beetle Juice",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/beetle-juice.json"
+    },
+    {
+      "title": "Back To The Future",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/back-to-the-future.json"
+    },
+    {
+      "title": "Batman",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/batman.json"
+    },
+    {
+      "title": "Child's Play",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/childs-play.json"
+    },
+    {
+      "title": "Critters",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/critters.json"
+    },
+    {
+      "title": "Death Becomes Her",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/death-becomes-her.json"
+    },
+    {
+      "title": "Dolly Dearest",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/dolly-dearest.json"
+    },
+    {
+      "title": "Družba Pere Kvržice",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/druzba-pere-kvrzice.json"
+    },
+    {
+      "title": "Empire of the Sun",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/empire-of-the-sun.json"
+    },
+    {
+      "title": "Goonies",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620976972/goonies.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620976972/goonies.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "movies/goonies.json"
+    },
+    {
+      "title": "Gremlins",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/gremlins.json"
+    },
+    {
+      "title": "Home Alone",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/home-alone.json"
+    },
+    {
+      "title": "Tulum",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/01/1620539960/tulum.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/01/1620539960/tulum.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "movies/tulum.json"
+    },
+    {
+      "title": "My Girl",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/my-girl.json"
+    },
+    {
+      "title": "Nightmare On Elm Street",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/nightmare-on-elm-street.json"
+    },
+    {
+      "title": "The Craft",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/the-craft.json"
+    },
+    {
+      "title": "The Witches Of Eastwick",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/the-witches-of-eastwick.json"
+    },
+    {
+      "title": "Tko pjeva, zlo ne misli",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/tko-pjeva-zlo-ne-misli.json"
+    },
+    {
+      "title": "Poltergeist",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/poltergeist.json"
+    },
+    {
+      "title": "Vlak u snijegu",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/vlak-u-snijegu.json"
+    },
+    {
+      "title": "Vuk samotnjak",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "movies/vuk-samotnjak.json"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Death Becomes Her",
+  "slug": "death-becomes-her",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Death Becomes Her",
+      "url": "https://i.ytimg.com/vi/NFXQQ2uAeHM/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/death-becomes-her/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:47.890Z"
+  },
+  "rawArticleHtml": null
+}
