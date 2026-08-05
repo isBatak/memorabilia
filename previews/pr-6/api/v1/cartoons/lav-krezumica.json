@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Lav Krezumica",
+  "slug": "lav-krezumica",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Lav Krezumica",
+      "url": "https://i.ytimg.com/vi/L_Ey9DfX-Dg/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/lav-krezumica/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:23.767Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "fp1uKFlOzkY",
+      "title": "Lav Krezumica - kidam na lijevo",
+      "url": "https://www.youtube.com/watch?v=fp1uKFlOzkY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/fp1uKFlOzkY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fp1uKFlOzkY/hqdefault.jpg",
+      "durationText": "0:03",
+      "publishedText": "prije 10 g.",
+      "source": {
+        "type": "youtube",
+        "name": "boštjan zajšek",
+        "url": "https://www.youtube.com/@bostjanzajsek3641"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Batman",
+  "slug": "batman",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Batman",
+      "url": "https://i.ytimg.com/vi/dgC9Q0uhX70/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/batman/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:47.889Z"
+  },
+  "rawArticleHtml": null
+}

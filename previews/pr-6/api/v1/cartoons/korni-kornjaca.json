@@ -1,0 +1,55 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Korni Kornjača",
+  "slug": "korni-kornjaca",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Korni Kornjača",
+      "url": "https://i.ytimg.com/vi/IFDSzaDCeSk/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/korni-kornjaca/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:23.766Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "_5ryN-ShL8A",
+      "title": "Touché Turtle - Mr. Robot (full episode)",
+      "url": "https://www.youtube.com/watch?v=_5ryN-ShL8A",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/_5ryN-ShL8A?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_5ryN-ShL8A/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Canal Desenhos Top Clássicos",
+        "url": "https://www.youtube.com/watch?v=_5ryN-ShL8A"
+      }
+    },
+    {
+      "id": "usmJXGzjXBY",
+      "title": "Touché Turtle intro",
+      "url": "https://www.youtube.com/watch?v=usmJXGzjXBY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/usmJXGzjXBY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/usmJXGzjXBY/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "hewey1972",
+        "url": "https://www.youtube.com/watch?v=usmJXGzjXBY"
+      }
+    }
+  ]
+}
