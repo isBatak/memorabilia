@@ -2,9 +2,10 @@ import Link from 'next/link';
 import {ArrowLeft, ExternalLink} from 'lucide-react';
 import {css} from '#styled-system/css';
 import type {ArchiveEntry, ArchiveVideo} from '../lib/archive';
+import {localizedPath, type Locale} from '../lib/i18n';
 import {videoMorph, videoTransitionName} from './video-transition';
 
-export function VideoPage({entry, video}: {entry: ArchiveEntry; video: ArchiveVideo}) {
+export function VideoPage({entry, video, locale}: {entry: ArchiveEntry; video: ArchiveVideo; locale: Locale}) {
   return (
     <section className={css({position: 'fixed', inset: 0, zIndex: 30, w: '100vw', h: '100dvh', minH: '100vh', overflow: 'hidden', bg: 'black', color: 'white', isolation: 'isolate', visibility: 'visible', opacity: 1})}>
       <div
@@ -45,7 +46,7 @@ export function VideoPage({entry, video}: {entry: ArchiveEntry; video: ArchiveVi
         })}
       >
         <Link
-          href={`/${entry.category}/${entry.slug}/`}
+          href={localizedPath(locale, `/${entry.category}/${entry.slug}/`)}
           transitionTypes={['close-video']}
           className={css({
             display: 'inline-flex',

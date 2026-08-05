@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 import {css, cx} from '#styled-system/css';
+import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard} from '../lib/archive';
+import {localizedPath} from '../lib/i18n';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -19,11 +21,12 @@ export function MediaCard({
   onNavigate?: () => void;
 }) {
   const t = useTranslations();
+  const locale = useLocaleChoice();
 
   return (
     <Link
       data-media-card
-      href={`/${item.category}/${item.slug}/`}
+      href={localizedPath(locale, `/${item.category}/${item.slug}/`)}
       onClick={onNavigate}
       aria-label={item.title}
       className={cx(

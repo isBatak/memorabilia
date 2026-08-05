@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {category as getCategory} from 'next/root-params';
 import {CollectionPage} from '../../../components/collection-page';
 import {categories, getArchiveIndex, type Category} from '../../../lib/archive';
 
@@ -10,14 +9,14 @@ const titles: Record<Category, string> = {
   movies: 'Filmovi'
 };
 
-export async function generateMetadata(): Promise<Metadata> {
-  const category = await getCategory();
+export async function generateMetadata({params}: PageProps<'/[lang]/[category]'>): Promise<Metadata> {
+  const {category} = await params;
   if (!categories.includes(category as Category)) return {};
   return {title: titles[category as Category]};
 }
 
-export default async function Page() {
-  const category = await getCategory();
+export default async function Page({params}: PageProps<'/[lang]/[category]'>) {
+  const {category} = await params;
   if (!categories.includes(category as Category)) notFound();
   const {collections} = getArchiveIndex();
   const items = [...collections[category as Category]].sort((a, b) => a.title.localeCompare(b.title, 'hr'));

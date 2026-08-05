@@ -1,8 +1,5 @@
-import '../../../globals.css';
 import {getAllVideoParams} from '../../../../lib/archive';
-import {RootDocument, rootMetadata} from '../../../root-document';
 
-export const metadata = rootMetadata;
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -10,4 +7,6 @@ export function generateStaticParams() {
     .map((category) => ({category}));
 }
 
-export default RootDocument;
+export default function WatchCategoryLayout({children}: LayoutProps<'/[lang]/watch/[category]'>) {
+  return children;
+}

@@ -1,8 +1,13 @@
 import type {Metadata} from 'next';
+import {notFound} from 'next/navigation';
+import {lang as getLang} from 'next/root-params';
 import {AppShell} from '../components/app-shell';
 import {LocaleProvider} from '../components/locale-provider';
 import {ThemeProvider} from '../components/theme-provider';
 import {getArchiveIndex} from '../lib/archive';
+import {isLocale} from '../lib/i18n';
+import en from '../messages/en.json';
+import hr from '../messages/hr.json';
 
 const [githubOwner, githubRepo] = process.env.GITHUB_REPOSITORY?.split('/') || [];
 const githubUrl = githubOwner && githubRepo
@@ -18,13 +23,15 @@ export const rootMetadata: Metadata = {
   twitter: {card: 'summary_large_image', title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', images: [socialImage]}
 };
 
-export function RootDocument({children}: Readonly<{children: React.ReactNode}>) {
+export async function RootDocument({children}: Readonly<{children: React.ReactNode}>) {
+  const locale = await getLang();
+  if (!isLocale(locale)) notFound();
   const {collections} = getArchiveIndex();
   return (
-    <html lang="hr" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <LocaleProvider>
+          <LocaleProvider locale={locale} messages={locale === 'hr' ? hr : en}>
             <AppShell collections={collections}>{children}</AppShell>
           </LocaleProvider>
         </ThemeProvider>
