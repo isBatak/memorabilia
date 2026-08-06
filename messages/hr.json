@@ -4,6 +4,7 @@
     "cartoons": "Crtani filmovi",
     "series": "Serije",
     "movies": "Filmovi",
+    "commercials": "Stare reklame",
     "about": "O arhivi"
   },
   "common": {
@@ -29,11 +30,12 @@
   "home": {
     "eyebrow": "Digitalna videoteka djetinjstva",
     "title": "Vrati program na početak.",
-    "intro": "Memorabilia ponovno pali ekran originalnog bloga — crtani filmovi, serije i filmovi koje smo čekali ispred televizora, sada sačuvani kao otvorena statička arhiva.",
+    "intro": "Memorabilia ponovno pali ekran originalnog bloga — crtani filmovi, serije, filmovi i stare reklame koje smo čekali ispred televizora, sada sačuvani kao otvorena statička arhiva.",
     "featured": "Večeras na programu",
     "cartoonRail": "Dragi crtići",
     "seriesRail": "Drage serije",
     "movieRail": "Dragi filmovi",
+    "commercialRail": "Stare reklame",
     "archiveTitle": "Sjećanja koja ne ovise o serveru.",
     "archiveText": "Arhiva je obnovljena iz snimki izvornog bloga i pretvorena u strukturirane JSON zapise. Bez baze i bez zatvorenog sustava — sadržaj i lokalno sačuvane slike mogu živjeti na bilo kojem statičkom hostingu.",
     "entries": "naslova",
@@ -45,6 +47,7 @@
     "cartoons": "Crtani filmovi koje smo čekali subotom ujutro, složeni na jednom mjestu.",
     "series": "Serije zbog kojih je još jedna epizoda uvijek zvučala kao dobra ideja.",
     "movies": "Filmske večeri, videokasete i naslovi koji su ostali dio odrastanja.",
+    "commercials": "Reklame iz vremena kada smo ih znali napamet i pjevušili dugo nakon programa.",
     "searchPlaceholder": "Pretraži ovu kolekciju…",
     "showing": "Prikazano"
   },

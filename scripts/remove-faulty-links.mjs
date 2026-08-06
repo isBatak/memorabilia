@@ -7,7 +7,7 @@ const index = JSON.parse(await fs.readFile(path.join(apiDirectory, 'index.json')
 let updated = 0;
 let removed = 0;
 
-for (const category of ['cartoons', 'series', 'movies']) {
+for (const category of ['cartoons', 'series', 'movies', 'commercials']) {
   for (const item of index[category]) {
     if (item.status !== 'ok' || !item.file) continue;
     const file = path.join(apiDirectory, item.file);

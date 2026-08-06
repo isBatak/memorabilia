@@ -8,7 +8,8 @@ export const dynamicParams = false;
 const titles: Record<Category, string> = {
   cartoons: 'Crtani filmovi',
   series: 'Serije',
-  movies: 'Filmovi'
+  movies: 'Filmovi',
+  commercials: 'Stare reklame'
 };
 
 export function generateStaticParams() {

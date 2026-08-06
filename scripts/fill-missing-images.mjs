@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const API_ROOT = path.resolve('public/api/v1');
 const IMAGE_ROOT = path.resolve('public/images');
-const categories = ['cartoons', 'series', 'movies'];
-const suffixes = {cartoons: 'crtani film', series: 'TV serija', movies: 'film trailer'};
+const categories = ['cartoons', 'series', 'movies', 'commercials'];
+const suffixes = {cartoons: 'crtani film', series: 'TV serija', movies: 'film trailer', commercials: 'stara reklama'};
 const requestedSlugs = new Set(process.argv.slice(2));
 
 const queryOverrides = {
