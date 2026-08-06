@@ -51,6 +51,8 @@ jobs:
         if: github.event_name != 'pull_request' || github.event.action != 'closed'
         env:
           PAGES_BASE_PATH: ${{ github.event_name == 'pull_request' && format('/{0}/previews/pr-{1}', github.event.repository.name, github.event.pull_request.number) || format('/{0}', github.event.repository.name) }}
+          NEXT_PUBLIC_BUY_ME_A_COFFEE_URL: ${{ vars.NEXT_PUBLIC_BUY_ME_A_COFFEE_URL }}
+          NEXT_PUBLIC_SUPPORT_TOAST_DELAY_MS: ${{ vars.NEXT_PUBLIC_SUPPORT_TOAST_DELAY_MS }}
         run: pnpm run build
 
       - name: Publish preview
