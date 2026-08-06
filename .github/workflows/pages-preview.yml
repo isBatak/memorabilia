@@ -1,32 +1,42 @@
-name: Deploy pull request preview
+name: Deploy GitHub Pages
 
 on:
+  push:
+    branches: [main]
   pull_request:
     types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
+# Every deployment writes to gh-pages. Serialize them so preview and production
+# runs cannot race and overwrite each other's branch state.
 concurrency:
-  group: pages-preview-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
-  preview:
+  deploy:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     environment:
-      name: pull-request-preview
-      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/pr-${{ github.event.pull_request.number }}/
+      name: ${{ github.event_name == 'pull_request' && 'pull-request-preview' || 'github-pages' }}
+      url: ${{ github.event_name == 'pull_request' && format('https://{0}.github.io/{1}/previews/pr-{2}/', github.repository_owner, github.event.repository.name, github.event.pull_request.number) || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
     steps:
-      - name: Check out repository
+      - name: Check out exact source revision
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.sha || github.sha }}
 
       - name: Set up pnpm
-        if: github.event.action != 'closed'
+        if: github.event_name != 'pull_request' || github.event.action != 'closed'
         uses: pnpm/action-setup@v4
 
       - name: Set up Node.js
-        if: github.event.action != 'closed'
+        if: github.event_name != 'pull_request' || github.event.action != 'closed'
         uses: actions/setup-node@v6
         with:
           node-version: 22.13.0
@@ -34,17 +44,17 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        if: github.event.action != 'closed'
+        if: github.event_name != 'pull_request' || github.event.action != 'closed'
         run: pnpm install --frozen-lockfile
 
-      - name: Build preview
-        if: github.event.action != 'closed'
+      - name: Build static site
+        if: github.event_name != 'pull_request' || github.event.action != 'closed'
         env:
-          PAGES_BASE_PATH: /${{ github.event.repository.name }}/previews/pr-${{ github.event.pull_request.number }}
+          PAGES_BASE_PATH: ${{ github.event_name == 'pull_request' && format('/{0}/previews/pr-{1}', github.event.repository.name, github.event.pull_request.number) || format('/{0}', github.event.repository.name) }}
         run: pnpm run build
 
       - name: Publish preview
-        if: github.event.action != 'closed'
+        if: github.event_name == 'pull_request' && github.event.action != 'closed'
         env:
           DEPLOY_MODE: preview
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -52,9 +62,33 @@ jobs:
         run: scripts/deploy-pages.sh
 
       - name: Remove closed preview
-        if: github.event.action == 'closed'
+        if: github.event_name == 'pull_request' && github.event.action == 'closed'
         env:
           DEPLOY_MODE: cleanup
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: scripts/deploy-pages.sh
+
+      - name: Publish production
+        if: github.event_name != 'pull_request'
+        env:
+          DEPLOY_MODE: production
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/deploy-pages.sh
+
+      # GITHUB_TOKEN pushes do not trigger a second Pages build. Deploy the
+      # updated gh-pages tree explicitly from this same workflow run.
+      - name: Check out assembled Pages site
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: pages-site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages-site
+
+      - name: Deploy Pages artifact
+        id: pages
+        uses: actions/deploy-pages@v4

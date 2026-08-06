@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
-import './globals.css';
-import {LocaleProvider} from '../components/locale-provider';
+import {getLocale, getMessages} from 'next-intl/server';
 import {AppShell} from '../components/app-shell';
+import {LocaleProvider} from '../components/locale-provider';
 import {ThemeProvider} from '../components/theme-provider';
 import {getArchiveIndex} from '../lib/archive';
 
@@ -11,7 +11,7 @@ const githubUrl = githubOwner && githubRepo
   : 'http://localhost:3000';
 const socialImage = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/og.png`;
 
-export const metadata: Metadata = {
+export const rootMetadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || githubUrl),
   title: {default: 'Memorabilia — arhiva djetinjstva', template: '%s · Memorabilia'},
   description: 'Crtani filmovi, serije, filmovi i stare reklame iz djetinjstva, sačuvani u Memorabilia arhivi.',
@@ -19,13 +19,15 @@ export const metadata: Metadata = {
   twitter: {card: 'summary_large_image', title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', images: [socialImage]}
 };
 
-export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
+export async function RootDocument({children}: Readonly<{children: React.ReactNode}>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
   const {collections} = getArchiveIndex();
   return (
-    <html lang="hr" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <LocaleProvider>
+          <LocaleProvider locale={locale} messages={messages}>
             <AppShell collections={collections}>{children}</AppShell>
           </LocaleProvider>
         </ThemeProvider>

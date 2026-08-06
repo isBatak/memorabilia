@@ -1,16 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import {usePathname} from 'next/navigation';
-import {useTranslations} from 'next-intl';
+import {usePathname, useRouter} from 'next/navigation';
+import {useLocale, useTranslations} from 'next-intl';
 import {useTheme} from 'next-themes';
 import {useEffect, useMemo, useState} from 'react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
 import {BadgeCent, Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
-import {useLocaleChoice} from './locale-provider';
 import type {ArchiveCard, Category} from '../lib/archive';
+import {localizedPath, type Locale} from '../lib/i18n';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const wordmark = css({
@@ -35,14 +35,16 @@ const navItems = [
 export function AppShell({children, collections}: {children: React.ReactNode; collections: Record<Category, ArchiveCard[]>}) {
   const t = useTranslations();
   const pathname = usePathname();
-  const {locale, setLocale} = useLocaleChoice();
+  const router = useRouter();
+  const locale = useLocale();
   const {resolvedTheme, setTheme} = useTheme();
   const [mounted, setMounted] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const watching = pathname.startsWith('/watch/');
-  const activeSection = pathname === '/' ? 'home' : pathname.split('/').filter(Boolean)[0] || 'home';
+  const routeSegments = pathname.split('/').filter(Boolean);
+  const watching = routeSegments[1] === 'watch';
+  const activeSection = routeSegments[1] || 'home';
   const allItems = useMemo(() => Object.values(collections).flat(), [collections]);
   const results = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase('hr');
@@ -66,6 +68,12 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   const darkTheme = !mounted || resolvedTheme !== 'light';
   const themeLabel = darkTheme ? t('common.lightTheme') : t('common.darkTheme');
 
+  function switchLocale(nextLocale: Locale) {
+    const route = routeSegments.slice(1).join('/');
+    router.replace(`/${nextLocale}/${route}${route ? '/' : ''}`);
+    setMenuOpen(false);
+  }
+
   const sidebar = css({
     position: 'fixed', top: 0, bottom: 0, left: 0, zIndex: 40, w: '15.5rem', bg: 'white/96',
     borderRight: '1px solid', borderColor: 'gray.200', px: 5, py: 6, display: 'flex', flexDirection: 'column',
@@ -77,7 +85,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   return (
     <div className={css({minH: '100vh', bg: 'gray.50', color: 'gray.950', _dark: {bg: 'black', color: 'gray.50'}})}>
       {!watching && <aside className={sidebar} aria-label="Glavna navigacija">
-        <Link href="/" aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
+        <Link href={localizedPath(locale)} aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
           MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.500'})}>.</span>
         </Link>
 
@@ -87,7 +95,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
             return (
               <Link
                 key={key}
-                href={href}
+                href={localizedPath(locale, href)}
                 aria-current={active ? 'page' : undefined}
                 onClick={() => setMenuOpen(false)}
                 className={cx(
@@ -117,7 +125,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
           <div>
           <p className={css({color: 'gray.500', fontSize: '10px', textTransform: 'uppercase', letterSpacing: '.13em', mb: 2})}>{t('common.language')}</p>
           <div className={css({display: 'flex', bg: 'gray.100', p: 1, borderRadius: '10px', _dark: {bg: 'gray.900'}})}>
-            {(['hr', 'en'] as const).map((code) => <button key={code} onClick={() => setLocale(code)} className={cx(css({flex: 1, border: 0, borderRadius: '7px', py: 1.5, fontSize: 'xs', fontWeight: 800, cursor: 'pointer', transition: 'all .2s'}), locale === code ? css({bg: 'gray.950', color: 'white', boxShadow: '0 2px 8px token(colors.black/16)', _dark: {bg: 'lime.300', color: 'black'}}) : css({bg: 'transparent', color: 'gray.600', _hover: {color: 'gray.950'}, _dark: {color: 'gray.400', _hover: {color: 'gray.50'}}}))}>{code.toUpperCase()}</button>)}
+            {(['hr', 'en'] as const).map((code) => <button key={code} onClick={() => switchLocale(code)} className={cx(css({flex: 1, border: 0, borderRadius: '7px', py: 1.5, fontSize: 'xs', fontWeight: 800, cursor: 'pointer', transition: 'all .2s'}), locale === code ? css({bg: 'gray.950', color: 'white', boxShadow: '0 2px 8px token(colors.black/16)', _dark: {bg: 'lime.300', color: 'black'}}) : css({bg: 'transparent', color: 'gray.600', _hover: {color: 'gray.950'}, _dark: {color: 'gray.400', _hover: {color: 'gray.50'}}}))}>{code.toUpperCase()}</button>)}
           </div>
           </div>
         </div>
@@ -127,7 +135,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
 
       {!watching && <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, h: 16, px: 4, display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'gray.100', bg: 'linear-gradient(to bottom, token(colors.blackAlpha.950), token(colors.blackAlpha.700), transparent)'})}>
         <button aria-label={t('common.openMenu')} onClick={() => setMenuOpen(true)} className={css({border: 0, bg: 'transparent', color: 'gray.100', p: 2})}><Menu/></button>
-        <Link href="/" aria-label="Memorabilia — početna" className={cx(wordmark, css({color: 'gray.100'}))}>MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.300'})}>.</span></Link>
+        <Link href={localizedPath(locale)} aria-label="Memorabilia — početna" className={cx(wordmark, css({color: 'gray.100'}))}>MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.300'})}>.</span></Link>
         <div className={hstack({gap: 0})}>
           <button disabled={!mounted} aria-label={themeLabel} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'gray.100', p: 2}))}>{darkTheme ? <Sun/> : <Moon/>}</button>
           <button aria-label={t('common.search')} onClick={() => setSearchOpen(true)} className={cx(button({variant: 'ghost', size: 'sm'}), css({colorPalette: 'gray', border: 0, bg: 'transparent', color: 'gray.100', p: 2}))}><Search/></button>
@@ -146,7 +154,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
             </div>
             <p className={css({mt: 5, mb: 4, color: 'gray.600', fontSize: 'sm', _dark: {color: 'gray.400'}})}>{results.length} / {allItems.length}</p>
             <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', sm: 'repeat(2,1fr)', lg: 'repeat(3,1fr)'}, gap: 3})}>
-              {results.map((item) => <Link key={`${item.category}-${item.slug}`} href={`/${item.category}/${item.slug}/`} onClick={() => {setSearchOpen(false); setQuery('');}} className={css({display: 'flex', gap: 3, alignItems: 'center', p: 3, borderRadius: '12px', bg: 'gray.100', border: '1px solid transparent', transition: 'all .2s', _hover: {borderColor: 'lime.500', bg: 'lime.50', transform: 'translateY(-2px)'}, _dark: {bg: 'gray.900', _hover: {borderColor: 'lime.500', bg: 'gray.800'}}})}>
+              {results.map((item) => <Link key={`${item.category}-${item.slug}`} href={localizedPath(locale, `/${item.category}/${item.slug}/`)} onClick={() => {setSearchOpen(false); setQuery('');}} className={css({display: 'flex', gap: 3, alignItems: 'center', p: 3, borderRadius: '12px', bg: 'gray.100', border: '1px solid transparent', transition: 'all .2s', _hover: {borderColor: 'lime.500', bg: 'lime.50', transform: 'translateY(-2px)'}, _dark: {bg: 'gray.900', _hover: {borderColor: 'lime.500', bg: 'gray.800'}}})}>
                 <div className={css({w: 20, aspectRatio: '16/10', borderRadius: '8px', overflow: 'hidden', bg: 'gray.900', flexShrink: 0})}>{item.image ? <img src={`${basePath}${item.image}`} alt="" className={css({w: '100%', h: '100%', objectFit: 'cover'})}/> : null}</div>
                 <span><strong className={css({display: 'block', fontSize: 'sm', lineClamp: 1})}>{item.title}</strong><small className={css({color: 'gray.600', textTransform: 'uppercase', fontSize: '9px', letterSpacing: '.1em', _dark: {color: 'gray.400'}})}>{t(`nav.${item.category}`)}</small></span>
               </Link>)}

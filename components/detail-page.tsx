@@ -1,18 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import {ArrowLeft, ArrowUpRight, CalendarDays, CirclePlay} from 'lucide-react';
 import {css} from '#styled-system/css';
 import {ArchiveGallery} from './archive-gallery';
 import {MediaCard} from './media-card';
 import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
+import {localizedPath} from '../lib/i18n';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export function DetailPage({entry, related}: {entry: ArchiveEntry; related: ArchiveCard[]}) {
   const t = useTranslations();
+  const locale = useLocale();
   const hero = entry.images.find((image) => image.localUrl)?.localUrl;
   const article = entry.paragraphs?.[0] || '';
   const sections = article.split(/\n\s*\n/).map((part) => part.trim()).filter(Boolean);
@@ -24,7 +26,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
         {hero ? <img src={`${basePath}${hero}`} alt="" className={css({position: 'absolute', inset: 0, w: '100%', h: '100%', objectFit: 'cover', objectPosition: 'center 28%', opacity: .72, filter: 'saturate(.76)'})}/> : <div className={css({position: 'absolute', inset: 0, bg: 'radial-gradient(circle at 70% 30%, token(colors.gray.700) 0%, token(colors.gray.900) 40%, token(colors.black) 75%)'})}/>}
         <div className={css({position: 'absolute', inset: 0, bg: 'linear-gradient(to top, token(colors.black) 3%, token(colors.black/68) 44%, token(colors.black/10) 82%), linear-gradient(90deg, token(colors.black/72), transparent 75%)'})}/>
         <div className={css({position: 'relative', zIndex: 1, w: '100%', px: {base: 5, md: 9}, pb: {base: 9, md: 12}, pt: 24})}>
-          <Link href={`/${entry.category}/`} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.300', fontSize: 'sm', mb: 8, _hover: {color: 'lime.300'}})}><ArrowLeft size={17}/>{t('common.back')}</Link>
+          <Link href={localizedPath(locale, `/${entry.category}/`)} className={css({display: 'inline-flex', alignItems: 'center', gap: 2, color: 'gray.300', fontSize: 'sm', mb: 8, _hover: {color: 'lime.300'}})}><ArrowLeft size={17}/>{t('common.back')}</Link>
           <p className={css({color: 'lime.300', fontSize: 'xs', fontWeight: 850, letterSpacing: '.15em', textTransform: 'uppercase', mb: 3})}>{t('detail.archiveEntry')} · {t(`nav.${entry.category}`)}</p>
           <h1 className={css({fontFamily: 'display', fontSize: {base: '4xl', sm: '6xl', md: '7xl'}, lineHeight: .94, letterSpacing: '-.06em', maxW: '55rem'})}>{entry.title}</h1>
           <div className={css({display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 5, mt: 6, color: 'gray.300', fontSize: 'sm'})}>
@@ -33,7 +35,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
           </div>
         </div>
       </header>
-      {!!entry.videos?.length && <section className={css({bg:'gray.950',color:'white',px:{base:5,md:9},py:10})}><h2 className={css({fontFamily:'display',fontSize:'3xl',mb:6})}>{t('detail.watch')}</h2><div className={css({display:'flex',gap:4,overflowX:'auto'})}>{entry.videos.map(video=><Link key={`${video.source.type}:${video.id}`} transitionTypes={['watch-video']} href={`/watch/${entry.category}/${entry.slug}/${video.source.type}/${video.id}`} className={css({flex:'0 0 min(82vw,23rem)'})}><div style={{viewTransitionName:videoTransitionName(video.id)}} className={css({viewTransitionClass:videoMorph,position:'relative',aspectRatio:'16/9',overflow:'hidden',borderRadius:'12px'})}><img src={video.thumbnailUrl} alt="" className={css({w:'100%',h:'100%',objectFit:'cover'})}/><CirclePlay className={css({position:'absolute',left:4,bottom:4})}/></div><h3 className={css({mt:3,fontWeight:750})}>{video.title}</h3><p className={css({color:'gray.400',fontSize:'xs'})}>{video.source.name||video.source.type}</p></Link>)}</div></section>}
+      {!!entry.videos?.length && <section className={css({bg:'gray.950',color:'white',px:{base:5,md:9},py:10})}><h2 className={css({fontFamily:'display',fontSize:'3xl',mb:6})}>{t('detail.watch')}</h2><div className={css({display:'flex',gap:4,overflowX:'auto'})}>{entry.videos.map(video=><Link key={`${video.source.type}:${video.id}`} transitionTypes={['watch-video']} href={localizedPath(locale, `/watch/${entry.category}/${entry.slug}/${video.source.type}/${video.id}/`)} className={css({flex:'0 0 min(82vw,23rem)'})}><div style={{viewTransitionName:videoTransitionName(video.id)}} className={css({viewTransitionClass:videoMorph,position:'relative',aspectRatio:'16/9',overflow:'hidden',borderRadius:'12px'})}><img src={video.thumbnailUrl} alt="" className={css({w:'100%',h:'100%',objectFit:'cover'})}/><CirclePlay className={css({position:'absolute',left:4,bottom:4})}/></div><h3 className={css({mt:3,fontWeight:750})}>{video.title}</h3><p className={css({color:'gray.400',fontSize:'xs'})}>{video.source.name||video.source.type}</p></Link>)}</div></section>}
 
       <div className={css({display: 'grid', gridTemplateColumns: {base: '1fr', xl: 'minmax(0, 46rem) 18rem'}, gap: {base: 10, xl: 16}, px: {base: 5, md: 9}, py: {base: 12, md: 18}, maxW: '88rem'})}>
         <section>

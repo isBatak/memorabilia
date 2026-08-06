@@ -1,9 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {CollectionPage} from '../../components/collection-page';
-import {categories, getArchiveIndex, type Category} from '../../lib/archive';
-
-export const dynamicParams = false;
+import {CollectionPage} from '../../../components/collection-page';
+import {categories, getArchiveIndex, type Category} from '../../../lib/archive';
 
 const titles: Record<Category, string> = {
   cartoons: 'Crtani filmovi',
@@ -12,17 +10,13 @@ const titles: Record<Category, string> = {
   commercials: 'Stare reklame'
 };
 
-export function generateStaticParams() {
-  return categories.map((category) => ({category}));
-}
-
-export async function generateMetadata({params}: {params: Promise<{category: string}>}): Promise<Metadata> {
+export async function generateMetadata({params}: PageProps<'/[lang]/[category]'>): Promise<Metadata> {
   const {category} = await params;
   if (!categories.includes(category as Category)) return {};
   return {title: titles[category as Category]};
 }
 
-export default async function Page({params}: {params: Promise<{category: string}>}) {
+export default async function Page({params}: PageProps<'/[lang]/[category]'>) {
   const {category} = await params;
   if (!categories.includes(category as Category)) notFound();
   const {collections} = getArchiveIndex();
