@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-export const categories = ['cartoons', 'series', 'movies'] as const;
+export const categories = ['cartoons', 'series', 'movies', 'commercials'] as const;
 export type Category = (typeof categories)[number];
 
 type IndexItem = {
@@ -75,7 +75,7 @@ export function getArchiveIndex() {
           slug: entry.slug || path.basename(item.file, '.json'),
           category,
           contentStatus: item.contentStatus,
-          image: publicImage(entry.images?.find((image) => image.localUrl)?.localUrl),
+          image: publicImage(entry.images?.find((image) => image.localUrl)?.localUrl) || entry.videos?.[0]?.thumbnailUrl || null,
           summary: excerpt(entry)
         };
       })

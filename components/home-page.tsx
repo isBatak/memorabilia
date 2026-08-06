@@ -74,6 +74,7 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
         <Rail id="cartoons" title={t('home.cartoonRail')} items={[...collections.cartoons].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
         <Rail id="series" title={t('home.seriesRail')} items={[...collections.series].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
         <Rail id="movies" title={t('home.movieRail')} items={[...collections.movies].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
+        <Rail id="commercials" title={t('home.commercialRail')} items={[...collections.commercials].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)))}/>
       </div>
 
       <section id="about" className={css({mx: {base: 5, md: 9}, my: {base: 16, md: 24}, borderRadius: {base: '22px', md: '30px'}, overflow: 'hidden', bg: 'lime.300', color: 'black', p: {base: 6, md: 12}, position: 'relative', boxShadow: '0 24px 70px token(colors.lime.500/18)'})}>
@@ -83,9 +84,9 @@ export function HomePage({collections, counts, imageCount}: {collections: Record
           <h2 className={css({fontFamily: 'display', fontSize: {base: '3xl', md: '5xl'}, lineHeight: 1, letterSpacing: '-.05em', mt: 6})}>{t('home.archiveTitle')}</h2>
           <p className={css({maxW: '48rem', mt: 6, fontSize: {base: 'md', md: 'lg'}, lineHeight: 1.65, color: 'black/72'})}>{t('home.archiveText')}</p>
           <div className={css({display: 'grid', gridTemplateColumns: {base: 'repeat(3,1fr)'}, gap: 3, mt: 10, pt: 8, borderTop: '1px solid', borderColor: 'black/18'})}>
-            <div><strong className={css({display: 'block', fontFamily: 'display', fontSize: {base: '2xl', md: '4xl'}})}>{counts.cartoons + counts.series + counts.movies}</strong><span className={css({fontSize: {base: '10px', md: 'sm'}, fontWeight: 700})}>{t('home.entries')}</span></div>
+            <div><strong className={css({display: 'block', fontFamily: 'display', fontSize: {base: '2xl', md: '4xl'}})}>{Object.values(counts).reduce((total, count) => total + count, 0)}</strong><span className={css({fontSize: {base: '10px', md: 'sm'}, fontWeight: 700})}>{t('home.entries')}</span></div>
             <div><strong className={css({display: 'block', fontFamily: 'display', fontSize: {base: '2xl', md: '4xl'}})}>{imageCount}+</strong><span className={css({fontSize: {base: '10px', md: 'sm'}, fontWeight: 700})}>{t('home.images')}</span></div>
-            <div><strong className={css({display: 'block', fontFamily: 'display', fontSize: {base: '2xl', md: '4xl'}})}>03</strong><span className={css({fontSize: {base: '10px', md: 'sm'}, fontWeight: 700})}>{t('home.categories')}</span></div>
+            <div><strong className={css({display: 'block', fontFamily: 'display', fontSize: {base: '2xl', md: '4xl'}})}>{Object.keys(collections).length.toString().padStart(2, '0')}</strong><span className={css({fontSize: {base: '10px', md: 'sm'}, fontWeight: 700})}>{t('home.categories')}</span></div>
           </div>
         </div>
       </section>

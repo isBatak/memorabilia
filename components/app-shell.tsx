@@ -8,7 +8,7 @@ import {useEffect, useMemo, useState} from 'react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
-import {Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
+import {BadgeCent, Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
 import type {ArchiveCard, Category} from '../lib/archive';
 import {localizedPath, type Locale} from '../lib/i18n';
 
@@ -28,7 +28,8 @@ const navItems = [
   {key: 'home', href: '/', icon: Home},
   {key: 'cartoons', href: '/cartoons/', icon: Tv},
   {key: 'series', href: '/series/', icon: Clapperboard},
-  {key: 'movies', href: '/movies/', icon: Film}
+  {key: 'movies', href: '/movies/', icon: Film},
+  {key: 'commercials', href: '/commercials/', icon: BadgeCent}
 ] as const;
 
 export function AppShell({children, collections}: {children: React.ReactNode; collections: Record<Category, ArchiveCard[]>}) {

@@ -6,7 +6,8 @@ import {categories, getArchiveIndex, type Category} from '../../../lib/archive';
 const titles: Record<Category, string> = {
   cartoons: 'Crtani filmovi',
   series: 'Serije',
-  movies: 'Filmovi'
+  movies: 'Filmovi',
+  commercials: 'Stare reklame'
 };
 
 export async function generateMetadata({params}: PageProps<'/[lang]/[category]'>): Promise<Metadata> {

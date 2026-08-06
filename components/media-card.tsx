@@ -8,6 +8,10 @@ import {localizedPath} from '../lib/i18n';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+function imageSource(image: string) {
+  return image.startsWith('http') ? image : `${basePath}${image}`;
+}
+
 export function MediaCard({
   item,
   priority = false,
@@ -62,7 +66,7 @@ export function MediaCard({
     >
       {item.image ? (
         <img
-          src={`${basePath}${item.image}`}
+          src={imageSource(item.image)}
           alt=""
           loading={priority ? 'eager' : 'lazy'}
           className={css({

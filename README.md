@@ -2,7 +2,7 @@
 
 **Memorabilia** is an effort to revive the original Memorabilia blog and
 modernize its content for the web today. It preserves articles about cartoons,
-television series, and films while turning them into structured data that can be
+television series, films, and old commercials while turning them into structured data that can be
 maintained, corrected, and expanded over time.
 
 The initial dataset was recovered from snapshots of the original blog in the
@@ -17,11 +17,12 @@ server or database required to read it, so the complete archive can be hosted on
 any static file service and consumed directly by websites, applications, or
 other preservation projects.
 
-The API separates the archive into three collections:
+The API separates the archive into four collections:
 
 - `series` — television series
 - `cartoons` — animated series and cartoons
 - `movies` — films from childhood
+- `commercials` — old television commercials
 
 Entries can include the original article text, metadata, images, source
 information, and locally preserved media. Entries for which only a title has
@@ -78,6 +79,7 @@ GET /api/v1/navigation.json
 GET /api/v1/series/:slug.json
 GET /api/v1/cartoons/:slug.json
 GET /api/v1/movies/:slug.json
+GET /api/v1/commercials/:slug.json
 ```
 
 `index.json` provides the complete categorized index and references every entry
@@ -95,6 +97,7 @@ public/
 │       ├── navigation.json
 │       ├── series/
 │       ├── cartoons/
-│       └── movies/
+│       ├── movies/
+│       └── commercials/
 └── images/
 ```

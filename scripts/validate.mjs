@@ -8,7 +8,8 @@ const PUBLIC_DIR = path.resolve(process.env.PUBLIC_DIR ?? 'public');
 const CATEGORIES = {
   series: 'series-post',
   cartoons: 'cartoon-post',
-  movies: 'movie-post'
+  movies: 'movie-post',
+  commercials: 'commercial-post'
 };
 
 async function readJson(file) {
