@@ -8,7 +8,9 @@ import {useEffect, useMemo, useState} from 'react';
 import {css, cx} from '#styled-system/css';
 import {button} from '#styled-system/recipes';
 import {hstack} from '#styled-system/patterns';
-import {BadgeCent, Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
+import {BadgeCent, CircleHelp, Clapperboard, Film, Home, Menu, Moon, Search, Sun, Tv, X} from './icons';
+import {SupportButton} from './support-button';
+import {SupportToast} from './support-toast';
 import type {ArchiveCard, Category} from '../lib/archive';
 import {localizedPath, type Locale} from '../lib/i18n';
 
@@ -29,7 +31,8 @@ const navItems = [
   {key: 'cartoons', href: '/cartoons/', icon: Tv},
   {key: 'series', href: '/series/', icon: Clapperboard},
   {key: 'movies', href: '/movies/', icon: Film},
-  {key: 'commercials', href: '/commercials/', icon: BadgeCent}
+  {key: 'commercials', href: '/commercials/', icon: BadgeCent},
+  {key: 'about', href: '/about/', icon: CircleHelp}
 ] as const;
 
 export function AppShell({children, collections}: {children: React.ReactNode; collections: Record<Category, ArchiveCard[]>}) {
@@ -116,6 +119,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
         </button>
 
         <div className={css({mt: 'auto', display: 'grid', gap: 5})}>
+          <SupportButton compact/>
           <div>
             <p className={css({color: 'gray.500', fontSize: '10px', textTransform: 'uppercase', letterSpacing: '.13em', mb: 2})}>{t('common.theme')}</p>
             <button disabled={!mounted} onClick={() => setTheme(darkTheme ? 'light' : 'dark')} aria-label={themeLabel} className={cx(button({variant: 'outline', size: 'sm'}), css({w: '100%', justifyContent: 'flex-start', border: '1px solid', borderColor: 'gray.300', bg: 'gray.50', color: 'gray.900', borderRadius: '10px', fontSize: 'xs', fontWeight: 750, _hover: {bg: 'lime.50', borderColor: 'lime.500'}, _dark: {bg: 'gray.950', color: 'gray.100', borderColor: 'gray.700', _hover: {bg: 'gray.900', borderColor: 'lime.500'}}, _disabled: {cursor: 'default'}}))}>
@@ -163,6 +167,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
           </div>
         </div>
       )}
+      {!watching && <SupportToast/>}
     </div>
   );
 }
