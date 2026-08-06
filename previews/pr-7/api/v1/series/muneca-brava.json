@@ -1,0 +1,25 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "Muneca Brava",
+  "slug": "muneca-brava",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Muneca Brava",
+      "url": "https://i.ytimg.com/vi/6zA35gyFI8A/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/muneca-brava/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:01.329Z"
+  },
+  "rawArticleHtml": null
+}

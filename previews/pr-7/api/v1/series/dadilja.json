@@ -1,0 +1,25 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "Dadilja",
+  "slug": "dadilja",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Dadilja",
+      "url": "https://i.ytimg.com/vi/y-WRr0z4TVg/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/dadilja/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:17:59.594Z"
+  },
+  "rawArticleHtml": null
+}

@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "The Witches Of Eastwick",
+  "slug": "the-witches-of-eastwick",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "The Witches Of Eastwick",
+      "url": "https://i.ytimg.com/vi/mLs1y_KSTKk/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/the-witches-of-eastwick/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:49.398Z"
+  },
+  "rawArticleHtml": null
+}

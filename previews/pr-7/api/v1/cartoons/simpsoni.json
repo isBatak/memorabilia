@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Simpsoni",
+  "slug": "simpsoni",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Simpsoni",
+      "url": "https://i.ytimg.com/vi/GbM60spz3ew/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/simpsoni/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:37.572Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "VZ3zRW0any0",
+      "title": "SIMPSONI THE WORD 1989 VHS 2 😍",
+      "url": "https://www.youtube.com/watch?v=VZ3zRW0any0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VZ3zRW0any0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VZ3zRW0any0/hqdefault.jpg",
+      "durationText": "0:15",
+      "publishedText": "prije 6 godina",
+      "source": {
+        "type": "youtube",
+        "name": "Danijel Šestić",
+        "url": "https://www.youtube.com/@danijelsestic6817"
+      }
+    }
+  ]
+}
