@@ -59,6 +59,35 @@
     "watch": "Watch now",
     "videos": "videos"
   },
+  "about": {
+    "eyebrow": "About the archive",
+    "title": "Keeping childhood memories within reach.",
+    "intro": "Memorabilia revives the original blog as a modern, open archive of cartoons, television series, films, and old commercials that shaped our childhoods.",
+    "preservation": {
+      "title": "Preserved from the old web",
+      "text": "The first collection was recovered from snapshots of the original Memorabilia blog in the Wayback Machine, including article text, images, and source information wherever they survived."
+    },
+    "open": {
+      "title": "Open by design",
+      "text": "Every entry is stored as static JSON. There is no database or closed platform, so the archive can be read, reused, and hosted by other preservation projects."
+    },
+    "growing": {
+      "title": "Still growing",
+      "text": "The recovered blog is a starting point. Missing media can be restored, incomplete records expanded, and new memories added as the collection continues to evolve."
+    },
+    "origin": {
+      "title": "Four collections",
+      "text": "The archive brings together cartoons, television series, childhood films, and old commercials—including title-only records waiting for their stories to be rediscovered."
+    },
+    "supportTitle": "Help keep the archive alive",
+    "supportText": "Maintaining the data, restoring media, and improving the website takes time. If Memorabilia brought back a good memory, you can support its continued preservation."
+  },
+  "support": {
+    "button": "Buy me a coffee",
+    "title": "Enjoying the archive?",
+    "toast": "A small coffee helps keep old memories preserved, organized, and available to everyone.",
+    "close": "Dismiss support message"
+  },
   "footer": {
     "copy": "Made for everyone who ran home before the opening credits.",
     "data": "Open JSON API"
