@@ -14,7 +14,14 @@
     "Animirana serija prati Kapetana Planeta i petero mladih Planeteera kojima Gaia povjerava prstenove s moćima zemlje, vatre, vjetra, vode i srca. Kada udruže snage, mogu prizvati junaka koji se bori protiv zagađenja i drugih prijetnji Zemlji.",
     "Kapetan Planet spaja pustolovinu i ekološke poruke, a svaka epizoda naglašava da zaštita planeta ovisi o zajedničkom djelovanju. Serija je ostala zapamćena po upečatljivoj uvodnoj špici i poruci: moć je vaša."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Kapetan Planet",
+      "url": "https://i.ytimg.com/vi/2tR4w8-O8g0/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,
@@ -22,5 +29,34 @@
     "scrapedAt": "2026-08-08T10:30:00.000Z"
   },
   "rawArticleHtml": null,
-  "videos": []
+  "videos": [
+    {
+      "id": "2tR4w8-O8g0",
+      "title": "Captain Planet Earth Day MARATHON",
+      "url": "https://www.youtube.com/watch?v=2tR4w8-O8g0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2tR4w8-O8g0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2tR4w8-O8g0/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Generation WB",
+        "url": "https://www.youtube.com/@GenerationWB"
+      }
+    },
+    {
+      "id": "0e-NdvLuJzo",
+      "title": "Captain Planet And The Planeteers Intro (1990)",
+      "url": "https://www.youtube.com/watch?v=0e-NdvLuJzo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/0e-NdvLuJzo?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0e-NdvLuJzo/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=0e-NdvLuJzo"
+      }
+    }
+  ]
 }
