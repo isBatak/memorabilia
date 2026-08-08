@@ -9,6 +9,7 @@ import {MediaCard} from './media-card';
 import {videoMorph, videoTransitionName} from './video-transition';
 import type {ArchiveCard, ArchiveEntry} from '../lib/archive';
 import {localizedPath} from '../lib/i18n';
+import {SupportButton} from './support-button';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -50,6 +51,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
             <div><dt className={css({color: 'gray.600', fontSize: 'xs', _dark: {color: 'gray.400'}})}>{t('common.gallery')}</dt><dd className={css({mt: 1})}>{entry.images.length}</dd></div>
           </dl>
           {source && <a href={source} target="_blank" rel="noreferrer" className={css({mt: 6, display: 'inline-flex', alignItems: 'center', gap: 2, color: 'lime.700', fontSize: 'sm', fontWeight: 750, _hover: {color: 'lime.600'}, _dark: {color: 'lime.300'}})}>{t('common.originalSource')}<ArrowUpRight size={15}/></a>}
+          <div className={css({mt: 6})}><SupportButton compact/></div>
         </aside>
       </div>
 

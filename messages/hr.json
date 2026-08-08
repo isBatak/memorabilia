@@ -59,6 +59,35 @@
     "watch": "Gledaj sada",
     "videos": "videozapisa"
   },
+  "about": {
+    "eyebrow": "O arhivi",
+    "title": "Čuvamo uspomene iz djetinjstva nadohvat ruke.",
+    "intro": "Memorabilia oživljava izvorni blog kao modernu, otvorenu arhivu crtanih filmova, serija, filmova i starih reklama koje su obilježile naše djetinjstvo.",
+    "preservation": {
+      "title": "Sačuvano sa starog weba",
+      "text": "Početna zbirka obnovljena je iz snimki izvornog bloga Memorabilia u Wayback Machineu, uključujući tekstove, slike i podatke o izvorima koji su preživjeli."
+    },
+    "open": {
+      "title": "Otvoreno po dizajnu",
+      "text": "Svaki je zapis pohranjen kao statički JSON. Nema baze podataka ni zatvorene platforme, pa arhivu mogu čitati, ponovno koristiti i ugostiti i drugi projekti očuvanja."
+    },
+    "growing": {
+      "title": "Arhiva i dalje raste",
+      "text": "Obnovljeni blog samo je početak. Mediji koji nedostaju mogu se vratiti, nepotpuni zapisi nadopuniti, a nove uspomene dodavati kako zbirka raste."
+    },
+    "origin": {
+      "title": "Četiri zbirke",
+      "text": "Arhiva okuplja crtane filmove, televizijske serije, filmove iz djetinjstva i stare reklame — uključujući zapise kojima tek treba ponovno pronaći priču."
+    },
+    "supportTitle": "Pomogni da arhiva ostane živa",
+    "supportText": "Održavanje podataka, obnova medija i poboljšavanje stranice traže vrijeme. Ako ti je Memorabilia vratila lijepu uspomenu, možeš podržati njezino daljnje očuvanje."
+  },
+  "support": {
+    "button": "Počasti me kavom",
+    "title": "Uživaš u arhivi?",
+    "toast": "Mala kava pomaže da stare uspomene ostanu sačuvane, uređene i dostupne svima.",
+    "close": "Zatvori poruku podrške"
+  },
   "footer": {
     "copy": "Napravljeno za sve koji su trčali kući prije uvodne špice.",
     "data": "Otvori JSON API"

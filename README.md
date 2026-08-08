@@ -49,6 +49,20 @@ pnpm build    # validate data and export the site to out/
 pnpm preview  # serve the finished static export
 ```
 
+### Website environment variables
+
+Copy `.env.example` to `.env.local` for local development. The optional support
+features are configured at build time with:
+
+- `NEXT_PUBLIC_BUY_ME_A_COFFEE_URL` — full URL of the Buy Me a Coffee page. The
+  support buttons and prompt are hidden when it is empty.
+- `NEXT_PUBLIC_SUPPORT_TOAST_DELAY_MS` — delay before the support prompt appears;
+  defaults to `30000` milliseconds.
+
+For GitHub Pages, add variables with these names under **Settings → Secrets and
+variables → Actions → Variables**. Both production and pull-request previews
+read them during the static build.
+
 ## GitHub Pages deployment
 
 The GitHub Actions workflows publish the production site from `main`. Pull
