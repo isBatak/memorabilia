@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-05T15:23:10.000Z",
+  "generatedAt": "2026-08-08T10:30:00.000Z",
   "counts": {
-    "discovered": 147,
-    "successful": 147,
+    "discovered": 153,
+    "successful": 153,
     "failed": 0,
     "byCategory": {
-      "series": 39,
-      "cartoons": 84,
+      "series": 41,
+      "cartoons": 88,
       "movies": 21,
       "commercials": 3
     }
@@ -123,6 +123,22 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "series/i-to-mi-je-neki-zivot.json"
+    },
+    {
+      "title": "Inspektor Rex",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/inspektor-rex.json"
+    },
+    {
+      "title": "Kobra 11",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/kobra-11.json"
     },
     {
       "title": "Moja obitelj",
@@ -335,12 +351,28 @@
       "file": "cartoons/a-je-to.json"
     },
     {
-      "title": "Profesor Baltazar",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
-      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
+      "title": "Action Man",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/action-man.json"
+    },
+    {
+      "title": "Bajum Badum",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
       "status": "ok",
       "contentStatus": "scraped",
-      "file": "cartoons/profesor-baltazar.json"
+      "file": "cartoons/bajum-badum.json"
+    },
+    {
+      "title": "Banane u pidžami",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/banane-u-pidzami.json"
     },
     {
       "title": "Barney",
@@ -519,14 +551,6 @@
       "file": "cartoons/graskograd.json"
     },
     {
-      "title": "Kako je Grinch ukrao Božić",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
-      "originalUrl": "http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
-      "status": "ok",
-      "contentStatus": "scraped",
-      "file": "cartoons/kako-je-grinch-ukrao-bozic.json"
-    },
-    {
       "title": "Gustav",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/02/1620657377/gustav.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/02/1620657377/gustav.html",
@@ -559,6 +583,22 @@
       "file": "cartoons/kakav-nered.json"
     },
     {
+      "title": "Kako je Grinch ukrao Božić",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/12/1621903942/kako-je-grinch-ukrao-bozic.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/kako-je-grinch-ukrao-bozic.json"
+    },
+    {
+      "title": "Kapetan Planet",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/kapetan-planet.json"
+    },
+    {
       "title": "Kapetan Zaspan",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html",
@@ -581,14 +621,6 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/kralj-lavova.json"
-    },
-    {
-      "title": "Bajum Badum",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
-      "originalUrl": "http://memorabilia.blog.hr/2006/04/1620869538/bajum-badum.html",
-      "status": "ok",
-      "contentStatus": "scraped",
-      "file": "cartoons/bajum-badum.json"
     },
     {
       "title": "Labuđa princeza",
@@ -639,6 +671,14 @@
       "file": "cartoons/majstor-fantaz.json"
     },
     {
+      "title": "Maksim",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/maksim.json"
+    },
+    {
       "title": "Mala sirena",
       "archiveUrl": null,
       "originalUrl": null,
@@ -655,12 +695,12 @@
       "file": "cartoons/mali-leteci-medvjedici.json"
     },
     {
-      "title": "Maksim",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
-      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "title": "Medvjedići dobrog srca",
+      "archiveUrl": null,
+      "originalUrl": null,
       "status": "ok",
-      "contentStatus": "scraped",
-      "file": "cartoons/maksim.json"
+      "contentStatus": "title-only",
+      "file": "cartoons/medvjedici-dobrog-srca.json"
     },
     {
       "title": "Micek Trtko",
@@ -775,6 +815,14 @@
       "file": "cartoons/pink-panther.json"
     },
     {
+      "title": "Profesor Baltazar",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/profesor-baltazar.json"
+    },
+    {
       "title": "Ptica trkačica",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/09/1621558967/ptica-trkacica.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/09/1621558967/ptica-trkacica.html",
@@ -831,20 +879,20 @@
       "file": "cartoons/slonica-nelica.json"
     },
     {
-      "title": "Snješko Bijeliš",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
-      "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
-      "status": "ok",
-      "contentStatus": "scraped",
-      "file": "cartoons/snjesko-bijelis.json"
-    },
-    {
       "title": "Snorkijevci",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
       "originalUrl": "http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
       "status": "ok",
       "contentStatus": "scraped",
       "file": "cartoons/snorkijevci.json"
+    },
+    {
+      "title": "Snješko Bijeliš",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
+      "status": "ok",
+      "contentStatus": "scraped",
+      "file": "cartoons/snjesko-bijelis.json"
     },
     {
       "title": "Sport Billy",
@@ -951,12 +999,12 @@
       "file": "cartoons/voltron.json"
     },
     {
-      "title": "Zekoslavne priče",
-      "archiveUrl": null,
-      "originalUrl": null,
+      "title": "Wumi",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
       "status": "ok",
-      "contentStatus": "title-only",
-      "file": "cartoons/zekoslavne-price.json"
+      "contentStatus": "scraped",
+      "file": "cartoons/wumi.json"
     },
     {
       "title": "Zekoslav Mrkva",
@@ -967,12 +1015,12 @@
       "file": "cartoons/zekoslav-mrkva.json"
     },
     {
-      "title": "Zvonko",
+      "title": "Zekoslavne priče",
       "archiveUrl": null,
       "originalUrl": null,
       "status": "ok",
       "contentStatus": "title-only",
-      "file": "cartoons/zvonko.json"
+      "file": "cartoons/zekoslavne-price.json"
     },
     {
       "title": "Zubić vile",
@@ -983,20 +1031,20 @@
       "file": "cartoons/zubic-vile.json"
     },
     {
+      "title": "Zvonko",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/zvonko.json"
+    },
+    {
       "title": "Žderosaur",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html",
       "originalUrl": "http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html",
       "status": "ok",
       "contentStatus": "scraped",
       "file": "cartoons/zderosaur.json"
-    },
-    {
-      "title": "Wumi",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
-      "originalUrl": "http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
-      "status": "ok",
-      "contentStatus": "scraped",
-      "file": "cartoons/wumi.json"
     }
   ],
   "movies": [
