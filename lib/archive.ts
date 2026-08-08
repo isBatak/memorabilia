@@ -46,7 +46,7 @@ function readJson<T>(file: string): T {
 }
 
 export function getAllVideoParams() {
-  return getAllParams().flatMap(({category, slug}) => (getEntry(category, slug)?.videos ?? []).map((video) => ({category, slug, source: video.source.type, videoId: video.id})));
+  return getAllParams().flatMap(({category, slug}) => (getEntry(category, slug)?.videos ?? []).filter((video) => video.source.type !== 'vk-video-playlist').map((video) => ({category, slug, source: video.source.type, videoId: video.id})));
 }
 
 function publicImage(localUrl?: string | null) {
