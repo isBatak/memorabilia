@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-08T10:30:00.000Z",
+  "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 153,
-    "successful": 153,
+    "discovered": 158,
+    "successful": 158,
     "failed": 0,
     "byCategory": {
       "series": 41,
-      "cartoons": 88,
+      "cartoons": 93,
       "movies": 21,
       "commercials": 3
     }
@@ -1045,6 +1045,46 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/medvjedici-dobrog-srca.json"
+    },
+    {
+      "title": "Mjesečeva Ratnica",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/mjeseceva-ratnica.json"
+    },
+    {
+      "title": "Digimon",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/digimon.json"
+    },
+    {
+      "title": "Zaboravni Tobias i Proljetni Cvijet",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/zaboravni-tobias-i-proljetni-cvijet.json"
+    },
+    {
+      "title": "Branitelji zemlje",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/branitelji-zemlje.json"
+    },
+    {
+      "title": "Goool",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/goool.json"
     }
   ],
   "movies": [
