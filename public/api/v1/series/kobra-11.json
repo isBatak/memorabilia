@@ -14,7 +14,14 @@
     "Kobra 11 prati pripadnike njemačke autocestovne policije koji istražuju nesreće, krijumčarenje, otmice i organizirani kriminal. Slučajevi redovito završavaju brzim potjerama, sudarima i spektakularnim eksplozijama na autocesti.",
     "Njemačka akcijska serija prikazuje se od 1996. godine i tijekom dugog emitiranja promijenila je više glavnih policijskih partnera. Njezin zaštitni znak ostale su raskošno snimljene automobilske akcijske scene."
   ],
-  "images": [],
+  "images": [
+    {
+      "alt": "Kobra 11",
+      "url": "https://i.ytimg.com/vi/SLlU6L92xas/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
   "source": {
     "requestedArchiveUrl": null,
     "resolvedArchiveUrl": null,
@@ -22,5 +29,34 @@
     "scrapedAt": "2026-08-08T10:30:00.000Z"
   },
   "rawArticleHtml": null,
-  "videos": []
+  "videos": [
+    {
+      "id": "SLlU6L92xas",
+      "title": "Alarm für Cobra 11 - Die Autobahnpolizei",
+      "url": "https://www.youtube.com/watch?v=SLlU6L92xas",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/SLlU6L92xas?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SLlU6L92xas/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "RTL",
+        "url": "https://www.youtube.com/@RTL"
+      }
+    },
+    {
+      "id": "zwJCFhx5P_A",
+      "title": "Alarm für Cobra 11 - Intro",
+      "url": "https://www.youtube.com/watch?v=zwJCFhx5P_A",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/zwJCFhx5P_A?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zwJCFhx5P_A/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=zwJCFhx5P_A"
+      }
+    }
+  ]
 }
