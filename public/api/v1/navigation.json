@@ -1,6 +1,6 @@
 {
   "source": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1622062333/bus-bus.html",
-  "generatedAt": "2026-08-04T13:26:37.000Z",
+  "generatedAt": "2026-08-08T10:30:00.000Z",
   "series": [
     {
       "title": "2.4 djeteta",
@@ -73,6 +73,16 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/02/1620641006/i-to-mi-je-neki-zivot.html"
     },
     {
+      "title": "Inspektor Rex",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
+      "title": "Kobra 11",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
       "title": "Moja obitelj",
       "archiveUrl": null,
       "originalUrl": null
@@ -106,11 +116,6 @@
       "title": "Ono",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620743950/ono.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/03/1620743950/ono.html"
-    },
-    {
-      "title": "Tko živ, tko mrtav",
-      "archiveUrl": null,
-      "originalUrl": null
     },
     {
       "title": "Potpuni stranci",
@@ -168,6 +173,11 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/06/1621199085/superbaka.html"
     },
     {
+      "title": "Tko živ, tko mrtav",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
       "title": "U autobusu",
       "archiveUrl": null,
       "originalUrl": null
@@ -200,9 +210,19 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/01/1620589901/a-je-to.html"
     },
     {
+      "title": "Action Man",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
       "title": "Baltazar",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/05/1621053959/profesor-baltazar.html"
+    },
+    {
+      "title": "Banane u pidžami",
+      "archiveUrl": null,
+      "originalUrl": null
     },
     {
       "title": "Barney",
@@ -340,6 +360,11 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/06/1621244144/kakav-nered.html"
     },
     {
+      "title": "Kapetan Planet",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
       "title": "Kapetan Zaspan",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html",
       "originalUrl": "http://memorabilia.blog.hr/2006/03/1620799314/kapetan-zaspan.html"
@@ -390,6 +415,11 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/06/1621176398/majstor-fantaz.html"
     },
     {
+      "title": "Maksim",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
+      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621495292/maksim.html"
+    },
+    {
       "title": "Mala sirena",
       "archiveUrl": null,
       "originalUrl": null
@@ -400,9 +430,9 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/05/1621117870/mali-leteci-medvjedici.html"
     },
     {
-      "title": "Maksim",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2006/08/1621495292/maksim.html",
-      "originalUrl": "http://memorabilia.blog.hr/2006/08/1621495292/maksim.html"
+      "title": "Medvjedići dobrog srca",
+      "archiveUrl": null,
+      "originalUrl": null
     },
     {
       "title": "Micek Trtko",
@@ -510,14 +540,14 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/06/1621272911/slonica-nelica.html"
     },
     {
-      "title": "Snješko Bijeliš",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
-      "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html"
-    },
-    {
       "title": "Snorkijevci",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html",
       "originalUrl": "http://memorabilia.blog.hr/2007/08/1623106280/snorkijevci.html"
+    },
+    {
+      "title": "Snješko Bijeliš",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html"
     },
     {
       "title": "Sport Billy",
@@ -585,9 +615,9 @@
       "originalUrl": "http://memorabilia.blog.hr/2007/09/1623155323/voltron.html"
     },
     {
-      "title": "Zekoslavne priče",
-      "archiveUrl": null,
-      "originalUrl": null
+      "title": "Wummy",
+      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
+      "originalUrl": "http://memorabilia.blog.hr/2007/08/1622989738/wumi.html"
     },
     {
       "title": "Zekoslav Mrkva",
@@ -595,7 +625,7 @@
       "originalUrl": "http://memorabilia.blog.hr/2006/02/1620624412/zekoslav-mrkva.html"
     },
     {
-      "title": "Zvonko",
+      "title": "Zekoslavne priče",
       "archiveUrl": null,
       "originalUrl": null
     },
@@ -605,14 +635,14 @@
       "originalUrl": "http://memorabilia.blog.hr/2008/08/1625308026/zubic-vile.html"
     },
     {
+      "title": "Zvonko",
+      "archiveUrl": null,
+      "originalUrl": null
+    },
+    {
       "title": "Žderosaur",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html",
       "originalUrl": "http://memorabilia.blog.hr/2012/04/1630707365/zderosaur.html"
-    },
-    {
-      "title": "Wummy",
-      "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/08/1622989738/wumi.html",
-      "originalUrl": "http://memorabilia.blog.hr/2007/08/1622989738/wumi.html"
     }
   ],
   "movies": [
