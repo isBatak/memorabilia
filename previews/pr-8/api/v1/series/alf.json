@@ -1,0 +1,47 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "Alf",
+  "slug": "alf",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "ALF",
+    "years": "1986.–1990.",
+    "country": "Sjedinjene Američke Države"
+  },
+  "content": "Alf, pravim imenom Gordon Shumway, dlakavi je izvanzemaljac s planeta Melmac koji se nakon pada svemirskog broda nastani u garaži obitelji Tanner. Willie, Kate, Lynn i Brian skrivaju ga od vlasti, dok se Alf pokušava prilagoditi životu na Zemlji — uz mnogo sarkazma, nestašluka i stalnu želju da pojede obiteljsku mačku Lucky.\n\nAmerička humoristična serija prikazivala se od 1986. do 1990. godine. Paul Fusco osmislio je Alfa, posudio mu glas i upravljao lutkom, a članove obitelji Tanner glumili su Max Wright, Anne Schedeen, Andrea Elson i Benji Gregory. U Hrvatskoj je serija ostala zapamćena kao jedan od televizijskih klasika djetinjstva.",
+  "paragraphs": [
+    "Alf, pravim imenom Gordon Shumway, dlakavi je izvanzemaljac s planeta Melmac koji se nakon pada svemirskog broda nastani u garaži obitelji Tanner. Willie, Kate, Lynn i Brian skrivaju ga od vlasti, dok se Alf pokušava prilagoditi životu na Zemlji — uz mnogo sarkazma, nestašluka i stalnu želju da pojede obiteljsku mačku Lucky.\n\nAmerička humoristična serija prikazivala se od 1986. do 1990. godine. Paul Fusco osmislio je Alfa, posudio mu glas i upravljao lutkom, a članove obitelji Tanner glumili su Max Wright, Anne Schedeen, Andrea Elson i Benji Gregory. U Hrvatskoj je serija ostala zapamćena kao jedan od televizijskih klasika djetinjstva."
+  ],
+  "images": [
+    {
+      "alt": "Alf",
+      "url": "https://images.rtl.hr/media/images/884xX/Feb2025/bef6c10ab86bbbb33820_960459.jpg?v=172a",
+      "archivedUrl": null,
+      "localUrl": "../../../images/alf/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-04T13:26:37.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "2hBSMInlDGg",
+      "title": "ALF – uvodna špica",
+      "url": "https://www.youtube.com/watch?v=2hBSMInlDGg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2hBSMInlDGg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2hBSMInlDGg/hqdefault.jpg",
+      "durationText": "1:02",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Jan Schmelter",
+        "url": "https://www.youtube.com/@xxSchmuckeXX"
+      }
+    }
+  ]
+}

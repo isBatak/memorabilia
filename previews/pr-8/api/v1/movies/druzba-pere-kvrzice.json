@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Družba Pere Kvržice",
+  "slug": "druzba-pere-kvrzice",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Družba Pere Kvržice",
+      "url": "https://i.ytimg.com/vi/QsOR4Zeh9f0/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/druzba-pere-kvrzice/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:47.890Z"
+  },
+  "rawArticleHtml": null
+}

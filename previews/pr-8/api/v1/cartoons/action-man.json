@@ -1,0 +1,26 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Action Man",
+  "slug": "action-man",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Action Man",
+    "years": "1995.–1996.",
+    "country": "Sjedinjene Američke Države i Kanada"
+  },
+  "content": "Action Man je akcijska animirana serija o elitnom junaku koji se sa svojim timom bori protiv zlikovca dr. X-a i njegove organizacije. Misije ga vode diljem svijeta, gdje se oslanja na borilačke vještine, tehnologiju i pomoć svojih saveznika.\n\nSerija je nastala prema popularnoj liniji akcijskih figura i kombinirala je špijunske zaplete, ekstremne sportove i znanstvenu fantastiku. U Hrvatskoj je bila poznata jednostavno pod naslovom Action Man.",
+  "paragraphs": [
+    "Action Man je akcijska animirana serija o elitnom junaku koji se sa svojim timom bori protiv zlikovca dr. X-a i njegove organizacije. Misije ga vode diljem svijeta, gdje se oslanja na borilačke vještine, tehnologiju i pomoć svojih saveznika.",
+    "Serija je nastala prema popularnoj liniji akcijskih figura i kombinirala je špijunske zaplete, ekstremne sportove i znanstvenu fantastiku. U Hrvatskoj je bila poznata jednostavno pod naslovom Action Man."
+  ],
+  "images": [],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-08T10:30:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": []
+}
