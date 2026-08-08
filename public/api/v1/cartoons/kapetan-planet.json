@@ -57,20 +57,6 @@
         "name": "YouTube",
         "url": "https://www.youtube.com/watch?v=0e-NdvLuJzo"
       }
-    },
-    {
-      "id": "745080932-22",
-      "title": "Kapetan Planet — zbirka epizoda",
-      "url": "https://vkvideo.ru/playlist/745080932_22",
-      "embedUrl": "https://vkvideo.ru/playlist/745080932_22",
-      "thumbnailUrl": "https://i.ytimg.com/vi/2tR4w8-O8g0/hqdefault.jpg",
-      "durationText": null,
-      "publishedText": null,
-      "source": {
-        "type": "vk-video-playlist",
-        "name": "VK Video",
-        "url": "https://vkvideo.ru/playlist/745080932_22"
-      }
     }
   ]
 }
