@@ -22,5 +22,244 @@
     "scrapedAt": "2026-08-02T16:18:18.116Z"
   },
   "rawArticleHtml": null,
-  "videos": []
+  "videos": [
+    {
+      "id": "03ChyrsYAXw",
+      "title": "Eustahije Brzić - Zmijska premijera - Crtani film",
+      "url": "https://www.youtube.com/watch?v=03ChyrsYAXw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/03ChyrsYAXw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/03ChyrsYAXw/hqdefault.jpg",
+      "durationText": "6:36",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "zTboKB1OoWQ",
+      "title": "Eustahije Brzić - Zmijin prijatelj - Crtani film",
+      "url": "https://www.youtube.com/watch?v=zTboKB1OoWQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/zTboKB1OoWQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zTboKB1OoWQ/hqdefault.jpg",
+      "durationText": "6:37",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "4GG12CMiBn4",
+      "title": "Eustahije Brzić - Zmije i boli - Crtani film",
+      "url": "https://www.youtube.com/watch?v=4GG12CMiBn4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/4GG12CMiBn4?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4GG12CMiBn4/hqdefault.jpg",
+      "durationText": "6:42",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "leget8IQ3qY",
+      "title": "Eustahije Brzić - Smrzni dobričinu - Crtani film",
+      "url": "https://www.youtube.com/watch?v=leget8IQ3qY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/leget8IQ3qY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/leget8IQ3qY/hqdefault.jpg",
+      "durationText": "6:38",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "lfJ0OYgRsCk",
+      "title": "Eustahije Brzić - Pomozite zmiji - Crtani film",
+      "url": "https://www.youtube.com/watch?v=lfJ0OYgRsCk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/lfJ0OYgRsCk?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lfJ0OYgRsCk/hqdefault.jpg",
+      "durationText": "6:50",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "M1mRxLqGbQw",
+      "title": "Eustahije Brzić - Pastir Eustahije - Cratni film",
+      "url": "https://www.youtube.com/watch?v=M1mRxLqGbQw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/M1mRxLqGbQw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M1mRxLqGbQw/hqdefault.jpg",
+      "durationText": "6:49",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "VAmU-SJnR0s",
+      "title": "Eustahije Brzić - Njegovo i njeno - Crtani film",
+      "url": "https://www.youtube.com/watch?v=VAmU-SJnR0s",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/VAmU-SJnR0s?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VAmU-SJnR0s/hqdefault.jpg",
+      "durationText": "6:39",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "wCeff4MqKhc",
+      "title": "Eustahije Brzić - Mama Jokohama - Crtani film",
+      "url": "https://www.youtube.com/watch?v=wCeff4MqKhc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/wCeff4MqKhc?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wCeff4MqKhc/hqdefault.jpg",
+      "durationText": "6:37",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "oymnQIwkpD4",
+      "title": "Eustahije Brzić - Ljubav i siktanje - Crtani film",
+      "url": "https://www.youtube.com/watch?v=oymnQIwkpD4",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/oymnQIwkpD4?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oymnQIwkpD4/hqdefault.jpg",
+      "durationText": "6:38",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "Rm21rAJRfWw",
+      "title": "Eustahije Brzić - Ljubav i naklonost - Crtani film",
+      "url": "https://www.youtube.com/watch?v=Rm21rAJRfWw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Rm21rAJRfWw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Rm21rAJRfWw/hqdefault.jpg",
+      "durationText": "6:46",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "msv1y5v7H_I",
+      "title": "Eustahije Brzić - Lov na jaje - Crtani film",
+      "url": "https://www.youtube.com/watch?v=msv1y5v7H_I",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/msv1y5v7H_I?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/msv1y5v7H_I/hqdefault.jpg",
+      "durationText": "6:44",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "o4_LmROn4Qs",
+      "title": "Eustahije Brzić - Japanska Buba - Crtani film",
+      "url": "https://www.youtube.com/watch?v=o4_LmROn4Qs",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/o4_LmROn4Qs?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o4_LmROn4Qs/hqdefault.jpg",
+      "durationText": "6:41",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "bPUCx9IlBZg",
+      "title": "Eustahije Brzić - Irska pustolovina - Crtani film",
+      "url": "https://www.youtube.com/watch?v=bPUCx9IlBZg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/bPUCx9IlBZg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bPUCx9IlBZg/hqdefault.jpg",
+      "durationText": "6:40",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "HMObFZ7zjnw",
+      "title": "Eustahije Brzić - Fotografski aparat - Crtani film",
+      "url": "https://www.youtube.com/watch?v=HMObFZ7zjnw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/HMObFZ7zjnw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HMObFZ7zjnw/hqdefault.jpg",
+      "durationText": "6:36",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "S5iogJrdqQc",
+      "title": "Eustahije Brzić - Divlji plavi asovi - Crtani film",
+      "url": "https://www.youtube.com/watch?v=S5iogJrdqQc",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/S5iogJrdqQc?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/S5iogJrdqQc/hqdefault.jpg",
+      "durationText": "6:27",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "HiSUoOZImDA",
+      "title": "Eustahije Brzić - Boks i džudo - Crtani film",
+      "url": "https://www.youtube.com/watch?v=HiSUoOZImDA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/HiSUoOZImDA?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HiSUoOZImDA/hqdefault.jpg",
+      "durationText": "6:34",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "skqcWrbZppQ",
+      "title": "Eustahije Brzić - Prljava igra - Crtani film",
+      "url": "https://www.youtube.com/watch?v=skqcWrbZppQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/skqcWrbZppQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/skqcWrbZppQ/hqdefault.jpg",
+      "durationText": "6:40",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    }
+  ]
 }

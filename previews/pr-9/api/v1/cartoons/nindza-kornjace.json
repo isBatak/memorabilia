@@ -1,0 +1,61 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Nindža Kornjače",
+  "slug": "nindza-kornjace",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Teenage Mutant Ninja Turtles",
+    "years": "1987.–1996.",
+    "country": "Sjedinjene Američke Države"
+  },
+  "content": "Nindža Kornjače prate četiri mutirane kornjače — Leonarda, Donatella, Michelangela i Raphaela — koje majstor Splinter podučava ninjutsuu. Iz kanalizacije New Yorka bore se protiv Sekača, Kranga i drugih neprijatelja.",
+  "paragraphs": [
+    "Nindža Kornjače prate četiri mutirane kornjače — Leonarda, Donatella, Michelangela i Raphaela — koje majstor Splinter podučava ninjutsuu. Iz kanalizacije New Yorka bore se protiv Sekača, Kranga i drugih neprijatelja."
+  ],
+  "images": [
+    {
+      "alt": "Nindža Kornjače",
+      "url": "https://i.ytimg.com/vi/SvIxdWEY_Os/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-09T16:30:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "SvIxdWEY_Os",
+      "title": "Nindža kornjače - Povratak Sekača - Epizoda 06 (1988)",
+      "durationText": "22:16",
+      "url": "https://www.youtube.com/watch?v=SvIxdWEY_Os",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/SvIxdWEY_Os?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SvIxdWEY_Os/hqdefault.jpg",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    },
+    {
+      "id": "xSyIrIX5TAo",
+      "title": "Nindža kornjače - Nastupa muva - Epizoda 12 (1988)",
+      "durationText": "22:18",
+      "url": "https://www.youtube.com/watch?v=xSyIrIX5TAo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/xSyIrIX5TAo?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xSyIrIX5TAo/hqdefault.jpg",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bh-video"
+      }
+    }
+  ]
+}
