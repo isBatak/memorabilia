@@ -1,0 +1,124 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Ribić",
+  "slug": "ribic",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": null,
+    "years": null,
+    "country": null
+  },
+  "content": "Ribić je kratka animirana serija o nespretnom i upornom ribiču čiji pokušaji da ulovi ribu redovito završavaju neočekivanim i komičnim obratima.\n\nSačuvana zbirka donosi hrvatsku uvodnu špicu i osam pojedinačnih epizoda s izvornim naslovima iz priložene YouTube playliste.",
+  "paragraphs": [
+    "Ribić je kratka animirana serija o nespretnom i upornom ribiču čiji pokušaji da ulovi ribu redovito završavaju neočekivanim i komičnim obratima.",
+    "Sačuvana zbirka donosi hrvatsku uvodnu špicu i osam pojedinačnih epizoda s izvornim naslovima iz priložene YouTube playliste."
+  ],
+  "images": [
+    {
+      "alt": "Ribić",
+      "url": "https://i.ytimg.com/vi/mtt54SF1CJI/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-09T16:00:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "9UGA53Ghj60",
+      "title": "Ribič - crtić intro",
+      "url": "https://www.youtube.com/watch?v=9UGA53Ghj60",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9UGA53Ghj60?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9UGA53Ghj60/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "YouTube", "url": "https://www.youtube.com/watch?v=9UGA53Ghj60"}
+    },
+    {
+      "id": "mtt54SF1CJI",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Prepreden mamac",
+      "url": "https://www.youtube.com/watch?v=mtt54SF1CJI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/mtt54SF1CJI?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mtt54SF1CJI/hqdefault.jpg",
+      "durationText": "8:05",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "2d6SOy5oHQo",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Leteća riba",
+      "url": "https://www.youtube.com/watch?v=2d6SOy5oHQo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/2d6SOy5oHQo?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2d6SOy5oHQo/hqdefault.jpg",
+      "durationText": "7:53",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "7lasANVRzds",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Gumena riba",
+      "url": "https://www.youtube.com/watch?v=7lasANVRzds",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/7lasANVRzds?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7lasANVRzds/hqdefault.jpg",
+      "durationText": "8:03",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "Wo2FS_p3KG8",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Ribič u dimnjaku",
+      "url": "https://www.youtube.com/watch?v=Wo2FS_p3KG8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Wo2FS_p3KG8?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Wo2FS_p3KG8/hqdefault.jpg",
+      "durationText": "7:39",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "1Uw9M4hKeh0",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Riblja kost bez ribe",
+      "url": "https://www.youtube.com/watch?v=1Uw9M4hKeh0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/1Uw9M4hKeh0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1Uw9M4hKeh0/hqdefault.jpg",
+      "durationText": "7:41",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "7uUsaimBm9w",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Odbjegla umjetna riba",
+      "url": "https://www.youtube.com/watch?v=7uUsaimBm9w",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/7uUsaimBm9w?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7uUsaimBm9w/hqdefault.jpg",
+      "durationText": "7:40",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "zluU4fkEBMg",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Gavran i riba",
+      "url": "https://www.youtube.com/watch?v=zluU4fkEBMg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/zluU4fkEBMg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zluU4fkEBMg/hqdefault.jpg",
+      "durationText": "7:21",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    },
+    {
+      "id": "f5DWL9temwM",
+      "title": "Crtani film - Veliki Ho Ho Ribič - Kamo su nestale ribičke uzice",
+      "url": "https://www.youtube.com/watch?v=f5DWL9temwM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/f5DWL9temwM?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f5DWL9temwM/hqdefault.jpg",
+      "durationText": "7:39",
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "BH Video", "url": "https://www.youtube.com/@bh-video"}
+    }
+  ]
+}
