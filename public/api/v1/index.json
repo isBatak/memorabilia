@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 158,
-    "successful": 158,
+    "discovered": 163,
+    "successful": 163,
     "failed": 0,
     "byCategory": {
-      "series": 41,
-      "cartoons": 93,
+      "series": 42,
+      "cartoons": 97,
       "movies": 21,
       "commercials": 3
     }
@@ -339,6 +339,14 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "series/kobra-11.json"
+    },
+    {
+      "title": "Dizalica (Bembo)",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/dizalica-bembo.json"
     }
   ],
   "cartoons": [
@@ -815,6 +823,14 @@
       "file": "cartoons/rakuni.json"
     },
     {
+      "title": "Ribić",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/ribic.json"
+    },
+    {
       "title": "Riblje redarstvo",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
       "originalUrl": "http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
@@ -893,6 +909,14 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "cartoons/superted.json"
+    },
+    {
+      "title": "Štrumpfovi",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/strumpfovi.json"
     },
     {
       "title": "Štucavko",
@@ -1085,6 +1109,22 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/goool.json"
+    },
+    {
+      "title": "Cico Štos",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/cico-stos.json"
+    },
+    {
+      "title": "Nindža Kornjače",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/nindza-kornjace.json"
     }
   ],
   "movies": [
