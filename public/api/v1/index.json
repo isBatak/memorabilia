@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 158,
-    "successful": 158,
+    "discovered": 160,
+    "successful": 160,
     "failed": 0,
     "byCategory": {
-      "series": 41,
-      "cartoons": 93,
+      "series": 42,
+      "cartoons": 94,
       "movies": 21,
       "commercials": 3
     }
@@ -339,6 +339,14 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "series/kobra-11.json"
+    },
+    {
+      "title": "Dizalica (Bembo)",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/dizalica-bembo.json"
     }
   ],
   "cartoons": [
@@ -1085,6 +1093,14 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/goool.json"
+    },
+    {
+      "title": "Cico Štos",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/cico-stos.json"
     }
   ],
   "movies": [
