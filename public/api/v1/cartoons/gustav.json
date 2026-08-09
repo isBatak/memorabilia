@@ -41,6 +41,76 @@
         "name": "Ognjen Đumić",
         "url": "https://www.youtube.com/@ognjenumic825"
       }
+    },
+    {
+      "id": "BuyPsw__VRk",
+      "title": "Gustav (Gusztáv, Gustavus) - Gustavus Is Pessimistic - S04E01",
+      "url": "https://www.youtube.com/watch?v=BuyPsw__VRk",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/BuyPsw__VRk?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BuyPsw__VRk/hqdefault.jpg",
+      "durationText": "4:49",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bhvideo"
+      }
+    },
+    {
+      "id": "USBkZBdSZbA",
+      "title": "Gustav (Gusztáv, Gustavus) - Gustavus Is Polite - S04E02",
+      "url": "https://www.youtube.com/watch?v=USBkZBdSZbA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/USBkZBdSZbA?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/USBkZBdSZbA/hqdefault.jpg",
+      "durationText": "4:50",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bhvideo"
+      }
+    },
+    {
+      "id": "pSVlbpnNYyQ",
+      "title": "Gustav (Gusztáv, Gustavus) - Gustavus Plus One Man - S04E03",
+      "url": "https://www.youtube.com/watch?v=pSVlbpnNYyQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/pSVlbpnNYyQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pSVlbpnNYyQ/hqdefault.jpg",
+      "durationText": "4:41",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bhvideo"
+      }
+    },
+    {
+      "id": "iln9AmnUrVY",
+      "title": "Gustav (Gusztáv, Gustavus) - Gustavus the Fellow Man - S04E04",
+      "url": "https://www.youtube.com/watch?v=iln9AmnUrVY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/iln9AmnUrVY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iln9AmnUrVY/hqdefault.jpg",
+      "durationText": "4:49",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bhvideo"
+      }
+    },
+    {
+      "id": "cFS3fnR_cVY",
+      "title": "Gustav (Gusztáv, Gustavus) - Gustavus The Pacifier - S04E05",
+      "url": "https://www.youtube.com/watch?v=cFS3fnR_cVY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cFS3fnR_cVY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cFS3fnR_cVY/hqdefault.jpg",
+      "durationText": "4:47",
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "BH Video",
+        "url": "https://www.youtube.com/@bhvideo"
+      }
     }
   ]
 }
