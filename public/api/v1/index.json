@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 162,
-    "successful": 162,
+    "discovered": 163,
+    "successful": 163,
     "failed": 0,
     "byCategory": {
       "series": 42,
-      "cartoons": 96,
+      "cartoons": 97,
       "movies": 21,
       "commercials": 3
     }
@@ -1117,6 +1117,14 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/cico-stos.json"
+    },
+    {
+      "title": "Nindža Kornjače",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/nindza-kornjace.json"
     }
   ],
   "movies": [
