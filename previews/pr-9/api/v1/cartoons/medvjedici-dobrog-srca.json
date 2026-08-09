@@ -1,0 +1,62 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Medvjedići dobrog srca",
+  "slug": "medvjedici-dobrog-srca",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Care Bears",
+    "years": "1985.–1988.",
+    "country": "Kanada i Sjedinjene Američke Države"
+  },
+  "content": "Medvjedići dobrog srca žive u zemlji oblaka i svaki na trbuhu nosi poseban simbol koji predstavlja njegovu osobinu. Zajedno pomažu djeci prevladati strah, tugu i sebičnost te se suprotstavljaju onima koji žele širiti beznađe.\n\nAnimirana serija nastala je prema popularnim ilustriranim likovima i igračkama. Njezine priče o prijateljstvu, empatiji i međusobnoj pomoći obilježile su televizijsko djetinjstvo mnogih gledatelja.",
+  "paragraphs": [
+    "Medvjedići dobrog srca žive u zemlji oblaka i svaki na trbuhu nosi poseban simbol koji predstavlja njegovu osobinu. Zajedno pomažu djeci prevladati strah, tugu i sebičnost te se suprotstavljaju onima koji žele širiti beznađe.",
+    "Animirana serija nastala je prema popularnim ilustriranim likovima i igračkama. Njezine priče o prijateljstvu, empatiji i međusobnoj pomoći obilježile su televizijsko djetinjstvo mnogih gledatelja."
+  ],
+  "images": [
+    {
+      "alt": "Medvjedići dobrog srca",
+      "url": "https://i.ytimg.com/vi/nci21wN5nl8/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-08T10:30:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "nci21wN5nl8",
+      "title": "Medvjedići dobra srca CD 1 - Moja kućica, svačija slobodica",
+      "url": "https://www.youtube.com/watch?v=nci21wN5nl8",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/nci21wN5nl8?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nci21wN5nl8/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=nci21wN5nl8"
+      }
+    },
+    {
+      "id": "8d7iTwe769M",
+      "title": "Medvjedići Dobra Srca (Kompilacija 1) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=8d7iTwe769M",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/8d7iTwe769M?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8d7iTwe769M/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/watch?v=8d7iTwe769M"
+      }
+    }
+  ]
+}

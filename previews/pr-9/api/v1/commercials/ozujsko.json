@@ -1,0 +1,32 @@
+{
+  "type": "commercial-post",
+  "category": "commercials",
+  "slug": "ozujsko",
+  "title": "Ožujsko",
+  "publishedAt": null,
+  "content": "Ožujsko — idealno piće za ekstremne sportove!",
+  "paragraphs": [
+    "Ožujsko — idealno piće za ekstremne sportove!"
+  ],
+  "images": [],
+  "source": {
+    "originalUrl": "https://www.youtube.com/watch?v=v9hf-9uQOfg"
+  },
+  "contentStatus": "scraped",
+  "videos": [
+    {
+      "id": "v9hf-9uQOfg",
+      "title": "Stara reklama za Ožujsko",
+      "url": "https://www.youtube.com/watch?v=v9hf-9uQOfg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/v9hf-9uQOfg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/v9hf-9uQOfg/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "dobriSTARIcrtani",
+        "url": "https://www.youtube.com/@dobristaricrtani"
+      }
+    }
+  ]
+}

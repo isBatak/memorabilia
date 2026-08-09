@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Orson i prijatelji",
+  "slug": "orson-i-prijatelji",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Orson i prijatelji",
+      "url": "https://i.ytimg.com/vi/HrGjZw6JoQo/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/orson-i-prijatelji/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:31.181Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "JlcjH_metd0",
+      "title": "Garfield and Friends - Unidentified Flying Orson - Orson's Farm",
+      "url": "https://www.youtube.com/watch?v=JlcjH_metd0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/JlcjH_metd0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JlcjH_metd0/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "katula",
+        "url": "https://www.youtube.com/watch?v=JlcjH_metd0"
+      }
+    }
+  ]
+}

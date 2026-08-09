@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Brum",
+  "slug": "brum",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Brum",
+      "url": "https://i.ytimg.com/vi/CI82L-sjFAI/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/brum/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:12.522Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "CI82L-sjFAI",
+      "title": "Brum ( Kompilacija ) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=CI82L-sjFAI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/CI82L-sjFAI?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CI82L-sjFAI/hqdefault.jpg",
+      "durationText": "1:30:12",
+      "publishedText": "prije 1 godinu",
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"
+      }
+    }
+  ]
+}
