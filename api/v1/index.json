@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-05T15:23:10.000Z",
+  "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 147,
-    "successful": 147,
+    "discovered": 158,
+    "successful": 158,
     "failed": 0,
     "byCategory": {
-      "series": 39,
-      "cartoons": 84,
+      "series": 41,
+      "cartoons": 93,
       "movies": 21,
       "commercials": 3
     }
@@ -323,6 +323,22 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "series/zvonili-ste-milorde.json"
+    },
+    {
+      "title": "Inspektor Rex",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/inspektor-rex.json"
+    },
+    {
+      "title": "Kobra 11",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "series/kobra-11.json"
     }
   ],
   "cartoons": [
@@ -831,12 +847,12 @@
       "file": "cartoons/slonica-nelica.json"
     },
     {
-      "title": "Snješko Bijeliš",
+      "title": "Snješko Bijelić",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
       "originalUrl": "http://memorabilia.blog.hr/2007/01/1621958040/snjesko-bijelic.html",
       "status": "ok",
       "contentStatus": "scraped",
-      "file": "cartoons/snjesko-bijelis.json"
+      "file": "cartoons/snjesko-bijelic.json"
     },
     {
       "title": "Snorkijevci",
@@ -997,6 +1013,78 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "cartoons/wumi.json"
+    },
+    {
+      "title": "Kapetan Planet",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/kapetan-planet.json"
+    },
+    {
+      "title": "Action Man",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/action-man.json"
+    },
+    {
+      "title": "Banane u pidžami",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/banane-u-pidzami.json"
+    },
+    {
+      "title": "Medvjedići dobrog srca",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/medvjedici-dobrog-srca.json"
+    },
+    {
+      "title": "Mjesečeva Ratnica",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/mjeseceva-ratnica.json"
+    },
+    {
+      "title": "Digimon",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/digimon.json"
+    },
+    {
+      "title": "Zaboravni Tobias i Proljetni Cvijet",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/zaboravni-tobias-i-proljetni-cvijet.json"
+    },
+    {
+      "title": "Branitelji zemlje",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/branitelji-zemlje.json"
+    },
+    {
+      "title": "Goool",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/goool.json"
     }
   ],
   "movies": [
