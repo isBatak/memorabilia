@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 160,
-    "successful": 160,
+    "discovered": 162,
+    "successful": 162,
     "failed": 0,
     "byCategory": {
       "series": 42,
-      "cartoons": 94,
+      "cartoons": 96,
       "movies": 21,
       "commercials": 3
     }
@@ -823,6 +823,14 @@
       "file": "cartoons/rakuni.json"
     },
     {
+      "title": "Ribić",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/ribic.json"
+    },
+    {
       "title": "Riblje redarstvo",
       "archiveUrl": "https://web.archive.org/web/20121107090850/http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
       "originalUrl": "http://memorabilia.blog.hr/2008/06/1625061875/riblje-redarstvo.html",
@@ -901,6 +909,14 @@
       "status": "ok",
       "contentStatus": "scraped",
       "file": "cartoons/superted.json"
+    },
+    {
+      "title": "Štrumpfovi",
+      "archiveUrl": null,
+      "originalUrl": null,
+      "status": "ok",
+      "contentStatus": "title-only",
+      "file": "cartoons/strumpfovi.json"
     },
     {
       "title": "Štucavko",
