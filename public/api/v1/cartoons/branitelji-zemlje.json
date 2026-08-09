@@ -1,0 +1,90 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Branitelji zemlje",
+  "slug": "branitelji-zemlje",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Defenders of the Earth",
+    "years": "1986.–1987.",
+    "country": "Sjedinjene Američke Države"
+  },
+  "content": "Flash Gordon, Fantom, Mandrake i Lothar udružuju snage kako bi obranili Zemlju od Minga Nemilosrdnog. U pustolovinama im pomažu njihova djeca i suradnici okupljeni u tajnom sjedištu.\n\nAnimirana serija spojila je nekoliko klasičnih junaka izdavačke kuće King Features. Dostupne epizode sačuvane su u hrvatskoj sinkronizaciji.",
+  "paragraphs": [
+    "Flash Gordon, Fantom, Mandrake i Lothar udružuju snage kako bi obranili Zemlju od Minga Nemilosrdnog. U pustolovinama im pomažu njihova djeca i suradnici okupljeni u tajnom sjedištu.",
+    "Animirana serija spojila je nekoliko klasičnih junaka izdavačke kuće King Features. Dostupne epizode sačuvane su u hrvatskoj sinkronizaciji."
+  ],
+  "images": [
+    {
+      "alt": "Branitelji zemlje",
+      "url": "https://iv.okcdn.ru/getVideoPreview?id=8723504826928&idx=8&type=39&tkn=BvX2H81BnCEa0z0YYbxMZvK-qZ4&fn=vid_u",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-08T12:00:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "-229734969_456239490",
+      "title": "Branitelji zemlje, 13. epizoda izgubljeno blago tibeta",
+      "url": "https://vkvideo.ru/video-229734969_456239490",
+      "embedUrl": "https://vkvideo.ru/video_ext.php?oid=-229734969&id=456239490&hd=2&autoplay=1",
+      "thumbnailUrl": "https://iv.okcdn.ru/getVideoPreview?id=8723504826928&idx=8&type=39&tkn=BvX2H81BnCEa0z0YYbxMZvK-qZ4&fn=vid_u",
+      "durationText": "20:49",
+      "publishedText": null,
+      "source": {
+        "type": "vk",
+        "name": "VK Video",
+        "url": "https://vkvideo.ru/video-229734969_456239490"
+      }
+    },
+    {
+      "id": "-229734969_456239489",
+      "title": "Branitelji zemlje bojno polje",
+      "url": "https://vkvideo.ru/video-229734969_456239489",
+      "embedUrl": "https://vkvideo.ru/video_ext.php?oid=-229734969&id=456239489&hd=2&autoplay=1",
+      "thumbnailUrl": "https://iv.okcdn.ru/getVideoPreview?id=8538924452521&idx=8&type=39&tkn=AKDidRs1i9QBzAL-kQ6hySzhGKs&fn=vid_u",
+      "durationText": "49:38",
+      "publishedText": null,
+      "source": {
+        "type": "vk",
+        "name": "VK Video",
+        "url": "https://vkvideo.ru/video-229734969_456239489"
+      }
+    },
+    {
+      "id": "-229734969_456239488",
+      "title": "Branitelji zemlje 12. vladari uma 2",
+      "url": "https://vkvideo.ru/video-229734969_456239488",
+      "embedUrl": "https://vkvideo.ru/video_ext.php?oid=-229734969&id=456239488&hd=2&autoplay=1",
+      "thumbnailUrl": "https://iv.okcdn.ru/getVideoPreview?id=8538200410807&idx=8&type=39&tkn=Z2QL5EmSUXlqvGtFyEtqE7L7mT4&fn=vid_u",
+      "durationText": "51:05",
+      "publishedText": null,
+      "source": {
+        "type": "vk",
+        "name": "VK Video",
+        "url": "https://vkvideo.ru/video-229734969_456239488"
+      }
+    },
+    {
+      "id": "-229734969_456239487",
+      "title": "Branitelji zemlje 11. Vladari uma 1 dio",
+      "url": "https://vkvideo.ru/video-229734969_456239487",
+      "embedUrl": "https://vkvideo.ru/video_ext.php?oid=-229734969&id=456239487&hd=2&autoplay=1",
+      "thumbnailUrl": "https://iv.okcdn.ru/getVideoPreview?id=8573932145239&idx=8&type=39&tkn=dEkV792QHXsYatZLdJ6wGoeHPTo&fn=vid_u",
+      "durationText": "20:59",
+      "publishedText": null,
+      "source": {
+        "type": "vk",
+        "name": "VK Video",
+        "url": "https://vkvideo.ru/video-229734969_456239487"
+      }
+    }
+  ]
+}

@@ -41,34 +41,6 @@
         "name": "Memorabilia archive",
         "url": "https://www.youtube.com/watch?v=ky8JzlQx3rA"
       }
-    },
-    {
-      "id": "izP-66vZNFQ",
-      "title": "Sinkronizirano 1",
-      "url": "https://www.youtube.com/watch?v=izP-66vZNFQ",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/izP-66vZNFQ?autoplay=1&rel=0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/izP-66vZNFQ/hqdefault.jpg",
-      "durationText": null,
-      "publishedText": null,
-      "source": {
-        "type": "youtube",
-        "name": "Memorabilia archive",
-        "url": "https://www.youtube.com/watch?v=izP-66vZNFQ"
-      }
-    },
-    {
-      "id": "4tQVx3xkgig",
-      "title": "Sinkronizirano 2",
-      "url": "https://www.youtube.com/watch?v=4tQVx3xkgig",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/4tQVx3xkgig?autoplay=1&rel=0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4tQVx3xkgig/hqdefault.jpg",
-      "durationText": null,
-      "publishedText": null,
-      "source": {
-        "type": "youtube",
-        "name": "Memorabilia archive",
-        "url": "https://www.youtube.com/watch?v=4tQVx3xkgig"
-      }
     }
   ]
 }
