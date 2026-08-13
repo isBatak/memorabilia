@@ -86,7 +86,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
   });
 
   return (
-    <div className={css({minH: '100vh', bg: 'gray.50', color: 'gray.950', _dark: {bg: 'black', color: 'gray.50'}})}>
+    <div className={css({minH: '100dvh', bg: 'gray.50', color: 'gray.950', _dark: {bg: 'black', color: 'gray.50'}})}>
       {!watching && <aside className={sidebar} aria-label="Glavna navigacija">
         <Link href={localizedPath(locale)} aria-label="Memorabilia — početna" onClick={() => setMenuOpen(false)} className={cx(wordmark, css({alignSelf: 'flex-start', mb: 10, color: 'gray.950', textShadow: 'none', _dark: {color: 'gray.50'}}))}>
           MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.500'})}>.</span>
@@ -137,7 +137,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
 
       {!watching && menuOpen && <button aria-label={t('common.close')} onClick={() => setMenuOpen(false)} className={css({position: 'fixed', inset: 0, zIndex: 30, bg: 'blackAlpha.700', border: 0, lg: {display: 'none'}})}/>}
 
-      {!watching && <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, h: 16, px: 4, display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'gray.100', bg: 'linear-gradient(to bottom, token(colors.blackAlpha.950), token(colors.blackAlpha.700), transparent)'})}>
+      {!watching && <header className={css({position: 'fixed', zIndex: 25, top: 0, left: 0, right: 0, minH: 'calc(4rem + env(safe-area-inset-top))', pt: 'env(safe-area-inset-top)', pl: 'max(1rem, env(safe-area-inset-left))', pr: 'max(1rem, env(safe-area-inset-right))', display: {base: 'flex', lg: 'none'}, alignItems: 'center', justifyContent: 'space-between', color: 'gray.100', bg: 'linear-gradient(to bottom, token(colors.blackAlpha.950), token(colors.blackAlpha.700), transparent)'})}>
         <button aria-label={t('common.openMenu')} onClick={() => setMenuOpen(true)} className={css({border: 0, bg: 'transparent', color: 'gray.100', p: 2})}><Menu/></button>
         <Link href={localizedPath(locale)} aria-label="Memorabilia — početna" className={cx(wordmark, css({color: 'gray.100'}))}>MEMORABILIA<span aria-hidden="true" className={css({color: 'lime.300'})}>.</span></Link>
         <div className={hstack({gap: 0})}>
@@ -149,7 +149,7 @@ export function AppShell({children, collections}: {children: React.ReactNode; co
       <main className={css({ml: {base: 0, lg: watching ? 0 : '15.5rem'}, minW: 0})}>{children}</main>
 
       {searchOpen && (
-        <div className={css({position: 'fixed', inset: 0, zIndex: 80, bg: 'white/94', color: 'gray.950', backdropFilter: 'blur(22px)', overflowY: 'auto', _dark: {bg: 'black/94', color: 'gray.50'}})} role="dialog" aria-modal="true" aria-label={t('common.search')}>
+        <div className={css({position: 'fixed', inset: 0, zIndex: 80, bg: 'white/94', color: 'gray.950', backdropFilter: 'blur(22px)', overflowY: 'auto', overscrollBehavior: 'contain', _dark: {bg: 'black/94', color: 'gray.50'}})} role="dialog" aria-modal="true" aria-label={t('common.search')}>
           <div className={css({maxW: '70rem', mx: 'auto', px: {base: 5, md: 10}, py: {base: 6, md: 12}})}>
             <div className={css({display: 'flex', alignItems: 'center', gap: 4})}>
               <Search size={26} className={css({color: 'lime.600', flexShrink: 0, _dark: {color: 'lime.300'}})}/>

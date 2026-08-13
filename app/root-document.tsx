@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import {getLocale, getMessages} from 'next-intl/server';
 import {AppShell} from '../components/app-shell';
 import {LocaleProvider} from '../components/locale-provider';
@@ -17,6 +17,16 @@ export const rootMetadata: Metadata = {
   description: 'Crtani filmovi, serije, filmovi i stare reklame iz djetinjstva, sačuvani u Memorabilia arhivi.',
   openGraph: {title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', type: 'website', images: [{url: socialImage, width: 1730, height: 909, alt: 'Memorabilia — vrati program na početak'}]},
   twitter: {card: 'summary_large_image', title: 'Memorabilia — vrati program na početak', description: 'Digitalna videoteka djetinjstva.', images: [socialImage]}
+};
+
+export const rootViewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: [
+    {media: '(prefers-color-scheme: light)', color: '#f9fafb'},
+    {media: '(prefers-color-scheme: dark)', color: '#000000'}
+  ]
 };
 
 export async function RootDocument({children}: Readonly<{children: React.ReactNode}>) {
