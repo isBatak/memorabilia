@@ -1,0 +1,25 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "U autobusu",
+  "slug": "u-autobusu",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "U autobusu",
+      "url": "https://i.ytimg.com/vi/OVri2MCRnnk/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/u-autobusu/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:07.089Z"
+  },
+  "rawArticleHtml": null
+}

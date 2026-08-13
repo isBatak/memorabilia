@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Vuk samotnjak",
+  "slug": "vuk-samotnjak",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Vuk samotnjak",
+      "url": "https://i.ytimg.com/vi/Tyl3jWwsj2Q/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/vuk-samotnjak/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:49.399Z"
+  },
+  "rawArticleHtml": null
+}
