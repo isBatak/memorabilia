@@ -19,9 +19,9 @@
   "images": [
     {
       "alt": "Krtek",
-      "url": "https://i.ytimg.com/vi/__VW8vuPu_c/hqdefault.jpg",
+      "url": "https://image.tmdb.org/t/p/w500/69ijBk75RL2qJCvwbNK5acXronb.jpg",
       "archivedUrl": null,
-      "localUrl": null
+      "localUrl": "../../../images/krtek/cover.jpg"
     }
   ],
   "source": {
