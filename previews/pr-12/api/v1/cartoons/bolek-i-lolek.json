@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Bolek i Lolek",
+  "slug": "bolek-i-lolek",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Bolek i Lolek",
+      "url": "https://i.ytimg.com/vi/ptjfy7a4-Hc/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/bolek-i-lolek/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:12.521Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "G6llJrZMBZU",
+      "title": "01 Bolek i Lolek Zlatna ribica",
+      "url": "https://www.youtube.com/watch?v=G6llJrZMBZU",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/G6llJrZMBZU?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/G6llJrZMBZU/hqdefault.jpg",
+      "durationText": "9:57",
+      "publishedText": "prije 1 godinu",
+      "source": {
+        "type": "youtube",
+        "name": "Crtici Sinkronizirano",
+        "url": "https://www.youtube.com/@CrticiSinkronizirano"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "Ally McBeal",
+  "slug": "ally-mcbeal",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Ally McBeal",
+      "url": "https://i.ytimg.com/vi/_5Xheohw8Pc/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/ally-mcbeal/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:17:57.300Z"
+  },
+  "rawArticleHtml": null
+}

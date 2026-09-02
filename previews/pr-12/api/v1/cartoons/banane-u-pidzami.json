@@ -1,0 +1,62 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Banane u pidžami",
+  "slug": "banane-u-pidzami",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Bananas in Pyjamas",
+    "years": "1992.–2001.",
+    "country": "Australija"
+  },
+  "content": "B1 i B2 dvije su vesele banane u plavo-bijelim pidžamama koje žive u Ulici maženja. Sa svojim prijateljima, medvjedićima Amy, Lulu i Morganom te štakorom u šeširu, svakodnevno upadaju u jednostavne i zabavne pustolovine.\n\nAustralska dječja serija prepoznatljiva je po pjesmici „Banane u pidžami silaze niz stube” i kostimiranim likovima. Iako nije klasičan crtani film, ostala je važan dio dječjeg televizijskog programa i uspomena iz djetinjstva.",
+  "paragraphs": [
+    "B1 i B2 dvije su vesele banane u plavo-bijelim pidžamama koje žive u Ulici maženja. Sa svojim prijateljima, medvjedićima Amy, Lulu i Morganom te štakorom u šeširu, svakodnevno upadaju u jednostavne i zabavne pustolovine.",
+    "Australska dječja serija prepoznatljiva je po pjesmici „Banane u pidžami silaze niz stube” i kostimiranim likovima. Iako nije klasičan crtani film, ostala je važan dio dječjeg televizijskog programa i uspomena iz djetinjstva."
+  ],
+  "images": [
+    {
+      "alt": "Banane u pidžami",
+      "url": "https://i.ytimg.com/vi/xNecOV1XTdY/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": null
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-08T10:30:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "xNecOV1XTdY",
+      "title": "Banane u pidžami (Uhvati ritam) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=xNecOV1XTdY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/xNecOV1XTdY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xNecOV1XTdY/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Crtani Filmovi Hrvatska",
+        "url": "https://www.youtube.com/watch?v=xNecOV1XTdY"
+      }
+    },
+    {
+      "id": "CP7w954x6tw",
+      "title": "Banane u pidžami - uvodna špica (Hrvatski)",
+      "url": "https://www.youtube.com/watch?v=CP7w954x6tw",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/CP7w954x6tw?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CP7w954x6tw/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/watch?v=CP7w954x6tw"
+      }
+    }
+  ]
+}

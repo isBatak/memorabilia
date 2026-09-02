@@ -1,0 +1,25 @@
+{
+  "type": "movie-post",
+  "category": "movies",
+  "title": "Dolly Dearest",
+  "slug": "dolly-dearest",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Dolly Dearest",
+      "url": "https://i.ytimg.com/vi/dD4R3mZ18qI/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/dolly-dearest/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:47.890Z"
+  },
+  "rawArticleHtml": null
+}

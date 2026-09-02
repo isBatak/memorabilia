@@ -1,0 +1,84 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Cico Štos",
+  "slug": "cico-stos",
+  "publishedAt": null,
+  "metadata": {
+    "originalTitle": "Charlie Chalk",
+    "years": "1988.–1989.",
+    "country": "Ujedinjeno Kraljevstvo"
+  },
+  "content": "Cico Štos britanska je stop-animirana serija o klaunu Charlieju koji nakon brodoloma završi na neobičnom otoku Merrytwit. Ondje upoznaje šarolike stanovnike i s njima proživljava vedre, maštovite pustolovine.\n\nU Hrvatskoj se serija prikazivala pod naslovom Cico Štos. Sačuvane snimke uključuju hrvatsku sinkronizaciju i uvodnu špicu.",
+  "paragraphs": [
+    "Cico Štos britanska je stop-animirana serija o klaunu Charlieju koji nakon brodoloma završi na neobičnom otoku Merrytwit. Ondje upoznaje šarolike stanovnike i s njima proživljava vedre, maštovite pustolovine.",
+    "U Hrvatskoj se serija prikazivala pod naslovom Cico Štos. Sačuvane snimke uključuju hrvatsku sinkronizaciju i uvodnu špicu."
+  ],
+  "images": [
+    {
+      "alt": "Cico Štos",
+      "url": "https://i.ytimg.com/vi/XLl0E1teckM/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/cico-stos/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-09T14:30:00.000Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "jt-zxt_GSD0",
+      "title": "Cico Štos (Slobodan dan) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=jt-zxt_GSD0",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/jt-zxt_GSD0?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jt-zxt_GSD0/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "Crtani Filmovi Hrvatska", "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"}
+    },
+    {
+      "id": "e0M1dSd6eXA",
+      "title": "Cico Štos - Planina što stenje (HR sink)",
+      "url": "https://www.youtube.com/watch?v=e0M1dSd6eXA",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/e0M1dSd6eXA?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/e0M1dSd6eXA/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "RETROTEKA", "url": "https://www.youtube.com/@RETRO_TV_1"}
+    },
+    {
+      "id": "LxB-zitS7jQ",
+      "title": "Cico Štos - stari crtić",
+      "url": "https://www.youtube.com/watch?v=LxB-zitS7jQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/LxB-zitS7jQ?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LxB-zitS7jQ/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "CrtaniFilmoviHR", "url": "https://www.youtube.com/@borbenimacak88"}
+    },
+    {
+      "id": "kwEIZRK0o70",
+      "title": "Charlie Chalk (Cico Štos) - Intro (Croatian)",
+      "url": "https://www.youtube.com/watch?v=kwEIZRK0o70",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/kwEIZRK0o70?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kwEIZRK0o70/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "Dubbing Bunny", "url": "https://www.youtube.com/@dubbingbunny5555"}
+    },
+    {
+      "id": "XLl0E1teckM",
+      "title": "Cico Štos (Odmor) - Crtani Film",
+      "url": "https://www.youtube.com/watch?v=XLl0E1teckM",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/XLl0E1teckM?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XLl0E1teckM/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {"type": "youtube", "name": "Crtani Filmovi Hrvatska", "url": "https://www.youtube.com/@Crtani_Filmovi_Hrvatska"}
+    }
+  ]
+}

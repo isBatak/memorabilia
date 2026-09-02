@@ -1,0 +1,32 @@
+{
+  "type": "commercial-post",
+  "category": "commercials",
+  "slug": "ledo",
+  "title": "Ledo",
+  "publishedAt": null,
+  "content": "Stara televizijska reklama za Ledo.",
+  "paragraphs": [
+    "Stara televizijska reklama za Ledo."
+  ],
+  "images": [],
+  "source": {
+    "originalUrl": "https://www.youtube.com/watch?v=FY-pkRMSVhg"
+  },
+  "contentStatus": "scraped",
+  "videos": [
+    {
+      "id": "FY-pkRMSVhg",
+      "title": "Stara reklama za Ledo",
+      "url": "https://www.youtube.com/watch?v=FY-pkRMSVhg",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/FY-pkRMSVhg?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FY-pkRMSVhg/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": "prije 12 godina",
+      "source": {
+        "type": "youtube",
+        "name": "dobriSTARIcrtani",
+        "url": "https://www.youtube.com/@dobristaricrtani"
+      }
+    }
+  ]
+}
