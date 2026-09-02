@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Miš Filip",
+  "slug": "mis-filip",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Miš Filip",
+      "url": "https://i.ytimg.com/vi/Bb8sTTYcX-g/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/mis-filip/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:28.953Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "Bb8sTTYcX-g",
+      "title": "Philip Mouse - Episode 1",
+      "url": "https://www.youtube.com/watch?v=Bb8sTTYcX-g",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Bb8sTTYcX-g?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bb8sTTYcX-g/hqdefault.jpg",
+      "durationText": null,
+      "publishedText": null,
+      "source": {
+        "type": "youtube",
+        "name": "Rabe",
+        "url": "https://www.youtube.com/watch?v=Bb8sTTYcX-g"
+      }
+    }
+  ]
+}

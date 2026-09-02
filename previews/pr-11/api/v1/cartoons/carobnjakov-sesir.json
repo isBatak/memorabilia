@@ -1,0 +1,41 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Čarobnjakov šešir",
+  "slug": "carobnjakov-sesir",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Čarobnjakov šešir",
+      "url": "https://i.ytimg.com/vi/UkD9AnoQecE/sddefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/carobnjakov-sesir/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:14.835Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "7I0eychxQWI",
+      "title": "Čarobnjakov šešir (1990.) - Davno izgubljeni dječji film",
+      "url": "https://www.youtube.com/watch?v=7I0eychxQWI",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/7I0eychxQWI?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7I0eychxQWI/hqdefault.jpg",
+      "durationText": "1:15:38",
+      "publishedText": "prije 1 godinu",
+      "source": {
+        "type": "youtube",
+        "name": "KriegelBlitz",
+        "url": "https://www.youtube.com/@KriegelBlitz"
+      }
+    }
+  ]
+}

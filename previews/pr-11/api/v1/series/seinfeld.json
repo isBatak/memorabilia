@@ -1,0 +1,25 @@
+{
+  "type": "series-post",
+  "category": "series",
+  "title": "Seinfeld",
+  "slug": "seinfeld",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Seinfeld",
+      "url": "https://i.ytimg.com/vi/OXISoosdGKc/maxresdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/seinfeld/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:05.558Z"
+  },
+  "rawArticleHtml": null
+}

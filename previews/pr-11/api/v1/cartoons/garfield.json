@@ -1,0 +1,55 @@
+{
+  "type": "cartoon-post",
+  "category": "cartoons",
+  "title": "Garfield",
+  "slug": "garfield",
+  "publishedAt": null,
+  "metadata": {},
+  "content": "",
+  "paragraphs": [],
+  "images": [
+    {
+      "alt": "Garfield",
+      "url": "https://i.ytimg.com/vi/grgLPQoQm4A/hqdefault.jpg",
+      "archivedUrl": null,
+      "localUrl": "../../../images/garfield/cover.jpg"
+    }
+  ],
+  "source": {
+    "requestedArchiveUrl": null,
+    "resolvedArchiveUrl": null,
+    "originalUrl": null,
+    "scrapedAt": "2026-08-02T16:18:18.116Z"
+  },
+  "rawArticleHtml": null,
+  "videos": [
+    {
+      "id": "eZaMqXKN1Oo",
+      "title": "Garfield Show - Epizoda 11 / Sezona 1",
+      "url": "https://www.youtube.com/watch?v=eZaMqXKN1Oo",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/eZaMqXKN1Oo?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eZaMqXKN1Oo/hqdefault.jpg",
+      "durationText": "11:52",
+      "publishedText": "prije 8 g.",
+      "source": {
+        "type": "youtube",
+        "name": "Crtaći Sinkronizovani - Srpski i Hrvatski",
+        "url": "https://www.youtube.com/@crtacisinkronizovani-srpsk359"
+      }
+    },
+    {
+      "id": "mwgxgBDvNBY",
+      "title": "The Garfield Show Intro",
+      "url": "https://www.youtube.com/watch?v=mwgxgBDvNBY",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/mwgxgBDvNBY?autoplay=1&rel=0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mwgxgBDvNBY/hqdefault.jpg",
+      "durationText": "0:26",
+      "publishedText": "prije 13 g.",
+      "source": {
+        "type": "youtube",
+        "name": "Garfield",
+        "url": "https://www.youtube.com/@OfficialGarfield"
+      }
+    }
+  ]
+}
