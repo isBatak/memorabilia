@@ -59,7 +59,7 @@ export function DetailPage({entry, related}: {entry: ArchiveEntry; related: Arch
 
       <section className={css({py: {base: 12, md: 16}, borderTop: '1px solid', borderColor: 'gray.200', _dark: {borderColor: 'gray.800'}})}>
         <h2 className={css({px: {base: 5, md: 9}, fontFamily: 'display', fontSize: '2xl', mb: 6})}>{t('detail.more')}</h2>
-        <div data-carousel className={css({display: 'flex', gap: {base: 3, md: 4}, overflowX: 'auto', px: {base: 5, md: 9}, pb: 7, scrollSnapType: 'x mandatory', scrollPaddingInline: {base: '1.25rem', md: '2.25rem'}, scrollBehavior: 'smooth', overscrollBehaviorX: 'contain', touchAction: 'pan-x pinch-zoom', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch', '&::-webkit-scrollbar': {display: 'none'}})}>{related.map((item) => <MediaCard key={item.slug} item={item}/>)}</div>
+        <div data-carousel className={css({display: 'flex', gap: {base: 3, md: 4}, overflowX: 'auto', px: {base: 5, md: 9}, pb: 7, scrollSnapType: 'x mandatory', scrollPaddingInline: {base: '1.25rem', md: '2.25rem'}, scrollBehavior: 'smooth', overscrollBehaviorX: 'contain', touchAction: 'pan-x pan-y pinch-zoom', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch', '&::-webkit-scrollbar': {display: 'none'}})}>{related.map((item) => <MediaCard key={item.slug} item={item}/>)}</div>
       </section>
     </article>
   );

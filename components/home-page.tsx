@@ -33,7 +33,7 @@ function Rail({id, title, items}: {id: string; title: string; items: ArchiveCard
           scrollPaddingInline: {base: '1.25rem', md: '2.25rem'},
           scrollBehavior: 'smooth',
           overscrollBehaviorX: 'contain',
-          touchAction: 'pan-x pinch-zoom',
+          touchAction: 'pan-x pan-y pinch-zoom',
           scrollbarWidth: 'none',
           WebkitOverflowScrolling: 'touch',
           '&::-webkit-scrollbar': {display: 'none'}
