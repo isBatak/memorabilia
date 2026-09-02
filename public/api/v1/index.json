@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-08-08T12:00:00.000Z",
   "counts": {
-    "discovered": 163,
-    "successful": 163,
+    "discovered": 164,
+    "successful": 164,
     "failed": 0,
     "byCategory": {
       "series": 42,
-      "cartoons": 97,
+      "cartoons": 98,
       "movies": 21,
       "commercials": 3
     }
@@ -1117,6 +1117,14 @@
       "status": "ok",
       "contentStatus": "title-only",
       "file": "cartoons/cico-stos.json"
+    },
+    {
+      "title": "Krtek",
+      "archiveUrl": null,
+      "originalUrl": "https://hr.wikipedia.org/wiki/Krtek",
+      "status": "ok",
+      "contentStatus": "curated",
+      "file": "cartoons/krtek.json"
     },
     {
       "title": "Nindža Kornjače",
