@@ -7,7 +7,7 @@ import {videoMorph, videoTransitionName} from './video-transition';
 
 export function VideoPage({entry, video, locale}: {entry: ArchiveEntry; video: ArchiveVideo; locale: Locale}) {
   return (
-    <section className={css({position: 'fixed', inset: 0, zIndex: 30, w: '100vw', h: '100dvh', minH: '100vh', overflow: 'hidden', bg: 'black', color: 'white', isolation: 'isolate', visibility: 'visible', opacity: 1})}>
+    <section className={css({position: 'fixed', inset: 0, zIndex: 30, w: '100vw', h: '100dvh', overflow: 'hidden', bg: 'black', color: 'white', isolation: 'isolate', visibility: 'visible', opacity: 1})}>
       <div
         style={{viewTransitionName: videoTransitionName(video.id)}}
         className={css({viewTransitionClass: videoMorph, position: 'absolute', inset: 0, bg: 'black'})}
@@ -34,7 +34,7 @@ export function VideoPage({entry, video, locale}: {entry: ArchiveEntry; video: A
           justifyContent: 'space-between',
           gap: 4,
           px: {base: 4, md: 7},
-          pt: {base: 4, md: 7},
+          pt: {base: 'max(1rem, env(safe-area-inset-top))', md: 7},
           pb: {base: 12, md: 20},
           bg: 'linear-gradient(to bottom, token(colors.black/92) 0%, token(colors.black/48) 52%, transparent 100%)',
           opacity: {base: 1, lg: .72},

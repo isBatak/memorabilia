@@ -58,8 +58,13 @@ export default defineConfig({
     '.light': {
       colorScheme: 'light'
     },
-    'html': {scrollBehavior: 'smooth'},
-    'body': {bg: 'bg', color: 'fg', fontFamily: 'sans', minH: '100vh'},
+    'html': {scrollBehavior: 'smooth', overscrollBehaviorY: 'none'},
+    'body': {bg: 'bg', color: 'fg', fontFamily: 'sans', minH: '100dvh', WebkitTapHighlightColor: 'transparent'},
+    'button, [role="button"]': {touchAction: 'manipulation', userSelect: 'none', WebkitUserSelect: 'none'},
+    'a': {touchAction: 'manipulation'},
+    '@media (max-width: 767px)': {
+      'input, select, textarea': {fontSize: '16px'}
+    },
     '::selection': {bg: 'red.500', color: 'white'},
     '::-webkit-scrollbar': {w: '10px', h: '8px'},
     '::-webkit-scrollbar-track': {bg: 'bg'},
